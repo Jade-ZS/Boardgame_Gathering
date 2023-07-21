@@ -9,7 +9,7 @@ function GameDisplay() {
 const [game, setGame] = useState([])
 
   useEffect(() => {
-    fetch('https://api.boardgameatlas.com/api/search?name=Catan&client_id=JLBr5npPhV')
+    fetch('https://api.boardgameatlas.com/api/search?order_by=rank&ascending=false&client_id=JLBr5npPhV')
     .then(response => response.json())
     .then(data => setGame([data.games[0]]))
   }, [])
@@ -20,7 +20,7 @@ const [game, setGame] = useState([])
     <section className='game-display'>
       <div className='game-intro'>
         <div className='thumbnail'>
-          <img src={game.images.medium} alt={`${game.handle} thumbnail`} />
+          <img src={game.images.thumb} alt={`${game.handle} thumbnail`} />
         </div> 
         <div className='intro'>
           <h1>{game.handle}</h1>

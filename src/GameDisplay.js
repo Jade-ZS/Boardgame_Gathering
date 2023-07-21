@@ -24,16 +24,19 @@ const [game, setGame] = useState([])
         </div> 
         <div className='intro'>
           <h1>{game.handle}</h1>
-          <p>{game.players}</p>
-          <p>{game.average_user_rating.toFixed(2)}</p>
+          <h3>{game.players} Players</h3>
+          <h3>ages {game.min_age}+</h3>
+          <h3>{game.average_user_rating.toFixed(2)} ⭐️</h3>
         </div> 
       </div>
-      <nav className='game-details'>
-        <NavLink to=".">About</NavLink>
-        <NavLink to="/game/rules">Rules</NavLink>
-        <NavLink to="/game/reviews">Reviews</NavLink>
-      </nav>
-      <Outlet />
+      <div className="links">
+        <nav className='game-nav'>
+          <NavLink to=".">About</NavLink>
+          <NavLink to="/game/rules">Rules</NavLink>
+          <NavLink to="/game/reviews">Reviews</NavLink>
+        </nav>
+      </div>
+      <Outlet context={{game}}/>
     </section>
   )))
 }

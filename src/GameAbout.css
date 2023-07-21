@@ -1,0 +1,8 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  width: 900px;
+}

@@ -5,7 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'
 
-
+// if('serviceWorker' in navigator){
+//   window.addEventListener('load', () => {
+//     navigator.serviceWorker.register('../public/service-worker.js')
+//     .then(registration => console.log('successfull registration:', registration.scope))
+//     .catch(error => console.log('failed registration:', error))
+//   })
+// }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

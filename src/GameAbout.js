@@ -10,8 +10,7 @@ function GameAbout(props) {
   return (
     <div className='about-container'>
       <div className='about'>
-        <h1>About goes here</h1>
-        <>{game.description_preview}</>
+        <p>{game.description_preview}</p>
       </div>
     </div>
   )

@@ -4,14 +4,14 @@
   /* justify-content: center; */
   align-items: center;
   background-color: #FFF7ED;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.game-intro {
+.game-details {
   /* border: 1px solid red; */
   display:flex;
   justify-content: center;
-  width: 900px;
+  width: 800px;
   margin: 30px 0;
 }
 
@@ -28,7 +28,7 @@
   box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.5);
 }
 
-.intro {
+.details {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -42,19 +42,27 @@
   margin: 30px 0;
 }
 
-.intro h1 {
+.details h1 {
   font-size: 2rem;
-}
-
-.intro h3,
-.intro h1 {
   margin: 9px 0;
   width:fit-content;
   background-color: white;
   border-radius: 5px;
   padding: 5px 5px;
   box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.5);
+}
 
+.details h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 9px 0;
+  width:90px;
+  height:32px;
+  /* background-color: white; */
+  border-radius: 5px;
+  padding: 5px 5px;
+  box-shadow: 3px 10px 7px rgba(0, 0, 0, 0.5);
 }
 
 .game-nav {

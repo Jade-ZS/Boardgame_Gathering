@@ -3,12 +3,14 @@ import PropTypes from 'prop-types'
 import './GameDisplay.css'
 import { useEffect, useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
-
+//need to import useParams
 function GameDisplay() {
   
 const [game, setGame] = useState([])
+//const { id } = useParams()
 
   useEffect(() => {
+    //interpelate the id from the url into the fetch call
     fetch('https://api.boardgameatlas.com/api/search?order_by=rank&ascending=false&client_id=JLBr5npPhV')
     .then(response => response.json())
     .then(data => setGame([data.games[0]]))

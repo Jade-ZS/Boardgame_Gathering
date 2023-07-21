@@ -11,6 +11,7 @@ function App() {
   return (
    <>
     <Routes>
+      {/* change path to ":id" */}
       <Route path="/game" element={<GameDisplay />}>
         <Route index element={<GameAbout />} />
         <Route path="rules" element={<GameRules />} />

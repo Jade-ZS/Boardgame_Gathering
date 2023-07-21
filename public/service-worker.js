@@ -1,6 +1,6 @@
 const gameBoardsCache = "GameBoard Casche";
 const filesPath = [
-  // '/',
+  '/',
   "/index.html",
   "/App.js",
   "/index.js",
@@ -14,12 +14,8 @@ self.addEventListener("install", (event) => {
       return cache.addAll(filesPath);
     })
   );
-  self.skipWaiting();
 });
 
-self.addEventListener("activate", () => {
-  console.log("Activation");
-});
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
@@ -27,6 +23,11 @@ self.addEventListener("fetch", (event) => {
       if (response) {
         return response;
       }
+      return fetch(event.request)
     })
-  );
-});
+    );
+  });
+  
+  self.addEventListener("activate", () => {
+    console.log("Activation");
+  });

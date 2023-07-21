@@ -28,18 +28,16 @@ console.log(games)
 
   return (
     <div>
-      <Banner />
-      <MenuBar />
-      <GameCards />
-      <Routes>
-        {/* change path to ":id" */}
-        <Route path="/game" element={<GameDisplay />}>
-          <Route index element={<GameAbout />} />
-          <Route path="rules" element={<GameRules />} />
-          <Route path="reviews" element={<GameReviews />} />
-        </Route>
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<><Banner /> <MenuBar /><GameCards /></>} />
+      {/* change path to ":id" */}
+      <Route path="/game" element={<GameDisplay />}>
+        <Route index element={<GameAbout />} />
+        <Route path="rules" element={<GameRules />} />
+        <Route path="reviews" element={<GameReviews />} />
+      </Route>
+    </Routes>
+  </div>
   );
 }
 

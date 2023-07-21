@@ -1,8 +1,10 @@
-import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
+import GameCards from './GameCards';
+import MenuBar from './MenuBar';
+import Banner from './Banner';
 import {getData} from './ApiCalls';
 import {useEffect, useState} from 'react';
+
 
 function App() {
 
@@ -18,21 +20,10 @@ function App() {
 console.log(games)
 
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Banner />
+      <MenuBar />
+      <GameCards />
     </div>
   );
 }

@@ -1,0 +1,24 @@
+.game-row {
+  /* border: solid 2px pink; */
+  margin: 0 5vw;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-card-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.test-card {
+  border: solid 2px pink;
+  height: 100px;
+  width: 130px;
+  flex: 0 0 auto;
+  border-radius: 20px;
+}
+

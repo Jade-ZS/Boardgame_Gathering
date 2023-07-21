@@ -1,6 +1,6 @@
 .game-row {
   /* border: solid 2px pink; */
-  margin: 0 30px;
+  margin: 0 5vw;
 }
 
 .heading-container {
@@ -19,5 +19,6 @@
   height: 100px;
   width: 130px;
   flex: 0 0 auto;
+  border-radius: 20px;
 }
 

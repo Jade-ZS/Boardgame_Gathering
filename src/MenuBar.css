@@ -1,20 +1,24 @@
 .search-bar {
   display: flex;
   border: solid 2px pink;
+  background-color: pink;
+  border-radius: 50px;
+  justify-content: center;
 }
 
 .to-my-favorites-button,
 .discover-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: solid 2px pink;
-  text-align: center;
+  border-radius: 20px;
 }
 
-
-
-.header {
+.menu-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr) 10px repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr) 10px repeat(2, 1fr);
   margin-top: 20px;
   margin: 30px 80px;
 }

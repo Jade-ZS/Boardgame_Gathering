@@ -1,13 +1,13 @@
 import './App.css';
 import GameCards from './GameCards';
-import Header from './Header';
+import MenuBar from './MenuBar';
 import Banner from './Banner';
 
 function App() {
   return (
     <div>
       <Banner />
-      <Header />
+      <MenuBar />
       <GameCards />
     </div>
   );

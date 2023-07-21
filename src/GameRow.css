@@ -14,11 +14,16 @@
   gap: 10px;
 }
 
-.test-card {
+.card {
   border: solid 2px pink;
-  height: 100px;
-  width: 130px;
+  height: 2vh;
+  width: 2vw;
+  margin: 5%;
   flex: 0 0 auto;
   border-radius: 20px;
 }
 
+img {
+  height: 5vh;
+  width: 5vw
+}

@@ -1,0 +1,27 @@
+.game-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-intro {
+  border: 1px solid red;
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.thumbnail {
+  width: 50%
+}
+
+.intro {
+  width: 50%;
+}
+
+.game-details {
+  border: 1px solid red;
+  display: flex;
+  gap:30px;
+  width: 100%;
+}

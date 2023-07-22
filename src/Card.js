@@ -1,9 +1,10 @@
 import './Card.css';
 
-export default function Card() {
+export default function Card({name ,imgSrc}) {
   return (
     <div className='card'>
-      <p>game name</p>
+      <img src={imgSrc}/>
+      <p>{name}</p>
     </div>
   )
 }

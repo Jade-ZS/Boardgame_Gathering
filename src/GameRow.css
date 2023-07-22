@@ -10,20 +10,8 @@
 
 .row-card-container {
   display: flex;
+  /* justify-content: space-around; */
   overflow-x: auto;
   gap: 10px;
 }
 
-.card {
-  border: solid 2px pink;
-  height: 2vh;
-  width: 2vw;
-  margin: 5%;
-  flex: 0 0 auto;
-  border-radius: 20px;
-}
-
-img {
-  height: 5vh;
-  width: 5vw
-}

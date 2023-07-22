@@ -1,10 +1,16 @@
 import './Card.css';
+import { React } from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Card({name ,imgSrc}) {
+export default function Card({name ,imgSrc, id}) {
+
   return (
-    <div className='card'>
+    // To Do: add link path
+    <Link to=''>
+    <div className='card' id={id} key={id}>
       <img src={imgSrc}/>
       <p>{name}</p>
     </div>
+    </Link>
   )
 }

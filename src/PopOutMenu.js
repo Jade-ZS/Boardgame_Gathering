@@ -1,6 +1,7 @@
 import React from "react";
 import { useSearchParams } from "react-router-dom";
 import "./PopOutMenu.css";
+import { Link } from "react-router-dom";
 
 function PopOutMenu({ games, handleClose }) {
 
@@ -55,6 +56,13 @@ function PopOutMenu({ games, handleClose }) {
             </ul>
           </div>
         </div>
+        <ul>
+          {gameType && gameList.map(game => (
+            <Link to={`/${game.id}`}>
+            <li key={game.id}>{game.handle}</li>
+            </Link>
+          ))}
+        </ul>
       </div>
   );
 }

@@ -45,7 +45,7 @@ function App() {
     <Routes>
       <Route path="/" element={<><Banner  games={games} /> <MenuBar /><GameCards newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
       {/* change path to ":id" */}
-      <Route path="/game" element={<GameDisplay />}>
+      <Route path="/:id" element={<GameDisplay games={games}/>}>
         <Route index element={<GameAbout />} />
         <Route path="rules" element={<GameRules />} />
         <Route path="reviews" element={<GameReviews />} />

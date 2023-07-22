@@ -6,7 +6,7 @@ export default function Card({name ,imgSrc, id}) {
 
   return (
     // To Do: add link path
-    <Link to=''>
+    <Link to={`/${id}`}>
     <div className='card' id={id} key={id}>
       <img src={imgSrc}/>
       <p>{name}</p>

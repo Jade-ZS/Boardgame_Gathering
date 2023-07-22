@@ -5,8 +5,8 @@ import { useEffect, useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 //need to import useParams
-function GameDisplay({games}) {
-  
+function GameDisplay({games, kidFriendly, partyGames, newRelease}) {
+games = [...games, ...kidFriendly, ...partyGames, ...newRelease];
 const {id} = useParams()
 
 //const { id } = useParams()

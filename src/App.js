@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     getData()
-      .then(data => setGames(data)) 
+      .then(data => setGames(data.games)) 
       .catch(error => setError(error))
   }, [])
 
@@ -29,7 +29,7 @@ console.log(games)
   return (
     <div>
     <Routes>
-      <Route path="/" element={<><Banner /> <MenuBar /><GameCards /></>} />
+      <Route path="/" element={<><Banner games={games} /> <MenuBar /><GameCards /></>} />
       {/* change path to ":id" */}
       <Route path="/game" element={<GameDisplay />}>
         <Route index element={<GameAbout />} />

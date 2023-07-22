@@ -1,6 +1,15 @@
 .banner {
+  display: flex;
   height: 80px;
   line-height: 80px;
   background-color: pink;
+  margin-right: auto;
+  justify-content: space-between;
+  /* align-items: center; */
   
+}
+
+.filter {
+  margin-right: 40px;
+  z-index: 2;
 }

@@ -3,26 +3,29 @@ import PropTypes from 'prop-types'
 import './GameDisplay.css'
 import { useEffect, useState } from 'react'
 import { NavLink, Outlet } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 //need to import useParams
-function GameDisplay() {
+function GameDisplay({games}) {
   
-const [game, setGame] = useState([])
+const {id} = useParams()
+
 //const { id } = useParams()
 
-  useEffect(() => {
-    //interpelate the id from the url into the fetch call
-    fetch('https://api.boardgameatlas.com/api/search?order_by=rank&ascending=false&client_id=JLBr5npPhV')
-    .then(response => response.json())
-    .then(data => setGame([data.games[0]]))
-  }, [])
+  // useEffect(() => {
+  //   //interpelate the id from the url into the fetch call
+  //   fetch('https://api.boardgameatlas.com/api/search?order_by=rank&ascending=false&client_id=JLBr5npPhV')
+  //   .then(response => response.json())
+  //   .then(data => setGame([data.games[0]]))
+  // }, [])
   
+  const game = games.filter(game => game.id === id)
   console.log(game)
   return (
     game.map(game => (
     <section className='game-display'>
       <div className='game-details'>
         <div className='thumbnail'>
-          <img src={game.images.thumb} alt={`${game.handle} thumbnail`} />
+          <img src={game.images.medium} alt={`${game.handle} thumbnail`} />
         </div> 
         <div className='details'>
           <h4 style={{backgroundColor: 'black', color: 'lightGreen'}}>{game.msrp_text}</h4>

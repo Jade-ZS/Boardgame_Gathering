@@ -19,10 +19,10 @@ const {id} = useParams()
   // }, [])
   
   const game = games.filter(game => game.id === id)
-  console.log(game)
+  // console.log(game)
   return (
     game.map(game => (
-    <section className='game-display'>
+    <section className='game-display' key={id}>
       <div className='game-details'>
         <div className='thumbnail'>
           <img src={game.images.medium} alt={`${game.handle} thumbnail`} />

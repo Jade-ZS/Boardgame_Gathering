@@ -10,8 +10,6 @@ export default function GameRow({category, games}) {
       </div>
       <div className='row-card-container'>
       {games.map((game) => {
-        // console.log('keynames: ', Object.keys(game))
-        console.log('game.id: ', game.id)
         return <Card name={game.name} imgSrc={game['image_url']} key={game.id} id={game.id}/>
       })}
       </div>

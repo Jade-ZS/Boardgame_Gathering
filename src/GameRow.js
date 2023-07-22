@@ -1,6 +1,7 @@
 import './GameRow.css';
+import Card from './Card'
 
-export default function GameRow({category}) {
+export default function GameRow({category, games}) {
   return (
     <div className='game-row'>
       <div className='heading-container'>
@@ -8,19 +9,7 @@ export default function GameRow({category}) {
         <p>show all</p>
       </div>
       <div className='row-card-container'>
-        {/**map some cards here */}
-        <div className='test-card'></div>
-        <div className='test-card'></div>
-        <div className='test-card'></div>
-        <div className='test-card'></div>
-        <div className='test-card'></div>
-        <div className='test-card'></div>
-        <div className='test-card'></div>
-        <div className='test-card'></div>
-        <div className='test-card'></div>
-        <div className='test-card'></div>
-        <div className='test-card'></div>
-        <div className='test-card'></div>
+      {games.map((game) => <Card name={game.name} imgSrc={game['image_url']}/>)}
       </div>
      
     </div>

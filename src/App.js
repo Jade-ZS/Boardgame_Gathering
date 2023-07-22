@@ -38,14 +38,14 @@ function App() {
   // console.log(kidFriendly[0].name, 'kids')
   // console.log(newRelease[0].name)
   // console.log(partyGames[0].max_player)
-  console.log('games', games)
+  // console.log('games', games)
 
   return (
     <div>
     <Routes>
       <Route path="/" element={<><Banner  games={games} /> <MenuBar /><GameCards newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
       {/* change path to ":id" */}
-      <Route path="/:id" element={<GameDisplay games={games}/>}>
+      <Route path="/:id" element={<GameDisplay games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/>}>
         <Route index element={<GameAbout />} />
         <Route path="rules" element={<GameRules />} />
         <Route path="reviews" element={<GameReviews />} />

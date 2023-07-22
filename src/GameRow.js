@@ -9,7 +9,11 @@ export default function GameRow({category, games}) {
         <p>show all</p>
       </div>
       <div className='row-card-container'>
-      {games.map((game) => <Card name={game.name} imgSrc={game['image_url']}/>)}
+      {games.map((game) => {
+        // console.log('keynames: ', Object.keys(game))
+        console.log('game.id: ', game.id)
+        return <Card name={game.name} imgSrc={game['image_url']} id={game.id}/>
+      })}
       </div>
      
     </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './GameDisplay.css'
 import { useEffect, useState } from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet, Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 //need to import useParams
 function GameDisplay({games, kidFriendly, partyGames, newRelease}) {
@@ -23,6 +23,10 @@ const {id} = useParams()
   return (
     game.map(game => (
     <section className='game-display' key={id}>
+      <div className='home-button'>
+        <Link to="/"><p><span>⌂</span></p></Link>
+        
+      </div>
       <div className='game-details'>
         <div className='thumbnail'>
           <img src={game.images.medium} alt={`${game.handle} thumbnail`} />

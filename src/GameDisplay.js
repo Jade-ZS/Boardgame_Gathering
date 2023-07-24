@@ -41,8 +41,8 @@ const {id} = useParams()
       <div className="links">
         <nav className='game-nav'>
           <NavLink to="." end className={({isActive}) => isActive ? 'active' : 'game-nav a'}>About</NavLink>
-          <NavLink to="/game/rules">Rules</NavLink>
-          <NavLink to="/game/reviews">Reviews</NavLink>
+          <NavLink to="locations">Locations</NavLink>
+          <NavLink to="artists">Artists</NavLink>
         </nav>
       </div>
       <Outlet context={{game}}/>

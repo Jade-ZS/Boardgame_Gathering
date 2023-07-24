@@ -28,7 +28,7 @@ function PopOutMenu({ games, handleClose }) {
             <ul>
               <li>Action</li>
               <li id="KUBCKBkGxV" onClick={handleClick}>Adventure</li>
-              <li>Role Play</li>
+              <li id="ge8pIhEUGE" onClick={handleClick}>Cooperative</li>
               <li>Strategy</li>
             </ul>
           </div>

@@ -26,10 +26,10 @@ function PopOutMenu({ games, handleClose }) {
           <p>Game Type</p>
           <div className="drop-down-menu">
             <ul>
-              <li>Action</li>
+              <li id='nuHYRFmMjU'onClick={handleClick}>Renaissance</li>
               <li id="KUBCKBkGxV" onClick={handleClick}>Adventure</li>
               <li id="ge8pIhEUGE" onClick={handleClick}>Cooperative</li>
-              <li>Strategy</li>
+              <li id="JwHcKqxh33" onClick={handleClick}>Trains</li>
             </ul>
           </div>
         </div>
@@ -57,6 +57,7 @@ function PopOutMenu({ games, handleClose }) {
           </div>
         </div>
         <ul>
+          <p>Your Options</p>
           {gameType && gameList.map(game => (
             <Link to={`/${game.id}`}>
             <li key={game.id}>{game.handle}</li>

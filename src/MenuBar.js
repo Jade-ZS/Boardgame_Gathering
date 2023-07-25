@@ -1,6 +1,6 @@
 import './MenuBar.css';
 import { useState } from 'react';
-import { useSearchParams} from 'react-router-dom';
+import { useSearchParams, Link } from 'react-router-dom';
 
 export default function MenuBar() {
 
@@ -26,7 +26,7 @@ export default function MenuBar() {
       </div>
       <div className='search-bar'>
         <input type='text' placeholder='game name' onChange={event=> handleChange(event)} value={searchParams.get('name') || ''} />
-        <button className='search-button' onClick={event => handleClick(event)} >Search</button>
+        <Link to='/'><button className='clear-button'>Clear</button></Link>
       </div>
     </div>
   )

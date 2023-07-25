@@ -12,9 +12,7 @@ function Locations(props) {
       acc.push(curr.name)
     }
     return acc
-  }, [])
-
-  console.log('local', locations)
+  }, []).sort()
 
   const retailLocations = locations.map((location, index) => (
     // figure out a better key identifier

@@ -11,5 +11,6 @@ async function getData(query) {
 } 
 
 
+// 'https:api.boardgameatlas.com/api/search?year_published=2019&client_id=iFrcfZiq9e'
 
 export {getData}

@@ -1,21 +1,26 @@
 import React from "react";
-import { useSearchParams } from "react-router-dom";
+// import { useSearchParams } from "react-router-dom";
 import "./PopOutMenu.css";
 import { Link } from "react-router-dom";
 
 function PopOutMenu({ games, handleClose }) {
 
-  const [searchParams, setSearchParams] = useSearchParams();
+  // const [searchParams, setSearchParams] = useSearchParams();
+  
+  // function handleClick(event) {
+    //   setSearchParams({
+      //     categoryId: event.target.id
+      //   })
+      // }
+      
+  // const gameType = searchParams.get("categoryId");
+  // const gameList = gameType ? games.filter(game => game.categories.some(cat => cat.id === gameType)) : games
+  
+  const [gameList, setGameList] = React.useState([]);
 
-  function handleClick(event) {
-    setSearchParams({
-      categoryId: event.target.id
-    })
+  const filterByType = (event) => {
+    setGameList(games.filter(game => game.categories.some(cat => cat.id === event.target.id)))
   }
-
-  const gameType = searchParams.get("categoryId");
-
-  const gameList = gameType ? games.filter(game => game.categories.some(cat => cat.id === gameType)) : games
 
   console.log(gameList)
 
@@ -27,7 +32,7 @@ function PopOutMenu({ games, handleClose }) {
           <div className="drop-down-menu">
             <ul>
               <li>Action</li>
-              <li id="KUBCKBkGxV" onClick={handleClick}>Adventure</li>
+              <li id="KUBCKBkGxV" onClick={filterByType}>Adventure</li>
               <li>Role Play</li>
               <li>Strategy</li>
             </ul>
@@ -57,7 +62,7 @@ function PopOutMenu({ games, handleClose }) {
           </div>
         </div>
         <ul>
-          {gameType && gameList.map(game => (
+          {gameList.length > 0 && gameList.map(game => (
             <Link to={`/${game.id}`}>
             <li key={game.id}>{game.handle}</li>
             </Link>

@@ -1,0 +1,29 @@
+.artist {
+  margin: 10px 10px;
+  border-radius: 10px;
+  width:fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px dotted white;;
+}
+
+.artist p {
+  margin: 5px 10px;
+  font-weight: bolder;
+  /* color: rgb(0, 0, 0); */
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.artist-container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 750px;
+  border-radius: 20px;
+  /* box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.5); */
+  /* background-color: white; */
+  margin-top: 20px;
+}

@@ -34,7 +34,7 @@ const {id} = useParams()
         <div className='details'>
           <h4 style={{backgroundColor: 'black', color: 'lightGreen'}}>{game.msrp_text}</h4>
           <h4 style={{backgroundColor: 'black', color: 'lightBlue'}}>{game.players} Players</h4>
-          <h4 style={{backgroundColor: 'black', color: 'red'}}>ages {game.min_age}+</h4>
+          <h4 style={{backgroundColor: 'black', color: 'red'}}>Ages {game.min_age}+</h4>
           <h4 style={{backgroundColor: 'black', color: 'yellow'}}>{game.average_user_rating.toFixed(2)} ⭐️</h4>
         </div> 
       </div>

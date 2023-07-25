@@ -7,8 +7,16 @@ function Artists(props) {
   
   const { game } = useOutletContext()
   
+  const artists = game.artists.map(artist => (
+    <div key={artist.id} className='artist'>
+      <p>{artist}</p>
+    </div>
+  ))
+
   return (
-    <div>Artists</div>
+    <div className='artist-container'>
+      {artists}
+    </div>
   )
 }
 

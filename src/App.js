@@ -43,7 +43,7 @@ function App() {
   return (
     <div>
     <Routes>
-      <Route path="/" element={<><Banner  games={games} /> <MenuBar /><GameCards newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
+      <Route path="/" element={<><Banner  games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/> <MenuBar /><GameCards newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
       {/* change path to ":id" */}
       <Route path="/:id" element={<GameDisplay games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/>}>
         <Route index element={<GameAbout />} />

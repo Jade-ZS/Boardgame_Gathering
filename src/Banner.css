@@ -5,11 +5,16 @@
   background-color: pink;
   margin-right: auto;
   justify-content: space-between;
-  /* align-items: center; */
-  
+  align-items: center;
+  padding-left: 40px;
 }
 
 .filter {
   margin-right: 40px;
   z-index: 2;
+}
+
+.filter:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }

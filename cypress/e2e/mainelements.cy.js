@@ -265,10 +265,8 @@ describe('Main page should display all elements', () => {
       })
     })
 
-
-   
-
+  
   })
-
+  
 })
 

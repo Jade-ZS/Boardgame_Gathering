@@ -42,7 +42,7 @@ describe('Search should have an intuitive user experience.', () => {
     .type('a')
     cy.get('.game-cards-container')
     .within(()=> {
-      cy.get('div')
+      cy.get('.search-result')
       .should('have.attr', 'class')
       .should('include', 'search-result')  
     })
@@ -55,7 +55,7 @@ describe('Search should have an intuitive user experience.', () => {
     .type('gibberish')
     cy.get('.game-cards-container')
     .within(()=> {
-      cy.get('div')
+      cy.get('.search-result')
       .within(()=> {
         cy.get('p')
         .contains('Sorry, no matching game was found. Please try a different game name...')
@@ -69,7 +69,7 @@ describe('Search should have an intuitive user experience.', () => {
     .type('a')
     cy.get('.game-cards-container')
     .within(()=> {
-      cy.get('div')
+      cy.get('.search-result')
       .each(()=> {
         cy.contains('Sorry, no matching game was found. Please try a different game name...')
         .should('not.exist')
@@ -84,7 +84,7 @@ describe('Search should have an intuitive user experience.', () => {
     .type('Ca')
     cy.get('.game-cards-container')
     .within(()=> {
-      cy.get('div')
+      cy.get('.search-result')
       .each(()=> {
         cy.get('a')
         .should("have.length", 2)
@@ -96,6 +96,9 @@ describe('Search should have an intuitive user experience.', () => {
         .first()
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324722072.jpg')
+        cy.get('p')
+        .first()
+        .contains('Catan')
         cy.get('a')
         .last()
         .should('have.attr', 'href')
@@ -103,7 +106,10 @@ describe('Search should have an intuitive user experience.', () => {
         cy.get('img')
         .last()
         .should('have.attr', 'src')
-        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257497048-519-B02BO03L.jpg')         
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257497048-519-B02BO03L.jpg')
+        cy.get('p')
+        .last()
+        .contains('PitchCar Mini')         
       })
     })
   })
@@ -115,7 +121,7 @@ describe('Search should have an intuitive user experience.', () => {
     .type('Backgammon')
     cy.get('.game-cards-container')
     .within(()=> {
-      cy.get('div')
+      cy.get('.search-result')
       .each(()=> {
         cy.get('a')
         .should("have.length", 1)
@@ -127,12 +133,33 @@ describe('Search should have an intuitive user experience.', () => {
         .eq(0)
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1626789069947')
+        cy.get('p')
+        .eq(0)
+        .contains('Backgammon')
       })
     })
   })
 
-  it('User should be able to select a game from search results and view game info', () => {
+  it('User should be able to select a game from search results, view game info, and return home', () => {
 
-  
+  cy.visit('http://localhost:3000/')
+    cy.get('input[type="text"]')         
+    .type('Backgammon')
+    cy.get('.search-result')
+    .within(() =>{
+      cy.get('a')
+      .click()
+    })
+    cy.get('.home-button')
+    .within(() => {
+      cy.get('a').click({ force: true })
+    })
+    
+    //check url :)
+
   })
 })
+
+
+
+// add testing for text up above

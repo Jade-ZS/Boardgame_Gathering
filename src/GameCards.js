@@ -7,8 +7,8 @@ import { useSearchParams } from 'react-router-dom';
 export default function GameCards({games, kidFriendly, partyGames, newRelease}) {
   const [ searchParam ] = useSearchParams();
   const nameParam = searchParam.get('name');
-  const gamesData = [...games, ...kidFriendly, ...partyGames, ...newRelease];
-  
+  console.log(games)
+  games = [...games, ...kidFriendly, ...partyGames, ...newRelease];
 
   const gameRows = (
     <div>
@@ -20,7 +20,7 @@ export default function GameCards({games, kidFriendly, partyGames, newRelease}) 
 
   return (
     <div className='game-cards-container'>
-      { nameParam ? <SearchResult games={gamesData}/> : gameRows}
+      { nameParam ? <SearchResult games={games}/> : gameRows}
     </div>
   )
 }

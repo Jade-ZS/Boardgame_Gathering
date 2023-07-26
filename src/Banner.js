@@ -7,13 +7,13 @@ export default function Banner({ games, newRelease, kidFriendly, partyGames }) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const allGames = [...games,...newRelease,...kidFriendly,...partyGames]
+  games = [...games,...newRelease,...kidFriendly,...partyGames]
   return (
     <div className='banner'>
       <h1>Boardgame Gathering</h1>
       <div className='filter'>  
         <h2 onClick={handleOpen}>Filter</h2>
-        {open && <PopOutMenu allGames={allGames} handleClose={handleClose} />}
+        {open && <PopOutMenu games={games} handleClose={handleClose} />}
       </div>
     </div>
   )

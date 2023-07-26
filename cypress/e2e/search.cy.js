@@ -35,6 +35,7 @@ beforeEach(() => {
 
 
 describe('Search should have an intuitive user experience.', () => {
+
   it('Should contain proper elements', () => {
     cy.visit('http://localhost:3000/')
     .get('input[type="text"]')
@@ -46,7 +47,9 @@ describe('Search should have an intuitive user experience.', () => {
       .should('include', 'search-result')  
     })
   })
-  it('A helpful message should appear when the users query returns no results, when the user gets results that message should not appear.', () => {
+
+  it('A helpful message should appear when the user\'s query returns no results, when the user gets results that message should not appear, or persist.', () => {
+    
     cy.visit('http://localhost:3000/')
     .get('input[type="text"]')
     .type('gibberish')
@@ -58,16 +61,78 @@ describe('Search should have an intuitive user experience.', () => {
         .contains('Sorry, no matching game was found. Please try a different game name...')
       })
     })
+
     cy.visit('http://localhost:3000/')
     .get('input[type="text"]')
+    .type('gibberish')
+    .clear()
     .type('a')
     cy.get('.game-cards-container')
-      .within(()=> {
+    .within(()=> {
       cy.get('div')
       .each(()=> {
         cy.contains('Sorry, no matching game was found. Please try a different game name...')
         .should('not.exist')
       })
     })
+  })
+
+  it('User should get result matching based on partial text, and nothing else', () => {
+      
+    cy.visit('http://localhost:3000/')
+    .get('input[type="text"]')
+    .type('Ca')
+    cy.get('.game-cards-container')
+    .within(()=> {
+      cy.get('div')
+      .each(()=> {
+        cy.get('a')
+        .should("have.length", 2)
+        cy.get('a')
+        .first()
+        .should('have.attr', 'href')
+        .should('include', '/OIXt3DmJU0')
+        cy.get('img')
+        .first()
+        .should('have.attr', 'src')
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324722072.jpg')
+        cy.get('a')
+        .last()
+        .should('have.attr', 'href')
+        .should('include', '/c7ncqL5AX6')
+        cy.get('img')
+        .last()
+        .should('have.attr', 'src')
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257497048-519-B02BO03L.jpg')         
+      })
+    })
+  })
+
+  it('User should be able to type out the full name of a game and get a result', () => {
+
+    cy.visit('http://localhost:3000/')
+    .get('input[type="text"]')         
+    .type('Backgammon')
+    cy.get('.game-cards-container')
+    .within(()=> {
+      cy.get('div')
+      .each(()=> {
+        cy.get('a')
+        .should("have.length", 1)
+        cy.get('a')
+        .eq(0)
+        .should('have.attr', 'href')
+        .should('include', '/YBJODy05aF')
+        cy.get('img')
+        .eq(0)
+        .should('have.attr', 'src')
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1626789069947')
+      })
+    })
+  })
+
+  it('User should be able to select a game from search results and view game info', () => {
+
+  
   })
 })

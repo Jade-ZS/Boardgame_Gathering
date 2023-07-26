@@ -26,24 +26,199 @@ beforeEach(() => {
   })
   .as('kids')
   
-
-
-  
 })
 
 
 
 // npx cypress run --browser chrome
 
-describe('template spec', () => {
-  it('passes', () => {
-    // cy.wait('@kids', '@party', '@new', '@games')
-    
-    // cy.visit("http://localhost:3000/")
+describe('Main page should display all elements', () => {
+  it('Proper headers should exist and contain proper text.', () => {
 
     cy.visit('http://localhost:3000/')
-    cy.get('h1').contains('h1','Boardgame')
-    cy.get('img').first().should('have.attr', 'src').should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324599426.jpg')
-    // .should('be.visible').contains('src=https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324599426.jpg')
+
+    cy.get('.banner')
+    .within(()=> {
+    cy.get('h1')
+    .contains('h1','Boardgame')
+    })
+
+    cy.get('.heading-container')
+    .eq(0)
+    .within(() => {
+    cy.get('h1')  
+    .contains('h1','New Release')
+    })
+
+    cy.get('.heading-container')
+    .eq(1)
+    .within(() => {
+    cy.get('h1')
+    .contains('h1','Party Games')
+    })
+
+    cy.get('.heading-container')
+    .eq(2)
+    .within(() => {
+    cy.get('h1')
+    .contains('h1','Kid Friendly')
+    })
+
   })
+  it('Carousels should display proper elements.', () => {
+
+    cy.visit('http://localhost:3000/')
+    
+    cy.get('.game-row')
+    .eq(0)
+    .within(() => {
+      cy.get('h1')
+      .contains('h1','New Release')   
+      cy.get('p')
+      .first()
+      .contains('show all')
+      cy.get('a')
+      .first()
+      .should('have.attr', 'href')
+      .should('include', '/J1vBFiqdHG')
+      cy.get('a')
+      .first()
+      .within(() => {
+        cy.get('img')
+        .first()
+        .should('be.visible')
+        .should('have.attr', 'src')
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324599426.jpg')
+        cy.get('p')
+        .first()
+        .contains('Atlantis Rising')
+      })
+    })
+
+    cy.get('.game-row')
+    .eq(0)
+    .within(() => {
+      cy.get('a')
+      .last()
+      .should('have.attr', 'href')
+      .should('include', '/OO9EJFWOcI')
+      cy.get('a')
+      .last()
+      .within(() => {
+        cy.get('img')
+        .last()
+        .should('be.visible')
+        .should('have.attr', 'src')
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1633738017899')
+        cy.get('p')
+        .last()
+        .contains('First Rat')
+      })
+    })
+
+    cy.get('.game-row')
+    .eq(1)
+    .within(() => {
+      cy.get('h1')
+      .contains('h1','Party Games')
+      cy.get('p')
+      .first()
+      .contains('show all')
+      cy.get('a')
+      .first()
+      .should('have.attr', 'href')
+      .should('include', '/OTIkviy9XZ')
+      cy.get('a')
+      .first()
+      .within(() => {
+        cy.get('img')
+        .first()
+        .should('be.visible')
+        .should('have.attr', 'src')
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1634312724849')
+        cy.get('p')
+        .first()
+        .contains('Mafia: Vendetta')
+      })
+    })
+
+    cy.get('.game-row')
+    .eq(1)
+    .within(() => {
+      cy.get('a')
+      .last()
+      .should('have.attr', 'href')
+      .should('include', '/ODojES1ouJ')
+      cy.get('a')
+      .last()
+      .within(() => {
+        cy.get('img')
+        .last()
+        .should('be.visible')
+        .should('have.attr', 'src')
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1671926936810')
+        cy.get('p')
+        .last()
+        .contains('Complete Murder Mystery Night')
+      })
+    })
+
+    cy.get('.game-row')
+    .eq(2)
+    .within(() => {
+      cy.get('h1')
+      .contains('h1','Kid Friendly')
+      cy.get('p')
+      .first()
+      .contains('show all')
+      cy.get('a')
+      .first()
+      .should('have.attr', 'href')
+      .should('include', '/3hnL2wtWnM')
+      cy.get('a')
+      .first()
+      .within(() => {
+        cy.get('img')
+        .first()
+        .should('be.visible')
+        .should('have.attr', 'src')
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1594689503033')
+        cy.get('p')
+        .first()
+        .contains('Chess')
+      })
+    })
+
+    cy.get('.game-row')
+    .eq(2)
+    .within(() => {
+      cy.get('a')
+      .last()
+      .should('have.attr', 'href')
+      .should('include', '/c7ncqL5AX6')
+      cy.get('a')
+      .last()
+      .within(() => {
+        cy.get('img')
+        .last()
+        .should('be.visible')
+        .should('have.attr', 'src')
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257497048-519-B02BO03L.jpg')
+        cy.get('p')
+        .last()
+        .contains('PitchCar')
+      })
+    })
+
+  })
+
+  it('Interactable elements should be present.', () => {
+
+    cy.visit('http://localhost:3000/')
+
+   
+
+  })
+
 })
+

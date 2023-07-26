@@ -4,7 +4,8 @@ import "./PopOutMenu.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-function PopOutMenu({ allGames, handleClose }) {
+
+function PopOutMenu({ games, handleClose, }) {
 
   // const [searchParams, setSearchParams] = useSearchParams();
   
@@ -20,73 +21,50 @@ function PopOutMenu({ allGames, handleClose }) {
   const [gameList, setGameList] = useState([]);
   const [show, setShow] = useState(false)
 
-  function filterByPlayers(event) {
-    const numPlayers = allGames.filter(game => game.min_players === Number(event.target.value) || game.max_players > Number(event.target.value))
-    setGameList(numPlayers)
-    setShow(true)
+  function handleClick(event, type) {
+    setSearchParams({
+      ...searchParams,
+      [type]: event.target.id
+    })
   }
 
-  function filterByType(event) {
-    setGameList(allGames.filter(game => game.categories.some(cat => cat.id === event.target.id)))
-    setShow(true)
-  }
+  const yearPublished = searchParams.get("year_published");
+  const gameType = searchParams.get("game_type");
 
-  function clearFilters() {
-    setGameList([])
-    setShow(false)
-  }
-
+  const yearList = yearPublished ? games.filter(game => game.year_published === Number(yearPublished)) : games
+  const gameList = gameType ? games.filter(game => game.categories.some(cat => cat.id === gameType)) : games
+  console.log()
   return (
       <div className="pop-out-menu">
-        <div>
-          {show &&
-          <div className="filtered-games">
-            <h3>Games</h3>
-            <button onClick={clearFilters}>clear filter</button>
-            <div>
-          {gameList.length > 0 && gameList.map(game => (
-                <Link to={`/${game.id}`} key={game.id}>
-                <p>{game.handle.toUpperCase()}</p>
-                </Link>
-              ))}
-            </div>
-          </div>}
+        <h4 onClick={handleClose}>Close</h4>
+        <div className="menu-item">
+          <p>Game Type</p>
+          <div className="drop-down-menu">
+            <ul>
+              <li id='nuHYRFmMjU' onClick={(event) => handleClick(event, "game_type")}>Renaissance</li>
+              <li id="KUBCKBkGxV" onClick={(event) => handleClick(event, "game_type")}>Adventure</li>
+              <li id="ge8pIhEUGE" onClick={(event) => handleClick(event, "game_type")}>Cooperative</li>
+              <li id="JwHcKqxh33" onClick={(event) => handleClick(event, "game_type")}>Trains</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h4 onClick={handleClose}>Close</h4>
-          <div className="menu-item">
-            <p>Game Type</p>
-            <div className="drop-down-menu">
-              <ul>
-                <li>Action</li>
-                <li id="KUBCKBkGxV" onClick={filterByType}>Adventure</li>
-                <li>Role Play</li>
-                <li>Strategy</li>
-              </ul>
-            </div>
-          </div>
-          <div className="menu-item">
-            <p>Number of Players</p>
-            <div className="drop-down-menu">
-              <ul>
-                <li value="1" onClick={filterByPlayers}>1</li>
-                <li value="2" onClick={filterByPlayers}>2</li>
-                <li value="3" onClick={filterByPlayers}>3</li>
-                <li value="4" onClick={filterByPlayers}>4+</li>
-              </ul>
-            </div>
-          </div>
-          <div className="menu-item">
-            <p>Rating</p>
-            <div className="drop-down-menu">
-              <ul>
-                <li>1 Star</li>
-                <li>2 Stars</li>
-                <li>3 Stars</li>
-                <li>4 Stars</li>
-                <li>5 Stars</li>
-              </ul>
-            </div>
+        <div className="menu-item">
+          <span>Year Published</span>
+          <div className="drop-down-menu">
+            <ul>
+              <li id="2010" onClick={(event) => handleClick(event, "year_published")}>2010</li>
+              <li id="2011" onClick={(event) => handleClick(event, "year_published")}>2011</li>
+              <li id="2012" onClick={(event) => handleClick(event, "year_published")}>2012</li>
+              <li id="2013" onClick={(event) => handleClick(event, "year_published")}>2013</li>
+              <li id="2014" onClick={(event) => handleClick(event, "year_published")}>2014</li>
+              <li id="2015" onClick={(event) => handleClick(event, "year_published")}>2015</li>
+              <li id="2016" onClick={(event) => handleClick(event, "year_published")}>2016</li>
+              <li id="2017" onClick={(event) => handleClick(event, "year_published")}>2017</li>
+              <li id="2018" onClick={(event) => handleClick(event, "year_published")}>2018</li>
+              <li id="2019" onClick={(event) => handleClick(event, "year_published")}>2019</li>
+              <li id="2020" onClick={(event) => handleClick(event, "year_published")}>2020</li>
+              <li id="2021" onClick={(event) => handleClick(event, "year_published")}>2021</li>
+            </ul>
           </div>
           {/* <ul>
             {gameList.length > 0 && gameList.map(game => (
@@ -96,6 +74,24 @@ function PopOutMenu({ allGames, handleClose }) {
             ))}
           </ul> */}
         </div>
+        <ul>
+          <p>Your Options</p>
+          {yearPublished && yearList.map(game => (
+            <Link to={`/${game.id}`}>
+              <div key={game.id}>
+            <li>{game.handle}</li>
+              </div>
+            </Link>
+          ))}
+          {gameType && gameList.map(game => (
+            <Link to={`/${game.id}`}>
+              <div key={game.id}>
+            <li>{game.handle}</li>
+            <li>Type</li>
+              </div>
+            </Link>
+          ))}
+        </ul>
       </div>
   );
 }

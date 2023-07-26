@@ -22,20 +22,23 @@ self.addEventListener("fetch", (event) => {
     caches.match(event.request).then((response) => {
       if (response) {
         return response;
-      }
-      return fetch(event.request)
-    })
-    );
-  });
-  
-  self.addEventListener("activate", () => {
-    console.log("Activation");
-    caches.keys()
-      .then(keys => {
-        keys.map(key => {
-          if(key !== gameBoardsCache) {
-            caches.delete(key);
-          }
-        })
+      } 
+      return fetch(event.request).then(response => {
+        const resClone = response.clone();
+        return caches.open(gameBoardsCache).then(cache => cache.put(event.request, resClone))
       })
-  });
+    })
+  );
+});
+  
+self.addEventListener("activate", () => {
+  console.log("Activation");
+  caches.keys()
+    .then(keys => {
+      keys.map(key => {
+        if(key !== gameBoardsCache) {
+          caches.delete(key);
+        }
+      })
+    })
+});

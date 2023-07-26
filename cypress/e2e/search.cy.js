@@ -46,5 +46,28 @@ describe('Search should have an intuitive user experience.', () => {
       .should('include', 'search-result')  
     })
   })
-
+  it('A helpful message should appear when the users query returns no results, when the user gets results that message should not appear.', () => {
+    cy.visit('http://localhost:3000/')
+    .get('input[type="text"]')
+    .type('gibberish')
+    cy.get('.game-cards-container')
+    .within(()=> {
+      cy.get('div')
+      .within(()=> {
+        cy.get('p')
+        .contains('Sorry, no matching game was found. Please try a different game name...')
+      })
+    })
+    cy.visit('http://localhost:3000/')
+    .get('input[type="text"]')
+    .type('a')
+    cy.get('.game-cards-container')
+      .within(()=> {
+      cy.get('div')
+      .each(()=> {
+        cy.contains('Sorry, no matching game was found. Please try a different game name...')
+        .should('not.exist')
+      })
+    })
+  })
 })

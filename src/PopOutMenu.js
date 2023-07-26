@@ -1,11 +1,25 @@
 import React from "react";
-import { useSearchParams } from "react-router-dom";
+// import { useSearchParams } from "react-router-dom";
 import "./PopOutMenu.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
 
 function PopOutMenu({ games, handleClose, }) {
 
-  const [searchParams, setSearchParams] = useSearchParams();
+  // const [searchParams, setSearchParams] = useSearchParams();
+  
+  // function handleClick(event) {
+    //   setSearchParams({
+      //     categoryId: event.target.id
+      //   })
+      // }
+      
+  // const gameType = searchParams.get("categoryId");
+  // const gameList = gameType ? allGames.filter(game => game.categories.some(cat => cat.id === gameType)) : allGames
+  
+  const [gameList, setGameList] = useState([]);
+  const [show, setShow] = useState(false)
 
   function handleClick(event, type) {
     setSearchParams({
@@ -52,6 +66,13 @@ function PopOutMenu({ games, handleClose, }) {
               <li id="2021" onClick={(event) => handleClick(event, "year_published")}>2021</li>
             </ul>
           </div>
+          {/* <ul>
+            {gameList.length > 0 && gameList.map(game => (
+              <Link to={`/${game.id}`}>
+              <li key={game.id}>{game.handle}</li>
+              </Link>
+            ))}
+          </ul> */}
         </div>
         <ul>
           <p>Your Options</p>

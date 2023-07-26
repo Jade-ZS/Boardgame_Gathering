@@ -2,12 +2,15 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 200px;
+  /* width: 200px; */
   background-color: rgb(255, 179, 179);
   border: 1px solid black;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  height: 95%;
+  overflow: scroll;
 }
 
 .pop-out-menu h4 {
@@ -20,11 +23,14 @@
 
 .pop-out-menu .menu-item p {
   margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 
 .pop-out-menu .dropdown-menu {
   position: relative;
   display: inline-block;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .pop-out-menu .dropdown-menu ul {
@@ -37,7 +43,8 @@
   border: 1px solid black;
   top: 100%;
   left: 0;
-  min-width: 160px;
+  /* min-width: 160px; */
+  width: fit-content;
   display: none;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -56,6 +63,9 @@
 }
 
 .pop-out-menu li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: #000000 solid 2px;
   cursor: pointer;
   box-shadow: 10px black;
@@ -72,4 +82,29 @@
 
 .pop-out-menu .dropdown-menu ul li:hover {
   background-color: #f4cdcd;
+}
+
+.filtered-games {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.pop-out-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.pop-out-menu a:hover {
+  text-decoration: underline;
+}
+
+.pop-out-menu::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f4cdcd;
+}
+
+.pop-out-menu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #479577;
 }

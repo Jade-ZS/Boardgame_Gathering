@@ -9,16 +9,6 @@ import { useState } from "react";
 function PopOutMenu({ games, handleClose, }) {
 
   const [searchParams, setSearchParams] = useSearchParams();
-  
-  // function handleClick(event) {
-    //   setSearchParams({
-      //     categoryId: event.target.id
-      //   })
-      // }
-      
-  // const gameType = searchParams.get("categoryId");
-  // const gameList = gameType ? allGames.filter(game => game.categories.some(cat => cat.id === gameType)) : allGames
-  
  
   const [show, setShow] = useState(false)
 
@@ -27,6 +17,12 @@ function PopOutMenu({ games, handleClose, }) {
       ...searchParams,
       [type]: event.target.id
     })
+    setShow(true)
+  }
+
+  function clearFilters() {
+    setSearchParams({})
+    setShow(false)
   }
 
   const yearPublished = searchParams.get("year_published");
@@ -37,9 +33,30 @@ function PopOutMenu({ games, handleClose, }) {
   console.log()
   return (
       <div className="pop-out-menu">
+        <div className="filtered">
+          {show && <ul className="filter-ul">
+            <p>Your Options</p>
+            <button onClick={clearFilters}>Clear Filters</button>
+            {yearPublished && yearList.map(game => (
+              <Link to={`/${game.id}`}>
+                <div key={game.id} className="option">
+                  <li>👾 {game.handle}</li>
+                </div>
+              </Link>
+            ))}
+            {gameType && gameList.map(game => (
+              <Link to={`/${game.id}`}>
+                <div key={game.id} className="option">
+                  <li>👾 {game.handle}</li>
+                </div>
+              </Link>
+            ))}
+          </ul>}
+        </div>
+        <div>
         <h4 onClick={handleClose}>Close</h4>
         <div className="menu-item">
-          <p>Game Type</p>
+          <p className="label">Game Type</p>
           <div className="drop-down-menu">
             <ul>
               <li id='nuHYRFmMjU' onClick={(event) => handleClick(event, "game_type")}>Renaissance</li>
@@ -50,7 +67,7 @@ function PopOutMenu({ games, handleClose, }) {
           </div>
         </div>
         <div className="menu-item">
-          <span>Year Published</span>
+          <p className="label">Year Published</p>
           <div className="drop-down-menu">
             <ul>
               <li id="2010" onClick={(event) => handleClick(event, "year_published")}>2010</li>
@@ -75,7 +92,7 @@ function PopOutMenu({ games, handleClose, }) {
             ))}
           </ul> */}
         </div>
-        <ul>
+        {/* <ul>
           <p>Your Options</p>
           {yearPublished && yearList.map(game => (
             <Link to={`/${game.id}`}>
@@ -92,7 +109,8 @@ function PopOutMenu({ games, handleClose, }) {
               </div>
             </Link>
           ))}
-        </ul>
+        </ul> */}
+        </div>
       </div>
   );
 }

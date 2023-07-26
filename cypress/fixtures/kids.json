@@ -1,0 +1,1059 @@
+{
+  "games": [
+    {
+      "id": "3hnL2wtWnM",
+      "handle": "chess",
+      "url": "https://www.boardgameatlas.com/game/3hnL2wtWnM/chess",
+      "bga_edit_url": "https://www.boardgameatlas.com/game/3hnL2wtWnM/edit",
+      "template_url": "/products/listing?objectId=3hnL2wtWnM&product_line=Board Games&type=product",
+      "name": "Chess",
+      "price": "12.99",
+      "price_ca": "89.95",
+      "price_uk": "0.00",
+      "price_au": "78.45",
+      "msrp": 14.95,
+      "msrps": [
+        {
+          "country": "US",
+          "price": 14.95
+        }
+      ],
+      "discount": "0.13",
+      "year_published": 1475,
+      "min_players": 2,
+      "max_players": 2,
+      "player_counts": [
+        2
+      ],
+      "min_playtime": 60,
+      "max_playtime": 90,
+      "min_age": 6,
+      "description": "<p><strong>Chess</strong> is a game for two players on an 8x8 grid with alternating light and dark spaces. Each player has a matching set of 16 pieces, including 8 pawns, 2 rooks, 2 knights, 2 bishops, a queen, and a king. Each type of piece has its own rules for movement. The object of the game is to capture the opponent's king. </p>",
+      "commentary": "",
+      "faq": "",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1594689503033",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1594689503033",
+      "matches_specs": null,
+      "specs": [],
+      "mechanics": [
+        {
+          "id": "qu5BcGjAzk",
+          "url": "https://www.boardgameatlas.com/mechanic/qu5BcGjAzk/undefined"
+        }
+      ],
+      "categories": [
+        {
+          "id": "hBqZ3Ar4RJ",
+          "url": "https://www.boardgameatlas.com/category/hBqZ3Ar4RJ/undefined"
+        }
+      ],
+      "publishers": [
+        {
+          "id": "fjvkGaFrI1",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/publisher/fjvkGaFrI1/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "designers": [],
+      "primary_publisher": {},
+      "primary_designer": {},
+      "developers": [],
+      "related_to": [],
+      "related_as": [],
+      "artists": [],
+      "names": [],
+      "rules_url": null,
+      "amazon_rank": 1656,
+      "official_url": "https://www.kickstarter.com/projects/spookytowergames/chess-in-a-bag?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "sell_sheet_url": null,
+      "store_images_url": null,
+      "comment_count": 0,
+      "num_user_ratings": 301,
+      "average_user_rating": 3.322523279210144,
+      "historical_low_prices": [
+        {
+          "country": "AU",
+          "date": "2021-09-05T10:17:57.372Z",
+          "price": 76.45,
+          "isLow": false
+        },
+        {
+          "country": "UK",
+          "date": "2021-12-14T14:43:22.671Z",
+          "price": 33.99,
+          "isLow": false
+        },
+        {
+          "country": "CA",
+          "date": "2021-12-26T19:19:09.651Z",
+          "price": 6.95,
+          "isLow": true
+        },
+        {
+          "country": "US",
+          "date": "2023-03-07T11:37:08.911Z",
+          "price": 12.99,
+          "isLow": false
+        }
+      ],
+      "active": true,
+      "num_user_complexity_votes": 4,
+      "average_learning_complexity": 2.25,
+      "average_strategy_complexity": 3.75,
+      "visits": 998,
+      "lists": 527,
+      "mentions": 20,
+      "links": 0,
+      "plays": 9784,
+      "rank": 189,
+      "type": "game",
+      "sku": "WWE30BF-BCT",
+      "upc": "035756940348",
+      "num_distributors": 4,
+      "trending_rank": 0,
+      "listing_clicks": 0,
+      "is_historical_low": false,
+      "skus": [
+        "2149274945",
+        "ASMJTB01",
+        "MIXJTB01ML",
+        "CRDHS-09B85547",
+        "45928451",
+        "MIXJTB02ML",
+        "2148541288",
+        "2148637845",
+        "2148689799",
+        "2148734431",
+        "2148775774",
+        "2148858601",
+        "2148887455",
+        "2148947275",
+        "2148967273",
+        "2148980564",
+        "2149036715",
+        "2149058008",
+        "2149076853",
+        "2149078688",
+        "2149085342",
+        "2149085354",
+        "2149109277",
+        "2149119646",
+        "2149207765",
+        "2149257883",
+        "700304152152",
+        "BCSEBLACK",
+        "BCSEGREEN",
+        "BCSEXLBLACK",
+        "BCSEXLGREEN",
+        "BG-000909-001",
+        "BG-001086-001",
+        "ELG6010",
+        "F0344_SUPERMARIO_CHESS_M",
+        "MDGCH01853",
+        "TNC007133",
+        "USACH005-191",
+        "USACH011-000",
+        "USOCH011000",
+        "WWE95200",
+        "WWI95200",
+        "2148766561"
+      ],
+      "sku_objects": [
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149274945"
+        },
+        {
+          "name": "Game Nerdz",
+          "sku": "ASMJTB01"
+        },
+        {
+          "name": "401 Games",
+          "sku": "MIXJTB01ML"
+        },
+        {
+          "name": "Card Haus",
+          "sku": "CRDHS-09B85547"
+        },
+        {
+          "name": "Bed Bath and Beyond Inc.",
+          "sku": "45928451"
+        },
+        {
+          "name": "Apt to Game",
+          "sku": "MIXJTB02ML"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148541288"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148637845"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148689799"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148734431"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148775774"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148858601"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148887455"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148947275"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148967273"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148980564"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149036715"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149058008"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149076853"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149078688"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149085342"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149085354"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149109277"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149119646"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149207765"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149257883"
+        },
+        {
+          "name": "Game Kastle",
+          "sku": "700304152152"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "BCSEBLACK"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "BCSEGREEN"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "BCSEXLBLACK"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "BCSEXLGREEN"
+        },
+        {
+          "name": "Meeples and Milkshakes",
+          "sku": "BG-000909-001"
+        },
+        {
+          "name": "Meeples and Milkshakes",
+          "sku": "BG-001086-001"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "ELG6010"
+        },
+        {
+          "name": "Gameology",
+          "sku": "F0344_SUPERMARIO_CHESS_M"
+        },
+        {
+          "name": "Mr. Dice Guy",
+          "sku": "MDGCH01853"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "TNC007133"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "USACH005-191"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "USACH011-000"
+        },
+        {
+          "name": "Wayland Games",
+          "sku": "USOCH011000"
+        },
+        {
+          "name": "Board Gaming With Education",
+          "sku": "WWE95200"
+        },
+        {
+          "name": "Game Nerdz",
+          "sku": "WWI95200"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148766561"
+        }
+      ],
+      "edit_url": "/products/listing-edit?objectId=3hnL2wtWnM&product_line=Board Games&type=product",
+      "players": "2",
+      "playtime": "60-90",
+      "msrp_text": "$14.95",
+      "price_text": "$12.99",
+      "tags": [
+        "Chess 12 Inch Sheesham and Kari Wood",
+        "14 Chess Jowisz Folding Chess Set with storage weighted pieces",
+        "14 Chess Junior Folding Chess set with storage",
+        "First Chess Set",
+        "Chess",
+        "Chess Folding Version Pre Order",
+        "CHESS",
+        "Game Gallery Wood Chess Classic Board Game"
+      ],
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1594689503033",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1594689503033",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1594689503033",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1594689503033",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1594689503033"
+      },
+      "description_preview": "  Chess  is a game for two players on an 8x8 grid with alternating light and dark spaces. Each player has a matching set of 16 pieces, including 8 pawns, 2 rooks, 2 knights, 2 bishops, a queen, and a king. Each type of piece has its own rules for movement. The object of the game is to capture the opponent's king.  "
+    },
+    {
+      "id": "M9xcYNHOGp",
+      "handle": "qwirkle",
+      "url": "https://www.boardgameatlas.com/game/M9xcYNHOGp/qwirkle",
+      "bga_edit_url": "https://www.boardgameatlas.com/game/M9xcYNHOGp/edit",
+      "template_url": "/products/listing?objectId=M9xcYNHOGp&product_line=Board Games&type=product",
+      "name": "Qwirkle",
+      "price": "17.95",
+      "price_ca": "14.95",
+      "price_uk": "29.95",
+      "price_au": "19.95",
+      "msrp": 14.95,
+      "msrps": [
+        {
+          "country": "CA",
+          "price": 0
+        },
+        {
+          "country": "UK",
+          "price": 24.99
+        },
+        {
+          "country": "AU",
+          "price": 0
+        },
+        {
+          "country": "US",
+          "price": 14.95
+        }
+      ],
+      "discount": "-0.20",
+      "year_published": 2006,
+      "min_players": 2,
+      "max_players": 4,
+      "player_counts": [
+        2,
+        3,
+        4
+      ],
+      "min_playtime": 45,
+      "max_playtime": 60,
+      "min_age": 6,
+      "description": "<p><strong>Qwirkle</strong> is as simple as matching colors and shapes, but this game also requires tactical maneuvers and well-planned strategy. Earn points by building rows and columns of blocks that share a common shape or color. Look for opportunities to score big by placing a tile that touches multiple pieces with matching attributes. The player with the most points wins! 108 wooden blocks.</p>\r\n<p><em>Winner of the <strong>2011 Spiel des Jahres</strong> (Game of the Year) Award.</em></p>",
+      "commentary": "",
+      "faq": "",
+      "thumb_url": "https://cdn.shopify.com/s/files/1/0513/4077/1515/products/qwirkle-board-game-canada.jpg?v=1611861954",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324084607.jpg",
+      "matches_specs": null,
+      "specs": [],
+      "mechanics": [
+        {
+          "id": "WPytek5P8l",
+          "url": "https://www.boardgameatlas.com/mechanic/WPytek5P8l/undefined"
+        },
+        {
+          "id": "9YdRn9J9oZ",
+          "url": "https://www.boardgameatlas.com/mechanic/9YdRn9J9oZ/undefined"
+        },
+        {
+          "id": "8PN2HE86wg",
+          "url": "https://www.boardgameatlas.com/mechanic/8PN2HE86wg/undefined"
+        }
+      ],
+      "categories": [
+        {
+          "id": "hBqZ3Ar4RJ",
+          "url": "https://www.boardgameatlas.com/category/hBqZ3Ar4RJ/undefined"
+        }
+      ],
+      "publishers": [
+        {
+          "id": "GrvfAjJt9v",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/publisher/GrvfAjJt9v/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "designers": [
+        {
+          "id": "YZSTVaW40H",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/designer/YZSTVaW40H/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "primary_publisher": {
+        "id": "GrvfAjJt9v",
+        "name": "MindWare",
+        "url": "https://www.boardgameatlas.com/publisher/GrvfAjJt9v/mindware"
+      },
+      "primary_designer": {
+        "id": "YZSTVaW40H",
+        "name": " Susan McKinley Ross ",
+        "url": "https://www.boardgameatlas.com/designer/YZSTVaW40H/-susan-mckinley-ross-"
+      },
+      "developers": [],
+      "related_to": [],
+      "related_as": [],
+      "artists": [],
+      "names": [],
+      "rules_url": "https://www.mindware.orientaltrading.com/pdf/instructions/32016.pdf",
+      "amazon_rank": 986,
+      "cs_rating": 4,
+      "official_url": "https://www.mindware.orientaltrading.com/qwirkle-a2-32016.fltr?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "comment_count": 0,
+      "num_user_ratings": 243,
+      "average_user_rating": 3.333426574900455,
+      "historical_low_prices": [
+        {
+          "country": "AU",
+          "date": "2022-05-03T01:31:27.529Z",
+          "price": 19.95,
+          "isLow": false
+        },
+        {
+          "country": "CA",
+          "date": "2023-01-01T22:12:03.003Z",
+          "price": 14.95,
+          "isLow": false
+        },
+        {
+          "country": "US",
+          "date": "2023-02-16T22:22:04.780Z",
+          "price": 22.47,
+          "isLow": false
+        },
+        {
+          "country": "UK",
+          "date": "2023-04-03T01:56:48.905Z",
+          "price": 29.95,
+          "isLow": false
+        }
+      ],
+      "active": true,
+      "num_user_complexity_votes": 0,
+      "average_learning_complexity": 0,
+      "average_strategy_complexity": 0,
+      "visits": 1552,
+      "lists": 628,
+      "mentions": 11,
+      "links": 0,
+      "plays": 1702,
+      "rank": 234,
+      "type": "game",
+      "sku": "MWR52132",
+      "upc": "736970521329",
+      "num_distributors": 1,
+      "trending_rank": 0,
+      "listing_clicks": 0,
+      "is_historical_low": false,
+      "skus": [
+        "MDW 32016W",
+        "736970521329",
+        "BG-002857-001",
+        "MWR52132",
+        "MWR32016",
+        "736970320168",
+        "MDGQW02343",
+        "MDGQW02346",
+        "QWIRKLE_TRAVEL_UK",
+        "889070197557",
+        "61647",
+        "QWIRK10",
+        "BG-QWIRKLETRAV",
+        "MW-04662",
+        "85160",
+        "MW32016",
+        "14194",
+        "512069",
+        "45923159",
+        "889070856454",
+        "BG-QWIRKLE",
+        "QWIRK01",
+        "MDW32016",
+        "61642",
+        "2147799638",
+        "31263:114769",
+        "44396 #0922",
+        "5060377424897",
+        "BG-000707-001",
+        "BG-000709-001",
+        "BG-001006-001",
+        "COIL-QWIRKLE",
+        "COIL-QWIRKLE_BONUS",
+        "COIL-QWIRKLE_COLLECTORS",
+        "COIL-QWIRKLE_TRAVEL",
+        "F1017_QWIRKLE_TRAVELBAG_SS",
+        "G0934_QWIRKLE_M",
+        "MDW32016W",
+        "MDW52132W",
+        "MND1001",
+        "MW-32016",
+        "MW-52132",
+        "QWIRKLE_UK",
+        "MW-85645",
+        "IEL-QWKTR51094",
+        "IEL-QWK51005",
+        "MW-302260-012020",
+        "2149317975",
+        "Ballarat|b4a11420-06cc-f01f-5a40-68a3b5e0b00f",
+        "0625012620161",
+        "QWIRKLE_BONUS",
+        "61642-VR"
+      ],
+      "sku_objects": [
+        {
+          "name": "Boarding School Games",
+          "sku": "MDW 32016W"
+        },
+        {
+          "name": "Boardgame Master",
+          "sku": "736970521329"
+        },
+        {
+          "name": "Meeples and Milkshakes",
+          "sku": "BG-002857-001"
+        },
+        {
+          "name": "Card Haus",
+          "sku": "MWR52132"
+        },
+        {
+          "name": "Card Haus",
+          "sku": "MWR32016"
+        },
+        {
+          "name": "401 Games",
+          "sku": "736970320168"
+        },
+        {
+          "name": "Mr. Dice Guy",
+          "sku": "MDGQW02343"
+        },
+        {
+          "name": "Mr. Dice Guy",
+          "sku": "MDGQW02346"
+        },
+        {
+          "name": "Magic Madhouse",
+          "sku": "QWIRKLE_TRAVEL_UK"
+        },
+        {
+          "name": "Good Games",
+          "sku": "889070197557"
+        },
+        {
+          "name": "Hanabee",
+          "sku": "61647"
+        },
+        {
+          "name": "Advent Games",
+          "sku": "QWIRK10"
+        },
+        {
+          "name": "Goldfields Toys & Games",
+          "sku": "BG-QWIRKLETRAV"
+        },
+        {
+          "name": "Board Game Bandit",
+          "sku": "MW-04662"
+        },
+        {
+          "name": "Game Shack Inc.",
+          "sku": "85160"
+        },
+        {
+          "name": "WoodForSheep Hobbies Ltd.",
+          "sku": "MW32016"
+        },
+        {
+          "name": "Dragon’s Den Games",
+          "sku": "14194"
+        },
+        {
+          "name": "gameknight.ca",
+          "sku": "512069"
+        },
+        {
+          "name": "Bed Bath and Beyond Inc.",
+          "sku": "45923159"
+        },
+        {
+          "name": "Arctic Board Game",
+          "sku": "889070856454"
+        },
+        {
+          "name": "Goldfields Toys & Games",
+          "sku": "BG-QWIRKLE"
+        },
+        {
+          "name": "Advent Games",
+          "sku": "QWIRK01"
+        },
+        {
+          "name": "Gumnut",
+          "sku": "MDW32016"
+        },
+        {
+          "name": "Hanabee",
+          "sku": "61642"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2147799638"
+        },
+        {
+          "name": "BoardGameCo",
+          "sku": "31263:114769"
+        },
+        {
+          "name": "Funagain Games",
+          "sku": "44396 #0922"
+        },
+        {
+          "name": "The Board Game Hut",
+          "sku": "5060377424897"
+        },
+        {
+          "name": "Meeples and Milkshakes",
+          "sku": "BG-000707-001"
+        },
+        {
+          "name": "Meeples and Milkshakes",
+          "sku": "BG-000709-001"
+        },
+        {
+          "name": "Meeples and Milkshakes",
+          "sku": "BG-001006-001"
+        },
+        {
+          "name": "Wayland Games",
+          "sku": "COIL-QWIRKLE"
+        },
+        {
+          "name": "Wayland Games",
+          "sku": "COIL-QWIRKLE_BONUS"
+        },
+        {
+          "name": "Wayland Games",
+          "sku": "COIL-QWIRKLE_COLLECTORS"
+        },
+        {
+          "name": "Wayland Games",
+          "sku": "COIL-QWIRKLE_TRAVEL"
+        },
+        {
+          "name": "Gameology",
+          "sku": "F1017_QWIRKLE_TRAVELBAG_SS"
+        },
+        {
+          "name": "Gameology",
+          "sku": "G0934_QWIRKLE_M"
+        },
+        {
+          "name": "Boardlandia",
+          "sku": "MDW32016W"
+        },
+        {
+          "name": "Boardlandia",
+          "sku": "MDW52132W"
+        },
+        {
+          "name": "Board's Edge Games",
+          "sku": "MND1001"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "MW-32016"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "MW-52132"
+        },
+        {
+          "name": "Magic Madhouse",
+          "sku": "QWIRKLE_UK"
+        },
+        {
+          "name": "Dragon’s Den Games",
+          "sku": "MW-85645"
+        },
+        {
+          "name": "Philibert",
+          "sku": "IEL-QWKTR51094"
+        },
+        {
+          "name": "Philibert",
+          "sku": "IEL-QWK51005"
+        },
+        {
+          "name": "gameknight.ca",
+          "sku": "MW-302260-012020"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149317975"
+        },
+        {
+          "name": "Guf",
+          "sku": "Ballarat|b4a11420-06cc-f01f-5a40-68a3b5e0b00f"
+        },
+        {
+          "name": "Imaginaire Shop",
+          "sku": "0625012620161"
+        },
+        {
+          "name": "Magic Madhouse",
+          "sku": "QWIRKLE_BONUS"
+        },
+        {
+          "name": "Harvey Norman",
+          "sku": "61642-VR"
+        }
+      ],
+      "edit_url": "/products/listing-edit?objectId=M9xcYNHOGp&product_line=Board Games&type=product",
+      "players": "2-4",
+      "playtime": "45-60",
+      "msrp_text": "$14.95",
+      "price_text": "$17.95",
+      "tags": [
+        "Qwirkle édition voyage",
+        "Qwirkle Travel",
+        "Qwirkle: Micky Mouse & Friends",
+        "Qwirkle: The Simpsons",
+        "Star Wars Qwirkle",
+        "原木形色棋",
+        "原木形色棋：旅行版",
+        "큐위클",
+        "Qwirkle",
+        "Qwirkle: 10th Anniversary Edition",
+        "Qwirkle Collector's Edition",
+        "Qwirkle Travel Size",
+        "Qwirkle board game",
+        "QWIRKLE",
+        "Qwirkle Bonus Pack",
+        "Qwirkle Game"
+      ],
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1629324084607.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1629324084607.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1629324084607.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1629324084607.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324084607.jpg"
+      },
+      "description_preview": "  Qwirkle  is as simple as matching colors and shapes, but this game also requires tactical maneuvers and well-planned strategy. Earn points by building rows and columns of blocks that share a common shape or color. Look for opportunities to score big by placing a tile that touches multiple pieces with matching attributes. The player with the most points wins! 108 wooden blocks. \r\n  Winner of the  2011 Spiel des Jahres  (Game of the Year) Award.  "
+    },
+    {
+      "id": "c7ncqL5AX6",
+      "handle": "pitchcar-mini",
+      "url": "https://www.boardgameatlas.com/game/c7ncqL5AX6/pitchcar-mini",
+      "bga_edit_url": "https://www.boardgameatlas.com/game/c7ncqL5AX6/edit",
+      "template_url": "/products/listing?objectId=c7ncqL5AX6&product_line=Board Games&type=product",
+      "name": "PitchCar Mini",
+      "price": "0.00",
+      "price_ca": "80.99",
+      "price_uk": "37.90",
+      "price_au": "114.95",
+      "msrp": 64.99,
+      "msrps": [
+        {
+          "country": "US",
+          "price": 64.99
+        }
+      ],
+      "discount": "0.00",
+      "year_published": 2003,
+      "min_players": 2,
+      "max_players": 8,
+      "player_counts": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "min_playtime": 30,
+      "max_playtime": 30,
+      "min_age": 6,
+      "description": "<p><em>PitchCar Mini</em> is a game of skill and a car race. This game is made of wood and is composed of 16 track parts (10 curves and 6 straight lines) which allows you to build about ten different 2.5 meter long tracks.</p>\r\n<p><br />Build your track, choose a car, and pitch it along the track! Take the best path, be smart, and you'll be a champion.</p>\r\n<p> </p>",
+      "commentary": "",
+      "faq": "",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257497048-519-B02BO03L.jpg",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257497048-519-B02BO03L.jpg",
+      "matches_specs": null,
+      "specs": [],
+      "mechanics": [
+        {
+          "id": "S0O9ucexPS",
+          "url": "https://www.boardgameatlas.com/mechanic/S0O9ucexPS/undefined"
+        },
+        {
+          "id": "qZx4PEzKKz",
+          "url": "https://www.boardgameatlas.com/mechanic/qZx4PEzKKz/undefined"
+        }
+      ],
+      "categories": [
+        {
+          "id": "tQGLgwdbYH",
+          "url": "https://www.boardgameatlas.com/category/tQGLgwdbYH/undefined"
+        }
+      ],
+      "publishers": [
+        {
+          "id": "Zd7ShZzrYg",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/publisher/Zd7ShZzrYg/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "designers": [
+        {
+          "id": "WHOndObwOK",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/designer/WHOndObwOK/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "primary_publisher": {
+        "id": "Zd7ShZzrYg",
+        "name": "FRED Distribution, Inc.",
+        "url": "https://www.boardgameatlas.com/publisher/Zd7ShZzrYg/fred-distribution-inc"
+      },
+      "primary_designer": {
+        "id": "WHOndObwOK",
+        "name": "Jean du Poël",
+        "url": "https://www.boardgameatlas.com/designer/WHOndObwOK/jean-du-pol"
+      },
+      "developers": [],
+      "related_to": [],
+      "related_as": [],
+      "artists": [],
+      "names": [],
+      "rules_url": null,
+      "official_url": null,
+      "comment_count": 0,
+      "num_user_ratings": 22,
+      "average_user_rating": 3.4545454545454546,
+      "historical_low_prices": [
+        {
+          "country": "UK",
+          "date": "2021-02-02T00:46:15.463Z",
+          "price": 30.95,
+          "isLow": false
+        },
+        {
+          "country": "AU",
+          "date": "2021-02-16T01:11:07.941Z",
+          "price": 114.99,
+          "isLow": false
+        },
+        {
+          "country": "CA",
+          "date": "2022-01-04T12:52:04.601Z",
+          "price": 76.04,
+          "isLow": false
+        },
+        {
+          "country": "US",
+          "date": "2022-06-08T02:18:28.759Z",
+          "price": 37.9,
+          "isLow": true
+        }
+      ],
+      "active": true,
+      "num_user_complexity_votes": 0,
+      "average_learning_complexity": 0,
+      "average_strategy_complexity": 0,
+      "visits": 818,
+      "lists": 91,
+      "mentions": 0,
+      "links": 0,
+      "plays": 191,
+      "rank": 1881,
+      "type": "game",
+      "num_distributors": 0,
+      "trending_rank": 0,
+      "listing_clicks": 0,
+      "is_historical_low": true,
+      "skus": [
+        "101152",
+        "29567:13893",
+        "99911699",
+        "3760093330053",
+        "EAG101152",
+        "PCM01",
+        "100350",
+        "EGL101152",
+        "BG-000698-001",
+        "FER-PITCHMINI",
+        "FDD101152"
+      ],
+      "sku_objects": [
+        {
+          "name": "Boarding School Games",
+          "sku": "101152"
+        },
+        {
+          "name": "BoardGameCo",
+          "sku": "29567:13893"
+        },
+        {
+          "name": "Good Games",
+          "sku": "99911699"
+        },
+        {
+          "name": "Boardgame Master",
+          "sku": "3760093330053"
+        },
+        {
+          "name": "Gumnut",
+          "sku": "EAG101152"
+        },
+        {
+          "name": "Advent Games",
+          "sku": "PCM01"
+        },
+        {
+          "name": "Game Shack Inc.",
+          "sku": "100350"
+        },
+        {
+          "name": "Apt to Game",
+          "sku": "EGL101152"
+        },
+        {
+          "name": "Meeples and Milkshakes",
+          "sku": "BG-000698-001"
+        },
+        {
+          "name": "Philibert",
+          "sku": "FER-PITCHMINI"
+        },
+        {
+          "name": "Miniature Market",
+          "sku": "FDD101152"
+        }
+      ],
+      "edit_url": "/products/listing-edit?objectId=c7ncqL5AX6&product_line=Board Games&type=product",
+      "players": "2-8",
+      "playtime": "30",
+      "msrp_text": "$64.99",
+      "price_text": "Price: N/A",
+      "tags": [
+        "PitchCar Mini",
+        "Pitchcar Mini"
+      ],
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559257497048-519-B02BO03L.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559257497048-519-B02BO03L.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559257497048-519-B02BO03L.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559257497048-519-B02BO03L.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257497048-519-B02BO03L.jpg"
+      },
+      "description_preview": "  PitchCar Mini  is a game of skill and a car race. This game is made of wood and is composed of 16 track parts (10 curves and 6 straight lines) which allows you to build about ten different 2.5 meter long tracks. \r\n  Build your track, choose a car, and pitch it along the track! Take the best path, be smart, and you'll be a champion. \r\n   "
+    }
+  ],
+  "count": 7411
+}

@@ -35,9 +35,9 @@ function App() {
       .then(data => setKidFriendly(data.games))
       .catch(error => setError(error))
   }, [])
-  // console.log(kidFriendly[0].name, 'kids')
-  // console.log(newRelease[0].name)
-  // console.log(partyGames[0].max_player)
+  console.log(kidFriendly, 'kids')
+  console.log(newRelease, 'new')
+  console.log(partyGames, 'party')
   console.log('games', games)
 
   return (

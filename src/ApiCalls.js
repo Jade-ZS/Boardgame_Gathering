@@ -2,7 +2,7 @@
 
 
 async function getData(query) {
-  let response = await fetch(`https://api.boardgameatlas.com/api/search?${query}&client_id=Efb4IXjG2E`)
+  let response = await fetch(`https://api.boardgameatlas.com/api/search?${query}&client_id=inxHMR90OJ`)
   if (!response.ok) { 
     throw new Error(response.statusText)
   }
@@ -11,5 +11,6 @@ async function getData(query) {
 } 
 
 
+// 'https:api.boardgameatlas.com/api/search?year_published=2019&client_id=iFrcfZiq9e'
 
 export {getData}

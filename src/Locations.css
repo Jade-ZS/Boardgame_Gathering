@@ -1,0 +1,21 @@
+.retail-location {
+  margin: 10px 10px;
+  border-radius: 10px;
+  width:fit-content
+}
+
+.retail-location p {
+  margin: 2px 10px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+
+.location-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 750px;
+  border-radius: 20px;
+  box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  margin: 20px 0;
+}

@@ -2,23 +2,39 @@ import React from "react";
 import { useSearchParams } from "react-router-dom";
 import "./PopOutMenu.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
-function PopOutMenu({ games, handleClose }) {
+
+
+function PopOutMenu({ games, handleClose, }) {
 
   const [searchParams, setSearchParams] = useSearchParams();
+  
+  // function handleClick(event) {
+    //   setSearchParams({
+      //     categoryId: event.target.id
+      //   })
+      // }
+      
+  // const gameType = searchParams.get("categoryId");
+  // const gameList = gameType ? allGames.filter(game => game.categories.some(cat => cat.id === gameType)) : allGames
+  
+ 
+  const [show, setShow] = useState(false)
 
-  function handleClick(event) {
+  function handleClick(event, type) {
     setSearchParams({
-      categoryId: event.target.id
+      ...searchParams,
+      [type]: event.target.id
     })
   }
 
-  const gameType = searchParams.get("categoryId");
+  const yearPublished = searchParams.get("year_published");
+  const gameType = searchParams.get("game_type");
 
+  const yearList = yearPublished ? games.filter(game => game.year_published === Number(yearPublished)) : games
   const gameList = gameType ? games.filter(game => game.categories.some(cat => cat.id === gameType)) : games
-
-  console.log(gameList)
-
+  console.log()
   return (
       <div className="pop-out-menu">
         <h4 onClick={handleClose}>Close</h4>
@@ -26,40 +42,54 @@ function PopOutMenu({ games, handleClose }) {
           <p>Game Type</p>
           <div className="drop-down-menu">
             <ul>
-              <li>Action</li>
-              <li id="KUBCKBkGxV" onClick={handleClick}>Adventure</li>
-              <li>Role Play</li>
-              <li>Strategy</li>
+              <li id='nuHYRFmMjU' onClick={(event) => handleClick(event, "game_type")}>Renaissance</li>
+              <li id="KUBCKBkGxV" onClick={(event) => handleClick(event, "game_type")}>Adventure</li>
+              <li id="ge8pIhEUGE" onClick={(event) => handleClick(event, "game_type")}>Cooperative</li>
+              <li id="JwHcKqxh33" onClick={(event) => handleClick(event, "game_type")}>Trains</li>
             </ul>
           </div>
         </div>
         <div className="menu-item">
-          <span>Number of Players</span>
-          <div className="dropdown-menu">
+          <span>Year Published</span>
+          <div className="drop-down-menu">
             <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4+</li>
+              <li id="2010" onClick={(event) => handleClick(event, "year_published")}>2010</li>
+              <li id="2011" onClick={(event) => handleClick(event, "year_published")}>2011</li>
+              <li id="2012" onClick={(event) => handleClick(event, "year_published")}>2012</li>
+              <li id="2013" onClick={(event) => handleClick(event, "year_published")}>2013</li>
+              <li id="2014" onClick={(event) => handleClick(event, "year_published")}>2014</li>
+              <li id="2015" onClick={(event) => handleClick(event, "year_published")}>2015</li>
+              <li id="2016" onClick={(event) => handleClick(event, "year_published")}>2016</li>
+              <li id="2017" onClick={(event) => handleClick(event, "year_published")}>2017</li>
+              <li id="2018" onClick={(event) => handleClick(event, "year_published")}>2018</li>
+              <li id="2019" onClick={(event) => handleClick(event, "year_published")}>2019</li>
+              <li id="2020" onClick={(event) => handleClick(event, "year_published")}>2020</li>
+              <li id="2021" onClick={(event) => handleClick(event, "year_published")}>2021</li>
             </ul>
           </div>
-        </div>
-        <div className="menu-item">
-          <span>Rating</span>
-          <div className="dropdown-menu">
-            <ul>
-              <li>1 Star</li>
-              <li>2 Stars</li>
-              <li>3 Stars</li>
-              <li>4 Stars</li>
-              <li>5 Stars</li>
-            </ul>
-          </div>
+          {/* <ul>
+            {gameList.length > 0 && gameList.map(game => (
+              <Link to={`/${game.id}`}>
+              <li key={game.id}>{game.handle}</li>
+              </Link>
+            ))}
+          </ul> */}
         </div>
         <ul>
+          <p>Your Options</p>
+          {yearPublished && yearList.map(game => (
+            <Link to={`/${game.id}`}>
+              <div key={game.id}>
+            <li>{game.handle}</li>
+              </div>
+            </Link>
+          ))}
           {gameType && gameList.map(game => (
             <Link to={`/${game.id}`}>
-            <li key={game.id}>{game.handle}</li>
+              <div key={game.id}>
+            <li>{game.handle}</li>
+            <li>Type</li>
+              </div>
             </Link>
           ))}
         </ul>

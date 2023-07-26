@@ -9,8 +9,8 @@ import {useEffect, useState} from 'react';
 import GameDisplay from './GameDisplay'
 import {Routes, Route, NavLink } from 'react-router-dom'
 import GameAbout from './GameAbout';
-import GameRules from './GameRules';
-import GameReviews from './GameReviews';
+import Locations from './Locations';
+import Artists from './Artists';
 
 
 function App() {
@@ -43,12 +43,12 @@ function App() {
   return (
     <div>
     <Routes>
-      <Route path="/" element={<><Banner  games={games} /> <MenuBar /><GameCards newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
+      <Route path="/" element={<><Banner  games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/> <MenuBar /><GameCards games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
       {/* change path to ":id" */}
       <Route path="/:id" element={<GameDisplay games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/>}>
         <Route index element={<GameAbout />} />
-        <Route path="rules" element={<GameRules />} />
-        <Route path="reviews" element={<GameReviews />} />
+        <Route path="locations" element={<Locations />} />
+        <Route path="artists" element={<Artists />} />
       </Route>
     </Routes>
   </div>

@@ -11,7 +11,7 @@ import {Routes, Route, NavLink } from 'react-router-dom'
 import GameAbout from './GameAbout';
 import Locations from './Locations';
 import Artists from './Artists';
-
+import Offline from './Offline.js'
 
 function App() {
 
@@ -42,7 +42,9 @@ function App() {
   }, [])
 
   return (
+   
     <div>
+    <Offline />
     <Routes>
       <Route path="/" element={<><Banner  games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} offline={offline}/> <MenuBar /><GameCards games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
       <Route path="/:id" element={<GameDisplay games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/>}>

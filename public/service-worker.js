@@ -23,10 +23,12 @@ self.addEventListener("fetch", (event) => {
       if (response) {
         return response;
       } 
-      return fetch(event.request).then(response => {
-        const resClone = response.clone();
-        return caches.open(gameBoardsCache).then(cache => cache.put(event.request, resClone))
-      })
+      return fetch(event.request)
+      
+      // .then(response => {
+      //   const resClone = response.clone();
+      //   return caches.open(gameBoardsCache).then(cache => cache.put(event.request, resClone))
+      // })
     })
   );
 });

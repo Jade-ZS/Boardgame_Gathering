@@ -51,11 +51,14 @@
 
 .pop-out-menu ul{
   border: #000000 solid 2px;
+  border-radius: 10px;
+  box-shadow: 10px black;
 }
 
 .pop-out-menu li{
   border: #000000 solid 2px;
   cursor: pointer;
+  box-shadow: 10px black;
 }
 
 .pop-out-menu li:hover {

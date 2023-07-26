@@ -87,8 +87,7 @@ function PopOutMenu({ games, handleClose, }) {
           {gameType && gameList.map(game => (
             <Link to={`/${game.id}`}>
               <div key={game.id}>
-            <li>{game.handle}</li>
-            <li>Type</li>
+                <li>{game.handle}</li>
               </div>
             </Link>
           ))}

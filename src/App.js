@@ -35,16 +35,11 @@ function App() {
       .then(data => setKidFriendly(data.games))
       .catch(error => setError(error))
   }, [])
-  console.log(kidFriendly, 'kids')
-  console.log(newRelease, 'new')
-  console.log(partyGames, 'party')
-  console.log('games', games)
 
   return (
     <div>
     <Routes>
       <Route path="/" element={<><Banner  games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/> <MenuBar /><GameCards games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
-      {/* change path to ":id" */}
       <Route path="/:id" element={<GameDisplay games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/>}>
         <Route index element={<GameAbout />} />
         <Route path="locations" element={<Locations />} />

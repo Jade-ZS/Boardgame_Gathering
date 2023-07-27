@@ -42,7 +42,7 @@ const {id} = useParams()
         <nav className='game-nav'>
           <NavLink to="." end className={({isActive}) => isActive ? 'active' : 'game-nav a'}>About</NavLink>
           <NavLink to="locations">Locations</NavLink>
-          <NavLink to="artists">Artists</NavLink>
+          {(game.artists.length > 0) && <NavLink to="artists">Artists</NavLink>}
         </nav>
       </div>
       <Outlet context={{game}}/>

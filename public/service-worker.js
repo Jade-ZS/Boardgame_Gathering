@@ -35,7 +35,9 @@ self.addEventListener("fetch", (event) => {
               .then(cache => cache.put(event.request.url, responseClone))
             return response;
           })
-      .catch()
+          .catch(() => {
+            return caches.match('offline.html');
+          })
     })
   );
 });

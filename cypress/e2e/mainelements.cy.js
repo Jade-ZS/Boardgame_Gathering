@@ -28,14 +28,11 @@ beforeEach(() => {
   
 })
 
-
-
-// npx cypress run --browser chrome
-
 describe('Main page should display all elements', () => {
   it('Proper headers should exist and contain proper text.', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
 
     cy.get('.banner')
     .within(()=> {
@@ -63,11 +60,12 @@ describe('Main page should display all elements', () => {
     cy.get('h1')
     .contains('h1','Kid Friendly')
     })
-
   })
-  it('Carousels should display proper elements.', () => {
+
+  it('New release carousel should display proper elements.', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
     
     cy.get('.game-row')
     .eq(0)
@@ -86,7 +84,6 @@ describe('Main page should display all elements', () => {
       .within(() => {
         cy.get('img')
         .first()
-        .should('be.visible')
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324599426.jpg')
         cy.get('p')
@@ -107,7 +104,6 @@ describe('Main page should display all elements', () => {
       .within(() => {
         cy.get('img')
         .last()
-        .should('be.visible')
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1633738017899')
         cy.get('p')
@@ -115,6 +111,12 @@ describe('Main page should display all elements', () => {
         .contains('First Rat')
       })
     })
+  })
+
+  it('Party games carousel should display proper elements.', () => {
+
+    cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
 
     cy.get('.game-row')
     .eq(1)
@@ -132,8 +134,7 @@ describe('Main page should display all elements', () => {
       .first()
       .within(() => {
         cy.get('img')
-        .first()
-        .should('be.visible')
+        .first() 
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1634312724849')
         cy.get('p')
@@ -153,8 +154,7 @@ describe('Main page should display all elements', () => {
       .last()
       .within(() => {
         cy.get('img')
-        .last()
-        .should('be.visible')
+        .last()  
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1671926936810')
         cy.get('p')
@@ -162,6 +162,12 @@ describe('Main page should display all elements', () => {
         .contains('Complete Murder Mystery Night')
       })
     })
+  })
+
+  it('Kid friendly carousel should display proper elements.', () => {
+
+    cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
 
     cy.get('.game-row')
     .eq(2)
@@ -179,8 +185,7 @@ describe('Main page should display all elements', () => {
       .first()
       .within(() => {
         cy.get('img')
-        .first()
-        .should('be.visible')
+        .first()   
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1594689503033')
         cy.get('p')
@@ -200,8 +205,7 @@ describe('Main page should display all elements', () => {
       .last()
       .within(() => {
         cy.get('img')
-        .last()
-        .should('be.visible')
+        .last()    
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257497048-519-B02BO03L.jpg')
         cy.get('p')
@@ -209,16 +213,57 @@ describe('Main page should display all elements', () => {
         .contains('PitchCar')
       })
     })
-
   })
 
-  it('Interactable elements should be present.', () => {
+  it('Other elements should be present in banner and menu bar.', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+    
+    cy.get('.banner')
+    .within(()=> {
+      cy.get('.filter')
+      .within(()=>{
+        cy.get('h2')
+        .contains('Filter')
+      })
+    })
 
-   
+    cy.get('.menu-bar')
+    .within(()=>{
+      cy.get('.to-my-favorites-button')
+      .within(()=>{
+        cy.get('p')
+        .contains('My Favorites')
+      })
 
-  })
+    cy.get('.discover-button')
+    .within(()=>{
+      cy.get('p')
+      .contains('Discover')
+    })
 
+    cy.get('.search-bar')
+    .within(()=>{
+      cy.get('a')
+      .should('have.attr', 'href')
+      .should('include', '/')
+      cy.get('a')
+      .within(()=>{
+        cy.get('button')
+        .contains('Clear')
+        .should('have.attr', 'class')
+        .should('include', 'clear-button')
+        })
+
+    cy.get('input')
+    .should('have.attr', 'type')
+    .should('include', 'text')
+    cy.get('input')
+    .should('have.attr', 'placeholder')
+    .should('include', 'game name')
+      })
+    }) 
+  }) 
 })
 

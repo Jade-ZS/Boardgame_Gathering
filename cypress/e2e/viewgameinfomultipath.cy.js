@@ -64,11 +64,11 @@ describe('template spec', () => {
       .first()
       .click()
       })
-      cy.url()
-      .should('include', '/J1vBFiqdHG')
-      cy.get('.home-button')
-      .within(() => {
-        cy.get('a').click({ force: true })
+    cy.url()
+    .should('include', '/J1vBFiqdHG')
+    cy.get('.home-button')
+    .within(() => {
+      cy.get('a').click({ force: true })
 
     })
   })
@@ -82,11 +82,11 @@ describe('template spec', () => {
       .first()
       .click()
       })
-      cy.url()
-      .should('include', '/OTIkviy9XZ')
-      cy.get('.home-button')
-      .within(() => {
-        cy.get('a').click({ force: true })
+    cy.url()
+    .should('include', '/OTIkviy9XZ')
+    cy.get('.home-button')
+    .within(() => {
+      cy.get('a').click({ force: true })
 
     })
   })
@@ -100,12 +100,35 @@ describe('template spec', () => {
       .first()
       .click()
       })
-      cy.url()
-      .should('include', '/3hnL2wtWnM')
-      cy.get('.home-button')
-      .within(() => {
-        cy.get('a').click({ force: true })
+    cy.url()
+    .should('include', '/3hnL2wtWnM')
+    cy.get('.home-button')
+    .within(() => {
+      cy.get('a').click({ force: true })
 
     })
+  })
+  it('Home button should be present, and have correct contents.', () => {
+
+    cy.visit('http://localhost:3000/')
+    cy.get('.game-row')
+    .eq(2)
+    .within(() => {
+      cy.get('img')
+      .first()
+      .click()
+      })
+    cy.url()
+    .should('include', '/3hnL2wtWnM')
+    
+    cy.get('.home-button')
+    .within(()=>{
+      cy.get('p')
+      .within(()=>{
+      cy.get('span')
+      .contains('⌂')
+      })
+    })
+
   })
 })

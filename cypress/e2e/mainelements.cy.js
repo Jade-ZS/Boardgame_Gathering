@@ -28,10 +28,6 @@ beforeEach(() => {
   
 })
 
-
-
-// npx cypress run --browser chrome
-
 describe('Main page should display all elements', () => {
   it('Proper headers should exist and contain proper text.', () => {
 
@@ -63,10 +59,9 @@ describe('Main page should display all elements', () => {
     cy.get('h1')
     .contains('h1','Kid Friendly')
     })
-
   })
 
-  it('Carousels should display proper elements.', () => {
+  it('New release carousel should display proper elements.', () => {
 
     cy.visit('http://localhost:3000/')
     
@@ -114,6 +109,11 @@ describe('Main page should display all elements', () => {
         .contains('First Rat')
       })
     })
+  })
+
+  it('Party games carousel should display proper elements.', () => {
+
+    cy.visit('http://localhost:3000/')
 
     cy.get('.game-row')
     .eq(1)
@@ -159,6 +159,11 @@ describe('Main page should display all elements', () => {
         .contains('Complete Murder Mystery Night')
       })
     })
+  })
+
+  it('Kid friendly carousel should display proper elements.', () => {
+
+    cy.visit('http://localhost:3000/')
 
     cy.get('.game-row')
     .eq(2)
@@ -206,7 +211,7 @@ describe('Main page should display all elements', () => {
     })
   })
 
-  it('Other interactable elements should be present in banner and menu bar.', () => {
+  it('Other elements should be present in banner and menu bar.', () => {
 
     cy.visit('http://localhost:3000/')
     cy.get('.banner')

@@ -1,15 +1,14 @@
 import './Offline.css';
 import { useState, useEffect } from 'react';
 
-export default function Offline() {
+export default function Offline({offline}) {
   const [clicked, setClicked] = useState(false)
-  const [hidden, setHidden] = useState(false);
 
   const handleClose = () => {
     setClicked(true);
   }
   return (
-    <div className={`offline ${clicked && 'clicked'}`}>
+    <div className={`offline ${clicked && 'clicked'} ${!offline && 'hidden'}`}>
       <div className='middle-layer inner'></div>
       <div className={'offline-notification inner'} >
         <span className='close inner' onClick={() => handleClose()}/>

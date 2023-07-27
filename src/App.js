@@ -21,6 +21,7 @@ function App() {
   const [partyGames, setPartyGames] = useState([]);
   const [kidFriendly, setKidFriendly] = useState([]);
   const [offline, setOffline] = useState(false);
+  
 
   useEffect(() => {
     if(!navigator.onLine) {
@@ -44,7 +45,7 @@ function App() {
   return (
    
     <div>
-    <Offline />
+    <Offline offline={offline}/>
     <Routes>
       <Route path="/" element={<><Banner  games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} offline={offline}/> <MenuBar /><GameCards games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
       <Route path="/:id" element={<GameDisplay games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/>}>

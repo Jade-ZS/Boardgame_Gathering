@@ -65,6 +65,7 @@ describe('Main page should display all elements', () => {
     })
 
   })
+
   it('Carousels should display proper elements.', () => {
 
     cy.visit('http://localhost:3000/')
@@ -86,7 +87,6 @@ describe('Main page should display all elements', () => {
       .within(() => {
         cy.get('img')
         .first()
-        
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324599426.jpg')
         cy.get('p')
@@ -107,7 +107,6 @@ describe('Main page should display all elements', () => {
       .within(() => {
         cy.get('img')
         .last()
-        
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1633738017899')
         cy.get('p')
@@ -132,8 +131,7 @@ describe('Main page should display all elements', () => {
       .first()
       .within(() => {
         cy.get('img')
-        .first()
-        
+        .first() 
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1634312724849')
         cy.get('p')
@@ -153,8 +151,7 @@ describe('Main page should display all elements', () => {
       .last()
       .within(() => {
         cy.get('img')
-        .last()
-        
+        .last()  
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1671926936810')
         cy.get('p')
@@ -179,8 +176,7 @@ describe('Main page should display all elements', () => {
       .first()
       .within(() => {
         cy.get('img')
-        .first()
-        
+        .first()   
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1594689503033')
         cy.get('p')
@@ -200,8 +196,7 @@ describe('Main page should display all elements', () => {
       .last()
       .within(() => {
         cy.get('img')
-        .last()
-        
+        .last()    
         .should('have.attr', 'src')
         .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257497048-519-B02BO03L.jpg')
         cy.get('p')
@@ -209,7 +204,6 @@ describe('Main page should display all elements', () => {
         .contains('PitchCar')
       })
     })
-
   })
 
   it('Other interactable elements should be present in banner and menu bar.', () => {
@@ -221,10 +215,8 @@ describe('Main page should display all elements', () => {
       .within(()=>{
         cy.get('h2')
         .contains('Filter')
-      }
-      )
-    }
-    )
+      })
+    })
 
     cy.get('.menu-bar')
     .within(()=>{
@@ -232,41 +224,35 @@ describe('Main page should display all elements', () => {
       .within(()=>{
         cy.get('p')
         .contains('My Favorites')
-      }
-
-      )
-
-      cy.get('.discover-button')
-      .within(()=>{
-        cy.get('p')
-        .contains('Discover')
-      }
-      )
-
-      cy.get('.search-bar')
-      .within(()=>{
-        cy.get('a')
-        .should('have.attr', 'href')
-        .should('include', '/')
-        cy.get('a')
-        .within(()=>{
-          cy.get('button')
-          .contains('Clear')
-          .should('have.attr', 'class')
-          .should('include', 'clear-button')
-        })
-        cy.get('input')
-        .should('have.attr', 'type')
-        .should('include', 'text')
-        cy.get('input')
-        .should('have.attr', 'placeholder')
-        .should('include', 'game name')
-
       })
+
+    cy.get('.discover-button')
+    .within(()=>{
+      cy.get('p')
+      .contains('Discover')
     })
 
-  
-  })
-  
+    cy.get('.search-bar')
+    .within(()=>{
+      cy.get('a')
+      .should('have.attr', 'href')
+      .should('include', '/')
+      cy.get('a')
+      .within(()=>{
+        cy.get('button')
+        .contains('Clear')
+        .should('have.attr', 'class')
+        .should('include', 'clear-button')
+        })
+
+    cy.get('input')
+    .should('have.attr', 'type')
+    .should('include', 'text')
+    cy.get('input')
+    .should('have.attr', 'placeholder')
+    .should('include', 'game name')
+      })
+    }) 
+  }) 
 })
 

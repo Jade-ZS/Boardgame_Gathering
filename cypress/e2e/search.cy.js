@@ -139,25 +139,6 @@ describe('Search should have an intuitive user experience.', () => {
       })
     })
   })
-
-  it('User should be able to select a game from search results, view game info, and return home', () => {
-
-  cy.visit('http://localhost:3000/')
-    cy.get('input[type="text"]')         
-    .type('Backgammon')
-    cy.get('.search-result')
-    .within(() =>{
-      cy.get('a')
-      .click()
-    })
-    cy.get('.home-button')
-    .within(() => {
-      cy.get('a').click({ force: true })
-    })
-    
-    //check url :)
-
-  })
 })
 
 

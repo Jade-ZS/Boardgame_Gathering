@@ -2,7 +2,7 @@
 
 
 async function getData(query) {
-  let response = await fetch(`https://api.boardgameatlas.com/api/search?${query}&client_id=iFrcfZiq9e`)
+  let response = await fetch(`https://api.boardgameatlas.com/api/search?${query}&client_id=inxHMR90OJ`)
   if (!response.ok) { 
     throw new Error(response.statusText)
   }

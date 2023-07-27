@@ -25,20 +25,18 @@ beforeEach(() => {
     fixture: 'kids.json'
   })
   .as('kids')
-  
+
 })
 
 
 describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('http://localhost:3000/')
-  })
-
-
 
   it('User should be able to select a game from search results, view game info, and return home', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
+
       cy.get('input[type="text"]')         
       .type('Backgammon')
       cy.get('.search-result')
@@ -57,6 +55,8 @@ describe('template spec', () => {
   it('User should be able to select a game from new release carousel, view game info, and return home', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
     cy.get('.game-row')
     .eq(0)
     .within(() => {
@@ -76,6 +76,8 @@ describe('template spec', () => {
   it('User should be able to select a game from party games carousel, view game info, and return home', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
     cy.get('.game-row')
     .eq(1)
     .within(() => {
@@ -95,6 +97,8 @@ describe('template spec', () => {
   it('User should be able to select a game from kid friendly carousel, view game info, and return home', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
     cy.get('.game-row')
     .eq(2)
     .within(() => {
@@ -114,6 +118,8 @@ describe('template spec', () => {
   it('Home button should be present, and have correct contents.', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
     cy.get('.game-row')
     .eq(2)
     .within(() => {
@@ -134,18 +140,20 @@ describe('template spec', () => {
     })
   })
   
-  it('Game details should be present, and have correct contents.', () => {
+  it('Game details should be present, have correct contents, and correct elements.', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
     cy.get('.game-row')
-    .eq(2)
+    .eq(1)
     .within(() => {
       cy.get('img')
       .first()
       .click()
       })
     cy.url()
-    .should('include', '/3hnL2wtWnM')
+    .should('include', '/OTIkviy9XZ')
     
     cy.get('.game-details')
     .within(()=>{
@@ -153,36 +161,50 @@ describe('template spec', () => {
       .within(()=>{
         cy.get('img')
         .should('have.attr', 'src')
-        .should('include', 'https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1594689503033') 
+        .should('include', 'https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1634312724849') 
         cy.get('img')
         .should('have.attr', 'alt')
-        .should('include', 'chess thumbnail') 
+        .should('include', 'mafia-vendetta thumbnail') 
         
       })
     cy.get('.details')
     .each(()=>{
       cy.get('h4')
       .eq(0)
-      .contains('14.95')
+      .contains('12.95')
       .should('have.attr', 'style')
       .should('include', 'lightgreen')
       cy.get('h4')
       .eq(1)
-      .contains('2 Players')
+      .contains('7-17 Players')
       .should('have.attr', 'style')
       .should('include', 'lightblue')
       cy.get('h4')
       .eq(2)
-      .contains('Ages 6+')
+      .contains('Ages 14+')
       .should('have.attr', 'style')
       .should('include', 'red')
       cy.get('h4')
       .eq(3)
-      .contains('3.32 ⭐️')
+      .contains('3.00 ⭐️')
       .should('have.attr', 'style')
       .should('include', 'yellow')
+      })
     })
-    })
+  })
+
+  it('Game details should be present, have correct contents, and correct elements.', () => {
+    cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
+    cy.get('.game-row')
+    .eq(1)
+    .within(() => {
+      cy.get('img')
+      .first()
+      .click()
+      })
+      
     cy.get('.links')
     .within(()=>{
       cy.get('.game-nav')
@@ -190,15 +212,15 @@ describe('template spec', () => {
         cy.get('a')
         .eq(0)
         .should('have.attr', 'href' )
-        .should('include', '/3hnL2wtWnM')
+        .should('include', '/OTIkviy9XZ')
         cy.get('a')
         .eq(1)
         .should('have.attr', 'href')
-        .should('include', '/3hnL2wtWnM/locations')
+        .should('include', '/OTIkviy9XZ/locations')
         cy.get('a')
         .eq(2)
         .should('have.attr', 'href')
-        .should('include', '/3hnL2wtWnM/artists')
+        .should('include', '/OTIkviy9XZ/artists')
       })
     })
 
@@ -211,6 +233,14 @@ describe('template spec', () => {
         .click()
       })
     })
+    cy.get('.about-container')
+    .within(()=>{
+      cy.get('.about')
+      .within(()=>{
+        cy.get('p')
+        .contains('No matter what your role, play it convincingly')
+      })
+    })
 
     cy.get('.links')
     .within(()=>{
@@ -219,6 +249,21 @@ describe('template spec', () => {
         cy.get('a')
         .eq(1)
         .click()
+      })
+    })
+    cy.get('.location-container')
+    .each(()=>{
+      cy.get('.retail-location')
+      .first()
+      .within(()=>{
+        cy.get('p')
+        .contains('BoardGameBliss Inc')
+      })
+      cy.get('.retail-location')
+      .last()
+      .within(()=>{
+        cy.get('p')
+        .contains('Noble Knight Games')
       })
     })
 
@@ -231,6 +276,13 @@ describe('template spec', () => {
         .click()
       })
     })
-
+    cy.get('.artist-container')
+    .within(()=>{
+      cy.get('.artist')
+      .within(()=>{
+        cy.get('p')
+        .contains('Ilya Komarov')
+      })
+    })
   })
 })

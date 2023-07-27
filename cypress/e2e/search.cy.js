@@ -38,6 +38,8 @@ describe('Search should have an intuitive user experience.', () => {
 
   it('Should contain proper elements', () => {
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
     .get('input[type="text"]')
     .type('a')
     cy.get('.game-cards-container')
@@ -51,6 +53,8 @@ describe('Search should have an intuitive user experience.', () => {
   it('A helpful message should appear when the user\'s query returns no results, when the user gets results that message should not appear, or persist.', () => {
     
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
     .get('input[type="text"]')
     .type('gibberish')
     cy.get('.game-cards-container')
@@ -63,6 +67,8 @@ describe('Search should have an intuitive user experience.', () => {
     })
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
     .get('input[type="text"]')
     .type('gibberish')
     .clear()
@@ -80,6 +86,8 @@ describe('Search should have an intuitive user experience.', () => {
   it('User should get result matching based on partial text, and nothing else', () => {
       
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
     .get('input[type="text"]')
     .type('Ca')
     cy.get('.game-cards-container')
@@ -117,6 +125,8 @@ describe('Search should have an intuitive user experience.', () => {
   it('User should be able to type out the full name of a game and get a result', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
     .get('input[type="text"]')         
     .type('Backgammon')
     cy.get('.game-cards-container')

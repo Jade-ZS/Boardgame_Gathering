@@ -32,6 +32,7 @@ describe('Main page should display all elements', () => {
   it('Proper headers should exist and contain proper text.', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
 
     cy.get('.banner')
     .within(()=> {
@@ -64,6 +65,7 @@ describe('Main page should display all elements', () => {
   it('New release carousel should display proper elements.', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
     
     cy.get('.game-row')
     .eq(0)
@@ -114,6 +116,7 @@ describe('Main page should display all elements', () => {
   it('Party games carousel should display proper elements.', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
 
     cy.get('.game-row')
     .eq(1)
@@ -164,6 +167,7 @@ describe('Main page should display all elements', () => {
   it('Kid friendly carousel should display proper elements.', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
 
     cy.get('.game-row')
     .eq(2)
@@ -214,6 +218,8 @@ describe('Main page should display all elements', () => {
   it('Other elements should be present in banner and menu bar.', () => {
 
     cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+    
     cy.get('.banner')
     .within(()=> {
       cy.get('.filter')

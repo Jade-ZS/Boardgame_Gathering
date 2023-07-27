@@ -19,16 +19,19 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      if (response) {
-        return response;
-      } 
-      return fetch(event.request)
-      
-      // .then(response => {
-      //   const resClone = response.clone();
-      //   return caches.open(gameBoardsCache).then(cache => cache.put(event.request, resClone))
-      // })
+    caches.match(event.request)
+      .then((response) => {
+        if (response) {
+          return response;
+        } 
+        return fetch(event.request)
+          .then(response => {
+            const responseClone = response.clone();
+            caches.open(gameBoardsCache)
+              .then(cache => cache.put(event.request.url, responseClone))
+            return response;
+          })
+      .catch()
     })
   );
 });

@@ -39,21 +39,8 @@ beforeEach(() => {
 })
 
 function cleanUp() {
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&order_by=rank&ascending=false&pretty=true&client_id=Efb4IXjG2E', {
-    statusCode: 200,
-  })
 
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&gt_year_published=2021&client_id=Efb4IXjG2E', {
-    statusCode: 200,
-  })
-
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=14&min_players=7&client_id=Efb4IXjG2E', {
-    statusCode: 200,
-  })
-
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=6&client_id=Efb4IXjG2E', {
-    statusCode: 200,
-  })
+  cy.clearCookies()
 }
 
 

@@ -154,6 +154,11 @@
   background-color: #479577;
 }
 
+
+.selected {
+  background-color: #479577;
+}
+
 .filtered {
   padding-right: 50px
 }
@@ -169,3 +174,4 @@
   overflow-wrap: break-word;
   height: min-content;
 } */
+

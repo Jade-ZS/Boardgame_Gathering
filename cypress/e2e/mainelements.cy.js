@@ -38,23 +38,10 @@ beforeEach(() => {
 
 })
 
-afterEach(()=>{
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&order_by=rank&ascending=false&pretty=true&client_id=Efb4IXjG2E', {
-    statusCode: 200,
-  })
+function cleanUp() {
 
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&gt_year_published=2021&client_id=Efb4IXjG2E', {
-    statusCode: 200,
-  })
-
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=14&min_players=7&client_id=Efb4IXjG2E', {
-    statusCode: 200,
-  })
-
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=6&client_id=Efb4IXjG2E', {
-    statusCode: 200,
-  })
-})
+  cy.clearCookies()
+}
 
 
 describe('Main page should display all elements', () => {
@@ -92,6 +79,7 @@ describe('Main page should display all elements', () => {
     cy.get('h1')
     .contains('h1','Kid Friendly')
     })
+    cleanUp()
   })
 
   it('New release carousel should display proper elements.', () => {
@@ -145,6 +133,7 @@ describe('Main page should display all elements', () => {
         .contains('First Rat')
       })
     })
+    cleanUp()
   })
 
   it('Party games carousel should display proper elements.', () => {
@@ -198,6 +187,7 @@ describe('Main page should display all elements', () => {
         .contains('Complete Murder Mystery Night')
       })
     })
+    cleanUp()
   })
 
   it('Kid friendly carousel should display proper elements.', () => {
@@ -251,6 +241,7 @@ describe('Main page should display all elements', () => {
         .contains('PitchCar')
       })
     })
+    cleanUp()
   })
 
   it('Other elements should be present in banner and menu bar.', () => {

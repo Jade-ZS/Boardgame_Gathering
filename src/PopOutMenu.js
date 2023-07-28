@@ -77,7 +77,11 @@ function PopOutMenu({ games, handleClose }) {
             </li>
             <li
               id="JwHcKqxh33"
-              onClick={(event) => handleClick(event, "game_type")}
+              onClick={(event) => { 
+                handleClick(event, "game_type")
+                setSelectedCategory(event.target.id)
+              }}
+              className={selectedCategory === "JwHcKqxh33" ? "selected" : ""}
             >
               Trains
             </li>
@@ -88,77 +92,85 @@ function PopOutMenu({ games, handleClose }) {
         <span>Year Published</span>
         <div className="drop-down-menu">
           <ul>
-            <li
-              id="2010"
-              onClick={(event) => handleClick(event, "year_published")}
+          <li
+              id="1995"
+              onClick={(event) => { 
+                handleClick(event, "year_published")
+                setSelectedCategory(event.target.id)
+              }}
+              className={selectedCategory === "1995" ? "selected" : ""}
             >
-              2010
+              1995
             </li>
             <li
-              id="2011"
-              onClick={(event) => handleClick(event, "year_published")}
+              id="2000"
+              onClick={(event) => { 
+                handleClick(event, "year_published")
+                setSelectedCategory(event.target.id)
+              }}
+              className={selectedCategory === "2000" ? "selected" : ""}
             >
-              2011
+              2000
             </li>
             <li
-              id="2012"
-              onClick={(event) => handleClick(event, "year_published")}
+              id="2008"
+              onClick={(event) => { 
+                handleClick(event, "year_published")
+                setSelectedCategory(event.target.id)
+              }}
+              className={selectedCategory === "2008" ? "selected" : ""}
             >
-              2012
-            </li>
-            <li
-              id="2013"
-              onClick={(event) => handleClick(event, "year_published")}
-            >
-              2013
-            </li>
-            <li
-              id="2014"
-              onClick={(event) => handleClick(event, "year_published")}
-            >
-              2014
-            </li>
-            <li
-              id="2015"
-              onClick={(event) => handleClick(event, "year_published")}
-            >
-              2015
+              2008
             </li>
             <li
               id="2016"
-              onClick={(event) => handleClick(event, "year_published")}
+              onClick={(event) => { 
+                handleClick(event, "year_published")
+                setSelectedCategory(event.target.id)
+              }}
+              className={selectedCategory === "2016" ? "selected" : ""}
             >
               2016
             </li>
             <li
               id="2017"
-              onClick={(event) => handleClick(event, "year_published")}
+              onClick={(event) => { 
+                handleClick(event, "year_published")
+                setSelectedCategory(event.target.id)
+              }}
+              className={selectedCategory === "2017" ? "selected" : ""}
             >
               2017
             </li>
             <li
               id="2018"
-              onClick={(event) => handleClick(event, "year_published")}
+              onClick={(event) => { 
+                handleClick(event, "year_published")
+                setSelectedCategory(event.target.id)
+              }}
+              className={selectedCategory === "2018" ? "selected" : ""}
             >
               2018
             </li>
             <li
               id="2019"
-              onClick={(event) => handleClick(event, "year_published")}
+              onClick={(event) => { 
+                handleClick(event, "year_published")
+                setSelectedCategory(event.target.id)
+              }}
+              className={selectedCategory === "2019" ? "selected" : ""}
             >
               2019
             </li>
             <li
-              id="2020"
-              onClick={(event) => handleClick(event, "year_published")}
+              id="2022"
+              onClick={(event) => { 
+                handleClick(event, "year_published")
+                setSelectedCategory(event.target.id)
+              }}
+              className={selectedCategory === "2022" ? "selected" : ""}
             >
-              2020
-            </li>
-            <li
-              id="2021"
-              onClick={(event) => handleClick(event, "year_published")}
-            >
-              2021
+              2022
             </li>
           </ul>
         </div>

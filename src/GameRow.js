@@ -6,7 +6,7 @@ export default function GameRow({category, games}) {
     <div className='game-row'>
       <div className='heading-container'>
         <h1>{category}</h1>
-        <p>show all</p>
+        {/* <p>show all</p> */}
       </div>
       <div className='row-card-container'>
       {games.map((game) => {

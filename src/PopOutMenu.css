@@ -1,56 +1,99 @@
 .pop-out-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  /* width: 200px; */
+  width: 200px;
   background-color: rgb(255, 179, 179);
-  border: 1px solid black;
-  padding: 10px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   height: 95%;
   overflow: scroll;
+  width: fit-content;
+  text-align: center;
+  padding: 0 20px;
+  border-left: 1px solid black;
 }
 
-.pop-out-menu h4 {
+.pop-out-menu button {
   cursor: pointer;
 }
 
-.pop-out-menu .menu-item {
-  margin-top: 20px;
+.pop-out-menu ul li {
+  list-style: none;
 }
 
-.pop-out-menu .menu-item p {
-  margin-bottom: 5px;
-  font-size: 1.5rem;
+.filtered {
+  padding-right: 20px;
 }
 
-.pop-out-menu .dropdown-menu {
-  position: relative;
-  display: inline-block;
-  height: 100vh;
-  overflow: scroll;
+.filtered ul {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: start;
 }
 
-.pop-out-menu .dropdown-menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  z-index: 1;
-  background-color: white;
-  border: 1px solid black;
-  top: 100%;
-  left: 0;
-  /* min-width: 160px; */
-  width: fit-content;
-  display: none;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.option {
+  width: 150px;
+  height:fit-content;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.pop-out-menu .dropdown-menu ul li {
+.option li {
+  list-style: none;
+  word-wrap: break-word;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.game-link:hover {
+  font-size: 1.10rem;
+  text-decoration: underline;
+  background-color: #479577;
+}
+
+.filtered a {
+  text-decoration: none;
+  color: black;
+}
+
+.label {
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  font-weight: 900;
+}
+
+.pop-out-menu::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f4cdcd;
+}
+
+.pop-out-menu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #479577;
+}
+
+.label {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.filter-li:hover {
+  background-color: #479577;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media screen and (max-width:450px){
+  
+  .pop-out-menu {
+      width: 90%;
+    }
+}
+
+/* .pop-out-menu .dropdown-menu ul li {
   padding: 10px;
   cursor: pointer;
   border-bottom: 1px solid #000000;
@@ -69,6 +112,8 @@
   border: #000000 solid 2px;
   cursor: pointer;
   box-shadow: 10px black;
+  width: 100%;
+  margin: 0;
 }
 
 .pop-out-menu li:hover {
@@ -109,6 +154,24 @@
   background-color: #479577;
 }
 
+
 .selected {
   background-color: #479577;
 }
+
+.filtered {
+  padding-right: 50px
+}
+
+.filter-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.option {
+  overflow-wrap: break-word;
+  height: min-content;
+} */
+

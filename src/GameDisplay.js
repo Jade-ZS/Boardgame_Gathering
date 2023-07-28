@@ -32,17 +32,17 @@ const {id} = useParams()
           <img src={game.images.medium} alt={`${game.handle} thumbnail`} />
         </div> 
         <div className='details'>
-          <h4 style={{backgroundColor: 'black', color: 'lightGreen'}}>{game.msrp_text}</h4>
+          {game.msrp_text ? <h4 style={{backgroundColor: 'black', color: 'lightGreen'}}>{game.msrp_text}</h4> : null}
           <h4 style={{backgroundColor: 'black', color: 'lightBlue'}}>{game.players} Players</h4>
           <h4 style={{backgroundColor: 'black', color: 'red'}}>Ages {game.min_age}+</h4>
-          <h4 style={{backgroundColor: 'black', color: 'yellow'}}>{game.average_user_rating.toFixed(2)} ⭐️</h4>
+          {game.average_user_rating > 0 ? <h4 style={{backgroundColor: 'black', color: 'yellow'}}>{game.average_user_rating.toFixed(2)} ⭐️</h4> : null}
         </div> 
       </div>
       <div className="links">
         <nav className='game-nav'>
-          <NavLink to="." end className={({isActive}) => isActive ? 'active' : 'game-nav a'}>About</NavLink>
-          <NavLink to="locations">Locations</NavLink>
-          <NavLink to="artists">Artists</NavLink>
+          {(game.description_preview.length > 0) && <NavLink to="." end className={({isActive}) => isActive ? 'active' : 'game-nav a'}>About</NavLink>}
+          {game.sku_objects && <NavLink to="locations">Locations</NavLink>}
+          {(game.artists.length > 0) && <NavLink to="artists">Artists</NavLink>}
         </nav>
       </div>
       <Outlet context={{game}}/>

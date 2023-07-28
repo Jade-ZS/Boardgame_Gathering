@@ -28,17 +28,13 @@ function App() {
     getData('&gt_year_published=2021')
       .then(data => setNewRelease(data.games))
       .catch(error => setError(error))
-    getData('&min_age=14&min_players=7')
+    getData('&min_players=4')
       .then(data => setPartyGames(data.games))
       .catch(error => setError(error))
     getData('&min_age=6')
       .then(data => setKidFriendly(data.games))
       .catch(error => setError(error))
   }, [])
-  console.log(kidFriendly, 'kids')
-  console.log(newRelease, 'new')
-  console.log(partyGames, 'party')
-  console.log('games', games)
 
   return (
     <div>

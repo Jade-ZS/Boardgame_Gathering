@@ -108,7 +108,7 @@ function PopOutMenu({ games, handleClose }) {
         </div>
       </div>
       <div className="menu-item">
-        <span>Year Published</span>
+        <p className="label">Year Published</p>
         <div className="drop-down-menu">
           <ul>
           <li

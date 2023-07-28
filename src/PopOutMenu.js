@@ -36,30 +36,32 @@ function PopOutMenu({ games, handleClose }) {
 
   return (
     <div className="pop-out-menu">
-      <h4 onClick={handleClose}>Close</h4>
-        <div className="filtered">
-          {show && <div className="filter-ul">
-            <button onClick={clearFilters}>Clear Filters</button>
-            <p className="label">Your Options</p>
-            {yearPublished && yearList.map(game => (
-              <Link to={`/${game.id}`}>
-                <div key={game.id} className="option">
-                  <p>👾</p>
-                  <li>{game.handle.replaceAll('-', ' ')}</li>
-                </div>
-              </Link>
-            ))}
-            {gameType && gameList.map(game => (
-              <Link to={`/${game.id}`} className="game-link">
-                <div key={game.id} className="option">
-                  <p>👾</p>
-                  <li>{game.handle.replaceAll('-', ' ')}</li>
-                </div>
-              </Link>
-            ))}
-          </div>}
+      <div className="filtered">
+        {show && <div className="filter-ul">
+          <button onClick={clearFilters}>Clear Filters</button>
+          <p className="label">Your Options</p>
+          {yearPublished && yearList.map(game => (
+            <Link to={`/${game.id}`}>
+              <div key={game.id} className="option">
+                <p>👾</p>
+                <li>{game.handle.replaceAll('-', ' ')}</li>
+              </div>
+            </Link>
+          ))}
+          {gameType && gameList.map(game => (
+            <Link to={`/${game.id}`} className="game-link">
+              <div key={game.id} className="option">
+                <p>👾</p>
+                <li>{game.handle.replaceAll('-', ' ')}</li>
+              </div>
+            </Link>
+          ))}
+        </div>}
+      </div>
       <div className="menu-item">
-        <p>Game Type</p>
+        <div>
+        <button onClick={handleClose}>Close</button>
+        <p className="label">Game Type</p>
         <div className="drop-down-menu">
           <ul>
             <li
@@ -192,7 +194,7 @@ function PopOutMenu({ games, handleClose }) {
           </ul>
         </div>
       </div>
-      </div>
-      </div>    
+    </div>
+  </div>    
 )}
 export default PopOutMenu;

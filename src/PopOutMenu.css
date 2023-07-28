@@ -86,6 +86,13 @@
   transition: background-color 0.3s ease-in-out;
 }
 
+@media screen and (max-width:450px){
+  
+  .pop-out-menu {
+      width: 90%;
+    }
+}
+
 /* .pop-out-menu .dropdown-menu ul li {
   padding: 10px;
   cursor: pointer;

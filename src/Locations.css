@@ -19,3 +19,9 @@
   background-color: white;
   margin: 20px 0;
 }
+
+@media screen and (max-width: 550px) {
+  .location-container {
+    max-width: 80vw;
+  }
+} 

@@ -4,22 +4,23 @@ import './Locations.css'
 import { useOutletContext } from 'react-router-dom'
 
 function Locations(props) {
-  
+  let locations;
   const { game } = useOutletContext()
 
-  const locations = game.sku_objects.reduce((acc, curr) => {
+  locations = game.sku_objects.reduce((acc, curr) => {
     if (!acc.includes(curr.name)) {
       acc.push(curr.name)
     }
     return acc
   }, []).sort()
 
-  const retailLocations = locations.map((location, index) => (
-    // figure out a better key identifier
+  const retailLocations = locations.map((location, index) => {
+    return (
     <div key={index + 1} className="retail-location">
       <p>{location}</p>
     </div>
-  ))
+    ) 
+})
   return (
     <div className='location-container'>
     {retailLocations}

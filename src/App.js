@@ -35,10 +35,6 @@ function App() {
       .then(data => setKidFriendly(data.games))
       .catch(error => setError(error))
   }, [])
-  console.log(kidFriendly, 'kids')
-  console.log(newRelease, 'new')
-  console.log(partyGames, 'party')
-  console.log('games', games)
 
   return (
     <div>

@@ -32,10 +32,10 @@ const {id} = useParams()
           <img src={game.images.medium} alt={`${game.handle} thumbnail`} />
         </div> 
         <div className='details'>
-          <h4 style={{backgroundColor: 'black', color: 'lightGreen'}}>{game.msrp_text}</h4>
+          {game.msrp_text ? <h4 style={{backgroundColor: 'black', color: 'lightGreen'}}>{game.msrp_text}</h4> : null}
           <h4 style={{backgroundColor: 'black', color: 'lightBlue'}}>{game.players} Players</h4>
           <h4 style={{backgroundColor: 'black', color: 'red'}}>Ages {game.min_age}+</h4>
-          <h4 style={{backgroundColor: 'black', color: 'yellow'}}>{game.average_user_rating.toFixed(2)} ⭐️</h4>
+          {game.average_user_rating > 0 ? <h4 style={{backgroundColor: 'black', color: 'yellow'}}>{game.average_user_rating.toFixed(2)} ⭐️</h4> : null}
         </div> 
       </div>
       <div className="links">

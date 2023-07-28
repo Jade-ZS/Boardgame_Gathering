@@ -93,6 +93,8 @@
   
   .pop-out-menu {
       width: 90%;
+      justify-content: center;
+      align-items: center;
     }
 }
 

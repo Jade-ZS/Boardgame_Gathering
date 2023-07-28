@@ -171,5 +171,9 @@ span {
     width: 100px;
     font-size: 1rem;
   }
+
+  .thumbnail {
+    width: 70%;
+  }
   
 }

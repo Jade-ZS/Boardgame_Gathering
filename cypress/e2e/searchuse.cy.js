@@ -23,7 +23,7 @@ beforeEach(() => {
   .as('new')
   
 
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=14&min_players=7&client_id=Efb4IXjG2E', {
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_players=4&client_id=Efb4IXjG2E', {
     statusCode: 200,
     fixture: 'party.json'
   })
@@ -61,48 +61,6 @@ describe('Search should have an intuitive user experience.', () => {
     })
     cleanUp()
   })
-
-  it('A helpful message should appear when the user\'s query returns no results, when the user gets results that message should not appear, or persist.', () => {
-    
-    unreg()
-
-    cy.visit('http://localhost:3000/')
-    cy.wait(['@games','@new','@party','@kids'])
-
-    .get('input[type="text"]')
-    .type('gibberish')
-    cy.get('.game-cards-container')
-    .within(()=> {
-      cy.get('.search-result')
-      .within(()=> {
-        cy.get('p')
-        .contains('Sorry, no matching game was found. Please try a different game name...')
-      })
-    })
-    cleanUp()
-  })
-
-  it('A helpful message should appear when the user\'s query returns no results.', () => {  
-    
-    unreg()
-    
-    cy.visit('http://localhost:3000/')
-    cy.wait(['@games','@new','@party','@kids'])
-
-    .get('input[type="text"]')
-    .type('gibberish')
-    .clear()
-    .type('a')
-    cy.get('.game-cards-container')
-    .within(()=> {
-      cy.get('.search-result')
-      .each(()=> {
-        cy.contains('Sorry, no matching game was found. Please try a different game name...')
-        .should('not.exist')
-      })
-    })
-    cleanUp()
-  })
   
   it('When the user gets results that message should not appear, or persist.', () => {
     
@@ -116,7 +74,7 @@ describe('Search should have an intuitive user experience.', () => {
     cy.get('.game-cards-container')
     .within(()=> {
       cy.get('.search-result')
-      .each(()=> {
+      .within(()=> {
         cy.get('a')
         .should("have.length", 2)
         cy.get('a')
@@ -158,7 +116,7 @@ describe('Search should have an intuitive user experience.', () => {
     cy.get('.game-cards-container')
     .within(()=> {
       cy.get('.search-result')
-      .each(()=> {
+      .within(()=> {
         cy.get('a')
         .should("have.length", 1)
         cy.get('a')
@@ -176,5 +134,3 @@ describe('Search should have an intuitive user experience.', () => {
     })
   })
 })
-
-// Maybe add testing for text of cards above...

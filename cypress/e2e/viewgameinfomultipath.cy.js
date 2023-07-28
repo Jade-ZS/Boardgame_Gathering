@@ -23,7 +23,7 @@ beforeEach(() => {
   .as('new')
   
 
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=14&min_players=7&client_id=Efb4IXjG2E', {
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_players=4&client_id=Efb4IXjG2E', {
     statusCode: 200,
     fixture: 'party.json'
   })

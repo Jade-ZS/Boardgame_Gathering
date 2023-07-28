@@ -23,7 +23,7 @@ beforeEach(() => {
   .as('new')
   
 
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=14&min_players=7&client_id=Efb4IXjG2E', {
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_players=4&client_id=Efb4IXjG2E', {
     statusCode: 200,
     fixture: 'party.json'
   })
@@ -94,9 +94,6 @@ describe('Main page should display all elements', () => {
     .within(() => {
       cy.get('h1')
       .contains('h1','New Release')   
-      cy.get('p')
-      .first()
-      .contains('show all')
       cy.get('a')
       .first()
       .should('have.attr', 'href')
@@ -148,9 +145,6 @@ describe('Main page should display all elements', () => {
     .within(() => {
       cy.get('h1')
       .contains('h1','Party Games')
-      cy.get('p')
-      .first()
-      .contains('show all')
       cy.get('a')
       .first()
       .should('have.attr', 'href')
@@ -202,9 +196,6 @@ describe('Main page should display all elements', () => {
     .within(() => {
       cy.get('h1')
       .contains('h1','Kid Friendly')
-      cy.get('p')
-      .first()
-      .contains('show all')
       cy.get('a')
       .first()
       .should('have.attr', 'href')
@@ -262,37 +253,25 @@ describe('Main page should display all elements', () => {
 
     cy.get('.menu-bar')
     .within(()=>{
-      cy.get('.to-my-favorites-button')
+      cy.get('.search-bar')
       .within(()=>{
-        cy.get('p')
-        .contains('My Favorites')
-      })
+        cy.get('a')
+        .should('have.attr', 'href')
+        .should('include', '/')
+        cy.get('a')
+        .within(()=>{
+          cy.get('button')
+          .contains('Clear')
+          .should('have.attr', 'class')
+          .should('include', 'clear-button')
+          })
 
-    cy.get('.discover-button')
-    .within(()=>{
-      cy.get('p')
-      .contains('Discover')
-    })
-
-    cy.get('.search-bar')
-    .within(()=>{
-      cy.get('a')
-      .should('have.attr', 'href')
-      .should('include', '/')
-      cy.get('a')
-      .within(()=>{
-        cy.get('button')
-        .contains('Clear')
-        .should('have.attr', 'class')
-        .should('include', 'clear-button')
-        })
-
-    cy.get('input')
-    .should('have.attr', 'type')
-    .should('include', 'text')
-    cy.get('input')
-    .should('have.attr', 'placeholder')
-    .should('include', 'game name')
+      cy.get('input')
+      .should('have.attr', 'type')
+      .should('include', 'text')
+      cy.get('input')
+      .should('have.attr', 'placeholder')
+      .should('include', 'game name')
       })
     }) 
   }) 

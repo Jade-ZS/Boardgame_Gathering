@@ -38,7 +38,7 @@ beforeEach(() => {
 
 })
 
-afterEach(()=>{
+function cleanUp() {
   cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&order_by=rank&ascending=false&pretty=true&client_id=Efb4IXjG2E', {
     statusCode: 200,
   })
@@ -54,7 +54,7 @@ afterEach(()=>{
   cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=6&client_id=Efb4IXjG2E', {
     statusCode: 200,
   })
-})
+}
 
 describe('Search should have an intuitive user experience.', () => {
 
@@ -73,6 +73,7 @@ describe('Search should have an intuitive user experience.', () => {
       .should('have.attr', 'class')
       .should('include', 'search-result')  
     })
+    cleanUp()
   })
 
   it('A helpful message should appear when the user\'s query returns no results, when the user gets results that message should not appear, or persist.', () => {
@@ -92,6 +93,7 @@ describe('Search should have an intuitive user experience.', () => {
         .contains('Sorry, no matching game was found. Please try a different game name...')
       })
     })
+    cleanUp()
   })
 
   it('A helpful message should appear when the user\'s query returns no results.', () => {  
@@ -113,6 +115,7 @@ describe('Search should have an intuitive user experience.', () => {
         .should('not.exist')
       })
     })
+    cleanUp()
   })
   
   it('When the user gets results that message should not appear, or persist.', () => {
@@ -154,6 +157,7 @@ describe('Search should have an intuitive user experience.', () => {
         .contains('PitchCar Mini')         
       })
     })
+    cleanUp()
   })
 
   it('User should be able to type out the full name of a game and get a result', () => {

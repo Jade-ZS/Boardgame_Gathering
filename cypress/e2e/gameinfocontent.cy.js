@@ -38,7 +38,7 @@ beforeEach(() => {
 
 })
 
-afterEach(()=>{
+function cleanUp() {
   cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&order_by=rank&ascending=false&pretty=true&client_id=Efb4IXjG2E', {
     statusCode: 200,
   })
@@ -54,7 +54,7 @@ afterEach(()=>{
   cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=6&client_id=Efb4IXjG2E', {
     statusCode: 200,
   })
-})
+}
 
 describe('Testing for user viewing game info.', () => {
   it('Home button should be present, and have correct contents.', () => {
@@ -82,6 +82,7 @@ describe('Testing for user viewing game info.', () => {
       .contains('⌂')
       })
     })
+    cleanUp()
   })
   
   it('Game details should be present, have correct contents, and correct elements.', () => {
@@ -137,6 +138,7 @@ describe('Testing for user viewing game info.', () => {
       .should('include', 'yellow')
       })
     })
+    cleanUp()
   })
 
   it('Game info nav and info should be present, have correct contents, and correct elements.', () => {

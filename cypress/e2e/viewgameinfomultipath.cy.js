@@ -38,7 +38,7 @@ beforeEach(() => {
 
 })
 
-afterEach(()=>{
+function cleanUp() {
   cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&order_by=rank&ascending=false&pretty=true&client_id=Efb4IXjG2E', {
     statusCode: 200,
   })
@@ -54,7 +54,7 @@ afterEach(()=>{
   cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=6&client_id=Efb4IXjG2E', {
     statusCode: 200,
   })
-})
+}
 
 describe('Testing for user pathing to game info page.', () => {
 
@@ -66,19 +66,20 @@ describe('Testing for user pathing to game info page.', () => {
     cy.wait(['@games','@new','@party','@kids'])
 
 
-      cy.get('input[type="text"]')         
-      .type('Backgammon')
-      cy.get('.search-result')
-      .within(() =>{
-        cy.get('a')
-        .click()
-      })
-      cy.url()
-      .should('include', 'http://localhost:3000/YBJODy05aF')
-      cy.get('.home-button')
-      .within(() => {
-        cy.get('a').click({ force: true })
-      }) 
+    cy.get('input[type="text"]')         
+    .type('Backgammon')
+    cy.get('.search-result')
+    .within(() =>{
+      cy.get('a')
+      .click()
+    })
+    cy.url()
+    .should('include', 'http://localhost:3000/YBJODy05aF')
+    cy.get('.home-button')
+    .within(() => {
+      cy.get('a').click({ force: true })
+    })
+    cleanUp() 
   })
 
   it('User should be able to select a game from new release carousel, view game info, and return home', () => {
@@ -102,6 +103,7 @@ describe('Testing for user pathing to game info page.', () => {
       cy.get('a').click({ force: true })
 
     })
+    cleanUp()
   })
 
   it('User should be able to select a game from party games carousel, view game info, and return home', () => {
@@ -125,6 +127,7 @@ describe('Testing for user pathing to game info page.', () => {
       cy.get('a').click({ force: true })
 
     })
+    cleanUp()
   })
 
   it('User should be able to select a game from kid friendly carousel, view game info, and return home', () => {

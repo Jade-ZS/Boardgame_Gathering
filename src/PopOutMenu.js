@@ -15,8 +15,6 @@ function PopOutMenu({ games, handleClose }) {
       ...searchParams,
       [type]: event.target.id,
     });
-      [type]: event.target.id
-    })
     setShow(true)
   }
 
@@ -35,10 +33,31 @@ function PopOutMenu({ games, handleClose }) {
     ? games.filter((game) => game.categories.some((cat) => cat.id === gameType))
     : games;
   console.log();
-  return (
 
+  return (
     <div className="pop-out-menu">
       <h4 onClick={handleClose}>Close</h4>
+        <div className="filtered">
+          {show && <div className="filter-ul">
+            <button onClick={clearFilters}>Clear Filters</button>
+            <p className="label">Your Options</p>
+            {yearPublished && yearList.map(game => (
+              <Link to={`/${game.id}`}>
+                <div key={game.id} className="option">
+                  <p>👾</p>
+                  <li>{game.handle.replaceAll('-', ' ')}</li>
+                </div>
+              </Link>
+            ))}
+            {gameType && gameList.map(game => (
+              <Link to={`/${game.id}`} className="game-link">
+                <div key={game.id} className="option">
+                  <p>👾</p>
+                  <li>{game.handle.replaceAll('-', ' ')}</li>
+                </div>
+              </Link>
+            ))}
+          </div>}
       <div className="menu-item">
         <p>Game Type</p>
         <div className="drop-down-menu">
@@ -53,8 +72,6 @@ function PopOutMenu({ games, handleClose }) {
             >
               Renaissance
             </li>
-            {/* <li id='nuHYRFmMjU' onClick={(event) => handleClick(event, "game_type")}>Renaissance</li> */}
-            {/* <li id="KUBCKBkGxV" onClick={(event) => handleClick(event, "game_type")}>Adventure</li> */}
             <li
               id="KUBCKBkGxV"
               onClick={(event) => {
@@ -175,94 +192,7 @@ function PopOutMenu({ games, handleClose }) {
           </ul>
         </div>
       </div>
-      <ul>
-        <p>Your Options</p>
-        {yearPublished &&
-          yearList.map((game) => (
-      <div className="pop-out-menu">
-        <div className="filtered">
-          {show && <div className="filter-ul">
-            <button onClick={clearFilters}>Clear Filters</button>
-            <p className="label">Your Options</p>
-            {yearPublished && yearList.map(game => (
-              <Link to={`/${game.id}`}>
-                <div key={game.id} className="option">
-                  <p>👾</p>
-                  <li>{game.handle.replaceAll('-', ' ')}</li>
-                </div>
-              </Link>
-            ))}
-            {gameType && gameList.map(game => (
-              <Link to={`/${game.id}`} className="game-link">
-                <div key={game.id} className="option">
-                  <p>👾</p>
-                  <li>{game.handle.replaceAll('-', ' ')}</li>
-                </div>
-              </Link>
-            ))}
-          </div>}
-        </div>
-        <div>
-        <button onClick={handleClose}>Close</button>
-        <div className="menu-item">
-          <p className="label">Game Type</p>
-          <div className="drop-down-menu">
-            <ul>
-              <li id='nuHYRFmMjU' className="filter-li" onClick={(event) => handleClick(event, "game_type")}>Renaissance</li>
-              <li id="KUBCKBkGxV" className="filter-li" onClick={(event) => handleClick(event, "game_type")}>Adventure</li>
-              <li id="ge8pIhEUGE" className="filter-li" onClick={(event) => handleClick(event, "game_type")}>Cooperative</li>
-              <li id="JwHcKqxh33" className="filter-li" onClick={(event) => handleClick(event, "game_type")}>Trains</li>
-            </ul>
-          </div>
-        </div>
-        <div className="menu-item">
-          <p className="label">Year Published</p>
-          <div className="drop-down-menu">
-            <ul>
-              <li id="2010" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2010</li>
-              <li id="2011" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2011</li>
-              <li id="2012" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2012</li>
-              <li id="2013" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2013</li>
-              <li id="2014" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2014</li>
-              <li id="2015" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2015</li>
-              <li id="2016" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2016</li>
-              <li id="2017" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2017</li>
-              <li id="2018" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2018</li>
-              <li id="2019" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2019</li>
-              <li id="2020" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2020</li>
-              <li id="2021" className="filter-li" onClick={(event) => handleClick(event, "year_published")}>2021</li>
-            </ul>
-          </div>
-          {/* <ul>
-            {gameList.length > 0 && gameList.map(game => (
-              <Link to={`/${game.id}`}>
-              <li key={game.id}>{game.handle}</li>
-              </Link>
-            ))}
-          </ul> */}
-        </div>
-        {/* <ul>
-          <p>Your Options</p>
-          {yearPublished && yearList.map(game => (
-            <Link to={`/${game.id}`}>
-              <div key={game.id}>
-                <li>{game.handle}</li>
-              </div>
-            </Link>
-          ))}
-        {gameType &&
-          gameList.map((game) => (
-            <Link to={`/${game.id}`}>
-              <div key={game.id}>
-                <li>{game.handle}</li>
-              </div>
-            </Link>
-          ))}
-      </ul>
-    </div>
-        </ul> */}
-        </div>
       </div>
-  );
-}
+      </div>    
+)}
 export default PopOutMenu;

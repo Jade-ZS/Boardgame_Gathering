@@ -85,6 +85,9 @@
   background-color: #479577;
   transition: background-color 0.3s ease-in-out;
 }
+.selected {
+  background-color: #479577;
+}
 
 @media screen and (max-width:450px){
   
@@ -154,10 +157,6 @@
   background-color: #479577;
 }
 
-
-.selected {
-  background-color: #479577;
-}
 
 .filtered {
   padding-right: 50px

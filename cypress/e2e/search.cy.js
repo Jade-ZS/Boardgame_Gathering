@@ -1,3 +1,13 @@
+async function unreg() {
+  if (!window.navigator || !navigator.serviceWorker) {
+    return null;
+  }
+  const regs = await navigator.serviceWorker.getRegistrations();
+  return Promise.all(regs.map((registration) => {
+    return registration.unregister();
+  }));
+}
+
 beforeEach(() => {
   cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&order_by=rank&ascending=false&pretty=true&client_id=Efb4IXjG2E', {
     statusCode: 200,
@@ -25,18 +35,33 @@ beforeEach(() => {
     fixture: 'kids.json'
   })
   .as('kids')
-  
+
 })
 
+afterEach(()=>{
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&order_by=rank&ascending=false&pretty=true&client_id=Efb4IXjG2E', {
+    statusCode: 200,
+  })
 
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&gt_year_published=2021&client_id=Efb4IXjG2E', {
+    statusCode: 200,
+  })
 
-// npx cypress run --browser chrome
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=14&min_players=7&client_id=Efb4IXjG2E', {
+    statusCode: 200,
+  })
 
-
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=6&client_id=Efb4IXjG2E', {
+    statusCode: 200,
+  })
+})
 
 describe('Search should have an intuitive user experience.', () => {
 
   it('Should contain proper elements', () => {
+
+    unreg()
+
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
 
@@ -52,6 +77,8 @@ describe('Search should have an intuitive user experience.', () => {
 
   it('A helpful message should appear when the user\'s query returns no results, when the user gets results that message should not appear, or persist.', () => {
     
+    unreg()
+
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
 
@@ -65,7 +92,12 @@ describe('Search should have an intuitive user experience.', () => {
         .contains('Sorry, no matching game was found. Please try a different game name...')
       })
     })
+  })
 
+  it('A helpful message should appear when the user\'s query returns no results.', () => {  
+    
+    unreg()
+    
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
 
@@ -82,9 +114,11 @@ describe('Search should have an intuitive user experience.', () => {
       })
     })
   })
+  
+  it('When the user gets results that message should not appear, or persist.', () => {
+    
+    unreg()
 
-  it('User should get result matching based on partial text, and nothing else', () => {
-      
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
 
@@ -124,6 +158,8 @@ describe('Search should have an intuitive user experience.', () => {
 
   it('User should be able to type out the full name of a game and get a result', () => {
 
+    unreg()
+
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
 
@@ -151,6 +187,4 @@ describe('Search should have an intuitive user experience.', () => {
   })
 })
 
-
-
-// add testing for text up above
+// Maybe add testing for text of cards above...

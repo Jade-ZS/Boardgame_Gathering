@@ -1,3 +1,13 @@
+async function unreg() {
+  if (!window.navigator || !navigator.serviceWorker) {
+    return null;
+  }
+  const regs = await navigator.serviceWorker.getRegistrations();
+  return Promise.all(regs.map((registration) => {
+    return registration.unregister();
+  }));
+}
+
 beforeEach(() => {
   cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&order_by=rank&ascending=false&pretty=true&client_id=Efb4IXjG2E', {
     statusCode: 200,
@@ -25,15 +35,37 @@ beforeEach(() => {
     fixture: 'kids.json'
   })
   .as('kids')
-  
+
 })
 
+afterEach(()=>{
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&order_by=rank&ascending=false&pretty=true&client_id=Efb4IXjG2E', {
+    statusCode: 200,
+  })
+
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&gt_year_published=2021&client_id=Efb4IXjG2E', {
+    statusCode: 200,
+  })
+
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=14&min_players=7&client_id=Efb4IXjG2E', {
+    statusCode: 200,
+  })
+
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=6&client_id=Efb4IXjG2E', {
+    statusCode: 200,
+  })
+})
+
+
 describe('Main page should display all elements', () => {
+
   it('Proper headers should exist and contain proper text.', () => {
+
+    unreg()
 
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
-
+    
     cy.get('.banner')
     .within(()=> {
     cy.get('h1')
@@ -63,6 +95,8 @@ describe('Main page should display all elements', () => {
   })
 
   it('New release carousel should display proper elements.', () => {
+
+    unreg()
 
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
@@ -114,6 +148,8 @@ describe('Main page should display all elements', () => {
   })
 
   it('Party games carousel should display proper elements.', () => {
+    
+    unreg()
 
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
@@ -166,6 +202,8 @@ describe('Main page should display all elements', () => {
 
   it('Kid friendly carousel should display proper elements.', () => {
 
+    unreg()
+
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
 
@@ -217,9 +255,11 @@ describe('Main page should display all elements', () => {
 
   it('Other elements should be present in banner and menu bar.', () => {
 
+    unreg()
+
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
-    
+
     cy.get('.banner')
     .within(()=> {
       cy.get('.filter')

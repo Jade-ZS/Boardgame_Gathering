@@ -1,0 +1,1000 @@
+{
+  "games": [
+    {
+      "id": "J1vBFiqdHG",
+      "handle": "atlantis-rising-second-edition",
+      "url": "https://www.boardgameatlas.com/game/J1vBFiqdHG/atlantis-rising-second-edition",
+      "bga_edit_url": "https://www.boardgameatlas.com/game/J1vBFiqdHG/edit",
+      "template_url": "/products/listing?objectId=J1vBFiqdHG&product_line=Board Games&type=product",
+      "name": "Atlantis Rising (second edition)",
+      "price": "48.00",
+      "price_ca": "42.99",
+      "price_uk": "0.00",
+      "price_au": "88.95",
+      "msrp": 65,
+      "msrps": [
+        {
+          "country": "US",
+          "price": 65
+        }
+      ],
+      "discount": "0.26",
+      "year_published": 2022,
+      "min_players": 1,
+      "max_players": 4,
+      "player_counts": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "min_playtime": 45,
+      "max_playtime": 90,
+      "min_age": 10,
+      "description": "<p>Your home, the great city of Atlantis, is sinking. You must work together to construct a cosmic gate and save your people.</p>\r\n<p>Atlantis Rising is a cooperative worker placement game. Players will deploy citizens across the island of Atlantis and gather resources by rolling dice. Resources are easier to collect near the shore, but workers are more likely to be swallowed up by floodwaters. Work together and take strategic risks to save the people of Atlantis from destruction.</p>",
+      "commentary": "",
+      "faq": "",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324599426.jpg",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324599426.jpg",
+      "matches_specs": null,
+      "specs": [],
+      "mechanics": [
+        {
+          "id": "9mNukNBxfZ",
+          "url": "https://www.boardgameatlas.com/mechanic/9mNukNBxfZ/undefined"
+        },
+        {
+          "id": "R0bGq4cAl4",
+          "url": "https://www.boardgameatlas.com/mechanic/R0bGq4cAl4/undefined"
+        },
+        {
+          "id": "hmipYN1R1I",
+          "url": "https://www.boardgameatlas.com/mechanic/hmipYN1R1I/undefined"
+        },
+        {
+          "id": "uZR0NCIA6D",
+          "url": "https://www.boardgameatlas.com/mechanic/uZR0NCIA6D/undefined"
+        },
+        {
+          "id": "XM2FYZmBHH",
+          "url": "https://www.boardgameatlas.com/mechanic/XM2FYZmBHH/undefined"
+        },
+        {
+          "id": "fBOTEBUAmV",
+          "url": "https://www.boardgameatlas.com/mechanic/fBOTEBUAmV/undefined"
+        }
+      ],
+      "categories": [
+        {
+          "id": "a8NM5cugJX",
+          "url": "https://www.boardgameatlas.com/category/a8NM5cugJX/undefined"
+        },
+        {
+          "id": "329DxyFL9D",
+          "url": "https://www.boardgameatlas.com/category/329DxyFL9D/undefined"
+        },
+        {
+          "id": "mavSOM8vjH",
+          "url": "https://www.boardgameatlas.com/category/mavSOM8vjH/undefined"
+        },
+        {
+          "id": "ZTneo8TaIO",
+          "url": "https://www.boardgameatlas.com/category/ZTneo8TaIO/undefined"
+        },
+        {
+          "id": "MHkqIVxwtx",
+          "url": "https://www.boardgameatlas.com/category/MHkqIVxwtx/undefined"
+        },
+        {
+          "id": "YyszHun1HP",
+          "url": "https://www.boardgameatlas.com/category/YyszHun1HP/undefined"
+        },
+        {
+          "id": "3B3QpKvXD3",
+          "url": "https://www.boardgameatlas.com/category/3B3QpKvXD3/undefined"
+        }
+      ],
+      "publishers": [
+        {
+          "id": "IGIv2BGAoI",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/publisher/IGIv2BGAoI/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        },
+        {
+          "id": "mky4EQg5fZ",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/publisher/mky4EQg5fZ/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "designers": [
+        {
+          "id": "QZlBO641jY",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/designer/QZlBO641jY/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        },
+        {
+          "id": "wbVnFK8Hvs",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/designer/wbVnFK8Hvs/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "primary_publisher": {
+        "id": "IGIv2BGAoI",
+        "name": "Elf Creek Games",
+        "url": "https://www.boardgameatlas.com/publisher/IGIv2BGAoI/elf-creek-games"
+      },
+      "primary_designer": {
+        "id": "QZlBO641jY",
+        "name": "Galen Ciscell",
+        "url": "https://www.boardgameatlas.com/designer/QZlBO641jY/galen-ciscell"
+      },
+      "developers": [],
+      "related_to": [],
+      "related_as": [],
+      "artists": [
+        "Vincent Dutrait",
+        "Peter Gifford"
+      ],
+      "names": [],
+      "rules_url": null,
+      "official_url": "https://www.elfcreekgames.com/products/atlantis-rising#?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "sell_sheet_url": null,
+      "store_images_url": null,
+      "comment_count": 0,
+      "num_user_ratings": 36,
+      "average_user_rating": 3.9826388888888897,
+      "historical_low_prices": [
+        {
+          "country": "AU",
+          "date": "2021-10-05T14:52:28.468Z",
+          "price": 88.95,
+          "isLow": false
+        },
+        {
+          "country": "CA",
+          "date": "2021-11-26T06:11:50.582Z",
+          "price": 59.95,
+          "isLow": false
+        },
+        {
+          "country": "UK",
+          "date": "2021-12-15T04:42:14.384Z",
+          "price": 47.99,
+          "isLow": false
+        },
+        {
+          "country": "US",
+          "date": "2023-02-28T05:52:58.928Z",
+          "price": 48,
+          "isLow": false
+        }
+      ],
+      "active": true,
+      "num_user_complexity_votes": 0,
+      "average_learning_complexity": 0,
+      "average_strategy_complexity": 0,
+      "visits": 5797,
+      "lists": 698,
+      "mentions": 41,
+      "links": 5,
+      "plays": 249,
+      "rank": 532,
+      "type": "game",
+      "upc": "644216211999",
+      "num_distributors": 0,
+      "trending_rank": 0,
+      "listing_clicks": 0,
+      "is_historical_low": false,
+      "skus": [
+        "ECG010",
+        "ECG007",
+        "644216211999",
+        "97307",
+        "Ballarat|02dcd191-ae3f-11e9-ed44-39539d3c74b1",
+        "ELF007",
+        "48004 #0655",
+        "90212:179549",
+        "Add 2019 Promo + Extended Difficult",
+        "BG-001247-001",
+        "2149257389",
+        "2148950725",
+        "2149407877"
+      ],
+      "sku_objects": [
+        {
+          "name": "Game Nerdz",
+          "sku": "ECG010"
+        },
+        {
+          "name": "Card Haus",
+          "sku": "ECG007"
+        },
+        {
+          "name": "401 Games",
+          "sku": "644216211999"
+        },
+        {
+          "name": "Game Shack Inc.",
+          "sku": "97307"
+        },
+        {
+          "name": "Guf",
+          "sku": "Ballarat|02dcd191-ae3f-11e9-ed44-39539d3c74b1"
+        },
+        {
+          "name": "Gumnut",
+          "sku": "ELF007"
+        },
+        {
+          "name": "Funagain Games",
+          "sku": "48004 #0655"
+        },
+        {
+          "name": "BoardGameCo",
+          "sku": "90212:179549"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "Add 2019 Promo + Extended Difficult"
+        },
+        {
+          "name": "Meeples and Milkshakes",
+          "sku": "BG-001247-001"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149257389"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148950725"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149407877"
+        }
+      ],
+      "edit_url": "/products/listing-edit?objectId=J1vBFiqdHG&product_line=Board Games&type=product",
+      "players": "1-4",
+      "playtime": "45-90",
+      "msrp_text": "$65.00",
+      "price_text": "$48.00",
+      "tags": [
+        "Atlantis Rising edition",
+        "Atlantis Rising (second edition)",
+        "Atlantis Rising (Second Edition) [Pre-Order]",
+        "Atlantis Rising (Second Edition)",
+        "Atlantis Rising Edition",
+        "Elf Creek Games Atlantis Rising 2nd Edition Board Game",
+        "Atlantis Rising (Second Edition) (Includes 2019 Promo Tiles + Extended Difficulty Expansion) (Import)",
+        "Atlantis Rising second edition board game",
+        "ATLANTIS RISING 2ND EDITION",
+        "Atlantis Rising",
+        "Atlantis Rising Second Edition",
+        "Atlantis Rising 2nd Edition",
+        "Atlantis Rising second edition KickStarter",
+        "Atlantis Rising second edition",
+        "Atlantis Rising (2nd Edition)",
+        "Atlantis Rising (Kickstarter 2nd Edition)",
+        "Atlantis Rising - 2nd Edition - Dent and Ding",
+        "Atlantis Rising (Second Edition) (Minor Damge)"
+      ],
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1629324599426.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1629324599426.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1629324599426.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1629324599426.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324599426.jpg"
+      },
+      "description_preview": " Your home, the great city of Atlantis, is sinking. You must work together to construct a cosmic gate and save your people. \r\n Atlantis Rising is a cooperative worker placement game. Players will deploy citizens across the island of Atlantis and gather resources by rolling dice. Resources are easier to collect near the shore, but workers are more likely to be swallowed up by floodwaters. Work together and take strategic risks to save the people of Atlantis from destruction. "
+    },
+    {
+      "id": "YBJODy05aF",
+      "handle": "backgammon",
+      "url": "https://www.boardgameatlas.com/game/YBJODy05aF/backgammon",
+      "bga_edit_url": "https://www.boardgameatlas.com/game/YBJODy05aF/edit",
+      "template_url": "/products/listing?objectId=YBJODy05aF&product_line=Board Games&type=product",
+      "name": "Backgammon",
+      "price": "5.29",
+      "price_ca": "13.95",
+      "price_uk": "0.00",
+      "price_au": "8.00",
+      "msrp": 5.99,
+      "msrps": [
+        {
+          "country": "US",
+          "price": 5.99
+        }
+      ],
+      "discount": "0.12",
+      "year_published": 3000,
+      "min_players": 2,
+      "max_players": 2,
+      "player_counts": [
+        2
+      ],
+      "min_playtime": 30,
+      "max_playtime": 30,
+      "min_age": 8,
+      "description": "<p><strong>Backgammon</strong> is a classic abstract strategy game dating back thousands of years. Each player has a set of 15 checkers (or stones) that must be moved from their starting positions, around, and then off the board. Dice are thrown each turn, and each player must decide which of their checkers to move based on the outcome of the roll. Players can capture each other's checkers, forcing the captured checkers to restart their journey around the board. The winner is the first player to get all 15 checkers off the board. A more recent addition to the game is the &quot;doubling cube&quot;, which allows players to up the stakes of the game. Although the game relies on dice to determine movement, there is a large degree of strategy in deciding how to make the most effective moves given each dice roll and measuring the risk in terms of possible rolls the opponent may get.</p>\r\n<p><strong>Backgammon</strong> may be the first game to be mentioned in written history, going back 5,000 years to the Sumerians of ancient Mesopotamia. During the 1920s, archaeologists unearthed five boards from a cemetery in the ancient town of Ur. At another location, pieces and dice were also found along with the board. Boards from ancient Egypt have also been recovered from the tomb of Tutankhamun, including a mechanical dice box, no doubt intended to stop cheaters.</p>\r\n<p>The names of the game were many. In Persia, Takhteh Nard which means &quot;Battle on Wood&quot;. In Egypt, Tau, which may be the ancestor of Senat. In Rome, Ludus Duodecim Scriptorum (&quot;game of twelve marks&quot;), later, Tabula (&quot;table&quot;), and by the sixth century, Alea (&quot;dice&quot;). In ancient China, T-shu-p-u and later in Japan, Sugoroko. The English name may derive from &quot;Bac gamen&quot; meaning &quot;Back Game&quot;, referring to re-entry of taken stones back to the board.</p>\r\n<p>It was often enjoyed by the upper classes and is sometimes called &quot;The Aristocratic Game.&quot; The Roman Emperor Claudius was known to be such a fan that he had a set built into his coach so he could play as he traveled (the world's first travel edition?).</p>\r\n<p>The rules in English were standardized in 1743 by Edmond Hoyle. These remained popular until the American innovations of the 1930s.</p>",
+      "commentary": "",
+      "faq": "",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1626789069947",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1626789069947",
+      "matches_specs": null,
+      "specs": [],
+      "mechanics": [
+        {
+          "id": "3tuJiW3pps",
+          "url": "https://www.boardgameatlas.com/mechanic/3tuJiW3pps/undefined"
+        },
+        {
+          "id": "R0bGq4cAl4",
+          "url": "https://www.boardgameatlas.com/mechanic/R0bGq4cAl4/undefined"
+        },
+        {
+          "id": "mGBzR68m8Z",
+          "url": "https://www.boardgameatlas.com/mechanic/mGBzR68m8Z/undefined"
+        }
+      ],
+      "categories": [
+        {
+          "id": "mavSOM8vjH",
+          "url": "https://www.boardgameatlas.com/category/mavSOM8vjH/undefined"
+        }
+      ],
+      "publishers": [
+        {
+          "id": "f4mQL4Hahl",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/publisher/f4mQL4Hahl/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "designers": [],
+      "primary_publisher": {
+        "id": "f4mQL4Hahl",
+        "name": "Pressman Toy Corp.",
+        "url": "https://www.boardgameatlas.com/publisher/f4mQL4Hahl/pressman-toy-corp"
+      },
+      "primary_designer": {},
+      "developers": [],
+      "related_to": [],
+      "related_as": [],
+      "artists": [
+        "Willem Cornelisz Duyster"
+      ],
+      "names": [],
+      "rules_url": null,
+      "amazon_rank": 229196,
+      "official_url": null,
+      "sell_sheet_url": null,
+      "store_images_url": null,
+      "comment_count": 0,
+      "num_user_ratings": 125,
+      "average_user_rating": 3.0760511111111106,
+      "historical_low_prices": [
+        {
+          "country": "UK",
+          "date": "2021-11-05T20:17:11.418Z",
+          "price": 7.09,
+          "isLow": false
+        },
+        {
+          "country": "AU",
+          "date": "2021-12-28T21:20:03.341Z",
+          "price": 34.95,
+          "isLow": false
+        },
+        {
+          "country": "CA",
+          "date": "2022-01-08T17:14:02.899Z",
+          "price": 64.95,
+          "isLow": false
+        },
+        {
+          "country": "US",
+          "date": "2023-03-29T14:42:36.295Z",
+          "price": 5.29,
+          "isLow": false
+        }
+      ],
+      "active": true,
+      "num_user_complexity_votes": 3,
+      "average_learning_complexity": 2,
+      "average_strategy_complexity": 2.6666666666666665,
+      "visits": 274,
+      "lists": 278,
+      "mentions": 1,
+      "links": 0,
+      "plays": 2032,
+      "rank": 607,
+      "type": "game",
+      "sku": "",
+      "upc": "",
+      "isbn": "",
+      "video_links": [],
+      "availability_status": "Available",
+      "num_distributors": 1,
+      "trending_rank": 0,
+      "listing_clicks": 0,
+      "is_historical_low": false,
+      "skus": [
+        "2148237433",
+        "686141010131",
+        "2149240486",
+        "2149257955",
+        "025766380180",
+        "025766003157",
+        "025766009579",
+        "025766029829",
+        "2148411656",
+        "2148477814",
+        "2148725282",
+        "2148725283",
+        "2148759789",
+        "2148840157",
+        "2148845786",
+        "2148975745",
+        "2148977932",
+        "2148995187",
+        "2149037066",
+        "2149042438",
+        "2149059564",
+        "2149095529",
+        "2149119174",
+        "2149187244",
+        "2149210741",
+        "25766380159",
+        "25766380180",
+        "4014156017337",
+        "5060506531038",
+        "6940483909190",
+        "742033921937",
+        "820650120720",
+        "9331863000144",
+        "9331863001929",
+        "9331863003022",
+        "9331863009703",
+        "9331863009970",
+        "9355469000278",
+        "9414131512010",
+        "778988639580",
+        "BG-001083-001",
+        "BG-001559-BG",
+        "2148798076",
+        "INT2059",
+        "INTX1252",
+        "WE20-4415",
+        "69788069",
+        "778988271766",
+        "2148608745",
+        "2149415404"
+      ],
+      "sku_objects": [
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148237433"
+        },
+        {
+          "name": "401 Games",
+          "sku": "686141010131"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149240486"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149257955"
+        },
+        {
+          "name": "Good Games",
+          "sku": "025766380180"
+        },
+        {
+          "name": "Good Games",
+          "sku": "025766003157"
+        },
+        {
+          "name": "Good Games",
+          "sku": "025766009579"
+        },
+        {
+          "name": "Good Games",
+          "sku": "025766029829"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148411656"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148477814"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148725282"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148725283"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148759789"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148840157"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148845786"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148975745"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148977932"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148995187"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149037066"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149042438"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149059564"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149095529"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149119174"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149187244"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149210741"
+        },
+        {
+          "name": "Good Games",
+          "sku": "25766380159"
+        },
+        {
+          "name": "Good Games",
+          "sku": "25766380180"
+        },
+        {
+          "name": "Good Games",
+          "sku": "4014156017337"
+        },
+        {
+          "name": "Good Games",
+          "sku": "5060506531038"
+        },
+        {
+          "name": "Good Games",
+          "sku": "6940483909190"
+        },
+        {
+          "name": "Board Game Supply",
+          "sku": "742033921937"
+        },
+        {
+          "name": "Good Games",
+          "sku": "820650120720"
+        },
+        {
+          "name": "Good Games",
+          "sku": "9331863000144"
+        },
+        {
+          "name": "Good Games",
+          "sku": "9331863001929"
+        },
+        {
+          "name": "Good Games",
+          "sku": "9331863003022"
+        },
+        {
+          "name": "Good Games",
+          "sku": "9331863009703"
+        },
+        {
+          "name": "Good Games",
+          "sku": "9331863009970"
+        },
+        {
+          "name": "Good Games",
+          "sku": "9355469000278"
+        },
+        {
+          "name": "Good Games",
+          "sku": "9414131512010"
+        },
+        {
+          "name": "401 Games",
+          "sku": "778988639580"
+        },
+        {
+          "name": "Meeples and Milkshakes",
+          "sku": "BG-001083-001"
+        },
+        {
+          "name": "Meeples and Milkshakes",
+          "sku": "BG-001559-BG"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148798076"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "INT2059"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "INTX1252"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "WE20-4415"
+        },
+        {
+          "name": "Bed Bath and Beyond Inc.",
+          "sku": "69788069"
+        },
+        {
+          "name": "Good Games",
+          "sku": "778988271766"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2148608745"
+        },
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149415404"
+        }
+      ],
+      "edit_url": "/products/listing-edit?objectId=YBJODy05aF&product_line=Board Games&type=product",
+      "players": "2",
+      "playtime": "30",
+      "msrp_text": "$5.99",
+      "price_text": "$5.29",
+      "tags": [
+        "Back-Gammon",
+        "Backgammon B.C.",
+        "Backgammon for Juniors",
+        "Backgammoneasy",
+        "Bräde Backgammon",
+        "Brädspel",
+        "Gamão",
+        "Juego de Backgammon",
+        "Kotra",
+        "Magnetic Backgammon",
+        "Nardshir",
+        "Novelty Corp",
+        "Ostábla",
+        "Pack-gammon",
+        "Pocket Backgammon",
+        "Puff",
+        "Puzzle Backgammon",
+        "Revertier",
+        "Sheshbesh",
+        "Table",
+        "Taplas",
+        "Tavla",
+        "Tavli",
+        "Tavola Reale",
+        "Toc",
+        "Toccategli",
+        "Tockadill",
+        "Tric Trac",
+        "Tric Trac Backgammon",
+        "Tryktrak",
+        "De Winnende Combinatie",
+        "Wurfzabel",
+        "Τάβλι",
+        "Нарды",
+        "Трик-трак",
+        "Шеш-беш",
+        "שש-בש",
+        "バックギャモン",
+        "双陆棋",
+        "雙陸棋",
+        "Backgammon 18\" Vinyl Stitched",
+        "Backgammon Classic Games",
+        "Backgammon - Basic Board",
+        "Backgammon"
+      ],
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1626789069947",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1626789069947",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1626789069947",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1626789069947",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1626789069947"
+      },
+      "description_preview": "  Backgammon  is a classic abstract strategy game dating back thousands of years. Each player has a set of 15 checkers (or stones) that must be moved from their starting positions, around, and then off the board. Dice are thrown each turn, and each player must decide which of their checkers to move based on the outcome of the roll. Players can capture each other's checkers, forcing the captured checkers to restart their journey around the board. The winner is the first player to get all 15 checkers off the board. A more recent addition to the game is the \"doubling cube\", which allows players to up the stakes of the game. Although the game relies on dice to determine movement, there is a large degree of strategy in deciding how to make the most effective moves given each dice roll and measuring the risk in terms of possible rolls the opponent may get. \r\n  Backgammon  may be the first game to be mentioned in written history, going back 5,000 years to the Sumerians of ancient Mesopotamia. During the 1920s, archaeologists unearthed five boards from a cemetery in the ancient town of Ur. At another location, pieces and dice were also found along with the board. Boards from ancient Egypt have also been recovered from the tomb of Tutankhamun, including a mechanical dice box, no doubt intended to stop cheaters. \r\n The names of the game were many. In Persia, Takhteh Nard which means \"Battle on Wood\". In Egypt, Tau, which may be the ancestor of Senat. In Rome, Ludus Duodecim Scriptorum (\"game of twelve marks\"), later, Tabula (\"table\"), and by the sixth century, Alea (\"dice\"). In ancient China, T-shu-p-u and later in Japan, Sugoroko. The English name may derive from \"Bac gamen\" meaning \"Back Game\", referring to re-entry of taken stones back to the board. \r\n It was often enjoyed by the upper classes and is sometimes called \"The Aristocratic Game.\" The Roman Emperor Claudius was known to be such a fan that he had a set built into his coach so he could play as he traveled (the world's first travel edition?). \r\n The rules in English were standardized in 1743 by Edmond Hoyle. These remained popular until the American innovations of the 1930s. "
+    },
+    {
+      "id": "OO9EJFWOcI",
+      "handle": "first-rat",
+      "url": "https://www.boardgameatlas.com/game/OO9EJFWOcI/first-rat",
+      "bga_edit_url": "https://www.boardgameatlas.com/game/OO9EJFWOcI/edit",
+      "template_url": "/products/listing?objectId=OO9EJFWOcI&product_line=Board Games&type=product",
+      "name": "First Rat",
+      "price": "29.99",
+      "price_ca": "0.00",
+      "price_uk": "0.00",
+      "price_au": "0.00",
+      "msrp": 39.99,
+      "msrps": [
+        {
+          "country": "US",
+          "price": 39.99
+        }
+      ],
+      "discount": "0.25",
+      "year_published": 2022,
+      "min_players": 1,
+      "max_players": 5,
+      "player_counts": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "min_playtime": 30,
+      "max_playtime": 75,
+      "min_age": 10,
+      "description": "<p>For generations, the rats in the old junkyard have been telling each other the great legend about a moon made of cheese. And now they have made up their mind: they will build a rocket and take over the Cheese Moon! Of course, all the rats work together to achieve this magnificent goal. However, each rat family is also competing to build the most rocket parts and to train the most Rattronauts so they can feast on as much of the lunar cheese as possible.<br /><br /><strong>First Rat</strong> is a Core Game for up to five players, which can also be played solo. Numerous strategies, special skills, and a variable setup create new excitement for every game. On every turn, players have to decide whether they want to move one of their rats up to five spaces or if they want to move multiple rats up to three spaces instead – which is only possible if the rats end their movement on spaces of the same color. And if there are already rats in that space, it also costs one cheese per rat! Moving across the junkyard, players collect resources, buy (or steal) useful items, build parts of the rocket or train their Rattronauts, in order to collect as many Victory Points as possible. Who will be the <strong>First Rat</strong>?</p>\r\n<p><em>- From Publisher</em></p>",
+      "commentary": "",
+      "faq": "",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1633738017899",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1633738017899",
+      "matches_specs": null,
+      "specs": [],
+      "mechanics": [
+        {
+          "id": "MEAoOygZsA",
+          "url": "https://www.boardgameatlas.com/mechanic/MEAoOygZsA/undefined"
+        },
+        {
+          "id": "qZx4PEzKKz",
+          "url": "https://www.boardgameatlas.com/mechanic/qZx4PEzKKz/undefined"
+        },
+        {
+          "id": "lA3KUtVFCy",
+          "url": "https://www.boardgameatlas.com/mechanic/lA3KUtVFCy/undefined"
+        },
+        {
+          "id": "uZR0NCIA6D",
+          "url": "https://www.boardgameatlas.com/mechanic/uZR0NCIA6D/undefined"
+        }
+      ],
+      "categories": [
+        {
+          "id": "KUBCKBkGxV",
+          "url": "https://www.boardgameatlas.com/category/KUBCKBkGxV/undefined"
+        },
+        {
+          "id": "MWoxgHrOJD",
+          "url": "https://www.boardgameatlas.com/category/MWoxgHrOJD/undefined"
+        },
+        {
+          "id": "TYnxiuiI3X",
+          "url": "https://www.boardgameatlas.com/category/TYnxiuiI3X/undefined"
+        }
+      ],
+      "publishers": [
+        {
+          "id": "134bN9cRFH",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/publisher/134bN9cRFH/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "designers": [
+        {
+          "id": "IEhXPJdqP1",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/designer/IEhXPJdqP1/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        },
+        {
+          "id": "2IDjHm8VJq",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/designer/2IDjHm8VJq/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "primary_publisher": {
+        "id": "134bN9cRFH",
+        "name": "Pegasus Spiele",
+        "url": "https://www.boardgameatlas.com/publisher/134bN9cRFH/pegasus-spiele"
+      },
+      "primary_designer": {
+        "id": "IEhXPJdqP1",
+        "name": "Gabriele Ausiello",
+        "url": "https://www.boardgameatlas.com/designer/IEhXPJdqP1/gabriele-ausiello"
+      },
+      "developers": [],
+      "related_to": [],
+      "related_as": [],
+      "artists": [
+        "Dennis Lohausen"
+      ],
+      "names": [],
+      "rules_url": null,
+      "official_url": "https://pegasusshop.de/sortiment/spiele/kennerspiele/12933/first-rat?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "sell_sheet_url": null,
+      "store_images_url": null,
+      "comment_count": 0,
+      "num_user_ratings": 1,
+      "average_user_rating": 3.39,
+      "historical_low_prices": [
+        {
+          "country": "CA",
+          "date": "2022-01-12T13:36:05.394Z",
+          "price": 42.95,
+          "isLow": false
+        },
+        {
+          "country": "US",
+          "date": "2023-03-30T03:49:30.804Z",
+          "price": 29.99,
+          "isLow": false
+        }
+      ],
+      "active": true,
+      "num_user_complexity_votes": 0,
+      "average_learning_complexity": 0,
+      "average_strategy_complexity": 0,
+      "visits": 2335,
+      "lists": 168,
+      "mentions": 7,
+      "links": 0,
+      "plays": 151,
+      "rank": 9999999,
+      "type": "game",
+      "sku": "",
+      "upc": "4250231729942",
+      "isbn": "",
+      "video_links": [],
+      "availability_status": "Available",
+      "num_distributors": 0,
+      "trending_rank": 0,
+      "listing_clicks": 0,
+      "is_historical_low": false,
+      "skus": [
+        "4.25E+12",
+        "PEG51232G",
+        "PES5123G",
+        "PGU51232G"
+      ],
+      "sku_objects": [
+        {
+          "name": "Advent Games",
+          "sku": "4.25E+12"
+        },
+        {
+          "name": "Miniature Market",
+          "sku": "PEG51232G"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "PES5123G"
+        },
+        {
+          "name": "Game Nerdz",
+          "sku": "PGU51232G"
+        }
+      ],
+      "edit_url": "/products/listing-edit?objectId=OO9EJFWOcI&product_line=Board Games&type=product",
+      "players": "1-5",
+      "playtime": "30-75",
+      "msrp_text": "$39.99",
+      "price_text": "$29.99",
+      "tags": [
+        "First Rat *PRE-ORDER*",
+        "First Rat",
+        "First Rat [Pre-Order]"
+      ],
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1633738017899",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1633738017899",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1633738017899",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1633738017899",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1633738017899"
+      },
+      "description_preview": " For generations, the rats in the old junkyard have been telling each other the great legend about a moon made of cheese. And now they have made up their mind: they will build a rocket and take over the Cheese Moon! Of course, all the rats work together to achieve this magnificent goal. However, each rat family is also competing to build the most rocket parts and to train the most Rattronauts so they can feast on as much of the lunar cheese as possible.   First Rat  is a Core Game for up to five players, which can also be played solo. Numerous strategies, special skills, and a variable setup create new excitement for every game. On every turn, players have to decide whether they want to move one of their rats up to five spaces or if they want to move multiple rats up to three spaces instead – which is only possible if the rats end their movement on spaces of the same color. And if there are already rats in that space, it also costs one cheese per rat! Moving across the junkyard, players collect resources, buy (or steal) useful items, build parts of the rocket or train their Rattronauts, in order to collect as many Victory Points as possible. Who will be the  First Rat ? \r\n  - From Publisher  "
+    }
+  ],
+  "count": 6661
+}

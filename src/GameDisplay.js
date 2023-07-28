@@ -40,9 +40,9 @@ const {id} = useParams()
       </div>
       <div className="links">
         <nav className='game-nav'>
-          {game.description_preview ? <NavLink to="." end className={({isActive}) => isActive ? 'active' : 'game-nav a'}>About</NavLink> : 'Coming Soon' }
-          {game.sku_objects ? <NavLink to="locations">Locations</NavLink> : null}
-          {game.artists.length ? <NavLink to="artists">Artists</NavLink> : null }
+          {(game.description_preview.length > 0) && <NavLink to="." end className={({isActive}) => isActive ? 'active' : 'game-nav a'}>About</NavLink>}
+          {game.sku_objects && <NavLink to="locations">Locations</NavLink>}
+          {(game.artists.length > 0) && <NavLink to="artists">Artists</NavLink>}
         </nav>
       </div>
       <Outlet context={{game}}/>

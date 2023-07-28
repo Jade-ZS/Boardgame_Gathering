@@ -1,0 +1,472 @@
+{
+  "games": [
+    {
+      "id": "OTIkviy9XZ",
+      "handle": "mafia-vendetta",
+      "url": "https://www.boardgameatlas.com/game/OTIkviy9XZ/mafia-vendetta",
+      "bga_edit_url": "https://www.boardgameatlas.com/game/OTIkviy9XZ/edit",
+      "template_url": "/products/listing?objectId=OTIkviy9XZ&product_line=Board Games&type=product",
+      "name": "Mafia: Vendetta",
+      "price": "0.00",
+      "price_ca": "14.99",
+      "price_uk": "0.00",
+      "price_au": "0.00",
+      "msrp": 12.95,
+      "msrps": [
+        {
+          "country": "US",
+          "price": 12.95
+        }
+      ],
+      "discount": "0.00",
+      "year_published": 2012,
+      "min_players": 7,
+      "max_players": 17,
+      "player_counts": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "min_playtime": 30,
+      "max_playtime": 45,
+      "min_age": 14,
+      "description": "Everyone is suspect in Mafia: Vendetta, a party game of bluffing and suspicion. Designed for seven to seventeen players, in Mafia: Vendetta some players take on the roles of Mafia members, others become the civilians of a crime-filled community. Every night the Mafia kills another person, every day the civilians have a chance to discuss the murder, choose suspects, and condemn one of them to death. Since every role is secret, you never know who is an innocent bystander, and who is part of the Mafia. If the Mafia kill off enough civilians, the community becomes a permanent haven for crime, but if the civilians rid their community of the Mafia, they win. <br />\r\n<br />\r\nMafia: Vendetta offers eleven different civilian roles and five different Mafia roles. It also features two different alternative modes, the Loner mode and Yakuza mode, that each introduce a third faction to the game. You might play a Mafia Thug, a protective Nurse, an innocent Bystander, or a cunning Imposter. No matter what your role, play it convincingly, make your choices carefully, and trust no one.",
+      "commentary": "",
+      "faq": "",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1634312724849",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1634312724849",
+      "matches_specs": null,
+      "specs": [],
+      "mechanics": [
+        {
+          "id": "GNtouC8NLm",
+          "url": "https://www.boardgameatlas.com/mechanic/GNtouC8NLm/undefined"
+        },
+        {
+          "id": "BGrhzIN69D",
+          "url": "https://www.boardgameatlas.com/mechanic/BGrhzIN69D/undefined"
+        },
+        {
+          "id": "XM2FYZmBHH",
+          "url": "https://www.boardgameatlas.com/mechanic/XM2FYZmBHH/undefined"
+        },
+        {
+          "id": "JYYdBW6UCE",
+          "url": "https://www.boardgameatlas.com/mechanic/JYYdBW6UCE/undefined"
+        }
+      ],
+      "categories": [],
+      "publishers": [
+        {
+          "id": "fLH8tXTBBp",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/publisher/fLH8tXTBBp/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "designers": [],
+      "primary_publisher": {
+        "name": "Fantasy Flight Games",
+        "id": "fLH8tXTBBp",
+        "url": "https://www.boardgameatlas.com/publisher/fLH8tXTBBp/fantasy-flight-games"
+      },
+      "developers": [],
+      "related_to": [],
+      "related_as": [],
+      "artists": [
+        "Ilya Komarov"
+      ],
+      "names": [
+        "Mafia: Family business",
+        "Мафия: Вся семья в сборе"
+      ],
+      "rules_url": null,
+      "official_url": "https://www.fantasyflightgames.com/en/products/mafia-vendetta/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "comment_count": 0,
+      "num_user_ratings": 3,
+      "average_user_rating": 3,
+      "historical_low_prices": [
+        {
+          "country": "US",
+          "date": "2021-03-31T07:14:20.551Z",
+          "price": 12.95,
+          "isLow": false
+        },
+        {
+          "country": "UK",
+          "date": "2021-06-12T09:41:58.180Z",
+          "price": 9.34,
+          "isLow": false
+        },
+        {
+          "country": "CA",
+          "date": "2021-11-23T22:50:33.415Z",
+          "price": 14.99,
+          "isLow": false
+        }
+      ],
+      "active": true,
+      "num_user_complexity_votes": 0,
+      "average_learning_complexity": 0,
+      "average_strategy_complexity": 0,
+      "visits": 209,
+      "lists": 15,
+      "mentions": 0,
+      "links": 0,
+      "plays": 14,
+      "rank": 9999999,
+      "type": "game",
+      "num_distributors": 0,
+      "trending_rank": 0,
+      "listing_clicks": 0,
+      "is_historical_low": false,
+      "skus": [
+        "2149149178",
+        "841333100520",
+        "FFGVA95",
+        "VA95",
+        "CRDHS-2668BE47"
+      ],
+      "sku_objects": [
+        {
+          "name": "Noble Knight Games",
+          "sku": "2149149178"
+        },
+        {
+          "name": "Game Kastle",
+          "sku": "841333100520"
+        },
+        {
+          "name": "BoardGameBliss Inc",
+          "sku": "FFGVA95"
+        },
+        {
+          "name": "Boardlandia",
+          "sku": "VA95"
+        },
+        {
+          "name": "Card Haus",
+          "sku": "CRDHS-2668BE47"
+        }
+      ],
+      "edit_url": "/products/listing-edit?objectId=OTIkviy9XZ&product_line=Board Games&type=product",
+      "players": "7-17",
+      "playtime": "30-45",
+      "msrp_text": "$12.95",
+      "price_text": "Price: N/A",
+      "tags": [
+        "Mafia Vendetta Last Chance",
+        "Mafia Vendetta",
+        "Mafia: Family business",
+        "Мафия: Вся семья в сборе"
+      ],
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1634312724849",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1634312724849",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1634312724849",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1634312724849",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1634312724849"
+      },
+      "description_preview": "Everyone is suspect in Mafia: Vendetta, a party game of bluffing and suspicion. Designed for seven to seventeen players, in Mafia: Vendetta some players take on the roles of Mafia members, others become the civilians of a crime-filled community. Every night the Mafia kills another person, every day the civilians have a chance to discuss the murder, choose suspects, and condemn one of them to death. Since every role is secret, you never know who is an innocent bystander, and who is part of the Mafia. If the Mafia kill off enough civilians, the community becomes a permanent haven for crime, but if the civilians rid their community of the Mafia, they win.  \r\n \r\nMafia: Vendetta offers eleven different civilian roles and five different Mafia roles. It also features two different alternative modes, the Loner mode and Yakuza mode, that each introduce a third faction to the game. You might play a Mafia Thug, a protective Nurse, an innocent Bystander, or a cunning Imposter. No matter what your role, play it convincingly, make your choices carefully, and trust no one."
+    },
+    {
+      "id": "cED5XC5Poh",
+      "handle": "ultimate-werewolf-whitebox-edition",
+      "url": "https://www.boardgameatlas.com/game/cED5XC5Poh/ultimate-werewolf-whitebox-edition",
+      "bga_edit_url": "https://www.boardgameatlas.com/game/cED5XC5Poh/edit",
+      "template_url": "/products/listing?objectId=cED5XC5Poh&product_line=Board Games&type=product",
+      "name": "Ultimate Werewolf: Whitebox Edition",
+      "price": "0.00",
+      "price_ca": "0.00",
+      "price_uk": "0.00",
+      "price_au": "0.00",
+      "msrp": "0.00",
+      "discount": "0.00",
+      "year_published": 2007,
+      "min_players": 7,
+      "max_players": 31,
+      "player_counts": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "min_playtime": 60,
+      "max_playtime": 60,
+      "min_age": 14,
+      "description": "",
+      "commentary": "",
+      "faq": "",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/empty+box+thumb.jpg",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/empty+box.jpg",
+      "matches_specs": null,
+      "specs": [],
+      "mechanics": [
+        {
+          "id": "GNtouC8NLm",
+          "url": "https://www.boardgameatlas.com/mechanic/GNtouC8NLm/undefined"
+        },
+        {
+          "id": "EVeAdboGUA",
+          "url": "https://www.boardgameatlas.com/mechanic/EVeAdboGUA/undefined"
+        },
+        {
+          "id": "XM2FYZmBHH",
+          "url": "https://www.boardgameatlas.com/mechanic/XM2FYZmBHH/undefined"
+        },
+        {
+          "id": "JYYdBW6UCE",
+          "url": "https://www.boardgameatlas.com/mechanic/JYYdBW6UCE/undefined"
+        }
+      ],
+      "categories": [],
+      "publishers": [
+        {
+          "id": "DILYwqowKI",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/publisher/DILYwqowKI/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "designers": [
+        {
+          "id": "FEbftHZJ2Z",
+          "num_games": null,
+          "score": 9999999,
+          "game": {},
+          "url": "https://www.boardgameatlas.com/designer/FEbftHZJ2Z/undefined",
+          "images": {
+            "thumb": null,
+            "small": null,
+            "medium": null,
+            "large": null,
+            "original": null
+          }
+        }
+      ],
+      "primary_publisher": {
+        "id": "DILYwqowKI",
+        "name": "Bézier Games",
+        "url": "http://localhost:3000/publisher/DILYwqowKI/bzier-games"
+      },
+      "primary_designer": {
+        "name": "Ted Alspach",
+        "id": "FEbftHZJ2Z",
+        "url": "https://www.boardgameatlas.com/designer/FEbftHZJ2Z/ted-alspach"
+      },
+      "developers": [],
+      "related_to": [],
+      "related_as": [],
+      "artists": [],
+      "names": [],
+      "comment_count": 0,
+      "num_user_ratings": 1,
+      "average_user_rating": 3,
+      "active": true,
+      "num_user_complexity_votes": 0,
+      "average_learning_complexity": 0,
+      "average_strategy_complexity": 0,
+      "visits": 33,
+      "lists": 2,
+      "mentions": 0,
+      "links": 0,
+      "plays": 0,
+      "rank": 9999999,
+      "type": "game",
+      "num_distributors": 0,
+      "trending_rank": 0,
+      "listing_clicks": 0,
+      "is_historical_low": false,
+      "edit_url": "/products/listing-edit?objectId=cED5XC5Poh&product_line=Board Games&type=product",
+      "players": "7-31",
+      "playtime": "60",
+      "price_text": "Price: N/A",
+      "tags": [],
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/empty+box.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/empty+box.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/empty+box.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/empty+box.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/empty+box.jpg"
+      },
+      "description_preview": ""
+    },
+    {
+      "id": "XuFYZKopUR",
+      "handle": "zombicide-2nd-edition-extra-players-upgrade-pack",
+      "url": "https://www.boardgameatlas.com/game/XuFYZKopUR/zombicide-2nd-edition-extra-players-upgrade-pack",
+      "bga_edit_url": "https://www.boardgameatlas.com/game/XuFYZKopUR/edit",
+      "template_url": "/products/listing?objectId=XuFYZKopUR&product_line=Board Games&type=product",
+      "name": "Zombicide (2nd Edition): Extra Players Upgrade Pack",
+      "price": "0.00",
+      "price_ca": "0.00",
+      "price_uk": "0.00",
+      "price_au": "0.00",
+      "msrp": "0.00",
+      "discount": "0.00",
+      "year_published": 2021,
+      "min_players": 7,
+      "max_players": 12,
+      "player_counts": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "min_playtime": 60,
+      "max_playtime": 120,
+      "min_age": 14,
+      "description": "",
+      "commentary": "",
+      "faq": "",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/empty+box+thumb.jpg",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/empty+box.jpg",
+      "matches_specs": null,
+      "specs": [],
+      "mechanics": [],
+      "categories": [],
+      "publishers": [],
+      "designers": [],
+      "primary_publisher": {},
+      "primary_designer": {},
+      "developers": [],
+      "related_to": [],
+      "related_as": [],
+      "artists": [
+        "Édouard Guiton"
+      ],
+      "names": [],
+      "rules_url": null,
+      "official_url": null,
+      "sell_sheet_url": null,
+      "store_images_url": null,
+      "comment_count": 0,
+      "num_user_ratings": 0,
+      "average_user_rating": 0,
+      "active": true,
+      "num_user_complexity_votes": 0,
+      "average_learning_complexity": 0,
+      "average_strategy_complexity": 0,
+      "visits": 2,
+      "lists": 6,
+      "mentions": 0,
+      "links": 0,
+      "plays": 0,
+      "rank": 9999999,
+      "type": "game",
+      "num_distributors": 0,
+      "trending_rank": 0,
+      "listing_clicks": 0,
+      "is_historical_low": false,
+      "edit_url": "/products/listing-edit?objectId=XuFYZKopUR&product_line=Board Games&type=product",
+      "players": "7-12",
+      "playtime": "60-120",
+      "price_text": "Price: N/A",
+      "tags": [],
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/empty+box.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/empty+box.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/empty+box.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/empty+box.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/empty+box.jpg"
+      },
+      "description_preview": ""
+    },
+    {
+      "id": "ODojES1ouJ",
+      "handle": "complete-murder-mystery-night",
+      "url": "https://www.boardgameatlas.com/game/ODojES1ouJ/complete-murder-mystery-night",
+      "bga_edit_url": "https://www.boardgameatlas.com/game/ODojES1ouJ/edit",
+      "template_url": "/products/listing?objectId=ODojES1ouJ&product_line=Board Games&type=product",
+      "name": "Complete Murder Mystery Night",
+      "price": "0.00",
+      "price_ca": "0.00",
+      "price_uk": "0.00",
+      "price_au": "0.00",
+      "msrp": "0.00",
+      "discount": "0.00",
+      "year_published": null,
+      "min_players": 7,
+      "max_players": 10,
+      "player_counts": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "min_playtime": null,
+      "max_playtime": null,
+      "min_age": 14,
+      "description": "",
+      "commentary": "",
+      "faq": "",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1671926936810",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1671926936810",
+      "matches_specs": null,
+      "specs": [],
+      "mechanics": [],
+      "categories": [],
+      "publishers": [],
+      "designers": [],
+      "primary_publisher": {},
+      "primary_designer": {},
+      "developers": [],
+      "related_to": [],
+      "related_as": [],
+      "artists": [],
+      "names": [],
+      "rules_url": null,
+      "official_url": null,
+      "sell_sheet_url": null,
+      "store_images_url": null,
+      "comment_count": 0,
+      "num_user_ratings": 0,
+      "average_user_rating": 0,
+      "active": true,
+      "num_user_complexity_votes": 0,
+      "average_learning_complexity": 0,
+      "average_strategy_complexity": 0,
+      "visits": 1,
+      "lists": 0,
+      "mentions": 0,
+      "links": 0,
+      "plays": 0,
+      "rank": 9999999,
+      "type": "game",
+      "num_distributors": 0,
+      "trending_rank": 0,
+      "listing_clicks": 0,
+      "is_historical_low": false,
+      "edit_url": "/products/listing-edit?objectId=ODojES1ouJ&product_line=Board Games&type=product",
+      "players": "7-10",
+      "price_text": "Price: N/A",
+      "tags": [],
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1671926936810",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1671926936810",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1671926936810",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1671926936810",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1671926936810"
+      },
+      "description_preview": ""
+    }
+  ],
+  "count": 4
+}

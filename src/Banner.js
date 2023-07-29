@@ -1,6 +1,7 @@
 import './Banner.css';
 import PopOutMenu from './PopOutMenu';
 import { useState } from'react';
+import PropTypes from 'prop-types';
 
 export default function Banner({ games, newRelease, kidFriendly, partyGames }) {
 
@@ -17,4 +18,11 @@ export default function Banner({ games, newRelease, kidFriendly, partyGames }) {
       </div>
     </div>
   )
+}
+
+Banner.propTypes = {
+  games: PropTypes.array.isRequired,
+  newRelease: PropTypes.array.isRequired,
+  kidFriendly: PropTypes.array.isRequired,
+  partyGames: PropTypes.array.isRequired
 }

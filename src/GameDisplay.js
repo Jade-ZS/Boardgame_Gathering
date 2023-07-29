@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { NavLink, Outlet, Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 //need to import useParams
-function GameDisplay({games, kidFriendly, partyGames, newRelease}) {
+function GameDisplay({addErr, games, kidFriendly, partyGames, newRelease}) {
 games = [...games, ...kidFriendly, ...partyGames, ...newRelease];
 const {id} = useParams()
 
@@ -19,6 +19,9 @@ const {id} = useParams()
   // }, [])
   
   const game = games.filter(game => game.id === id)
+  if (Array.isArray(game) && !game.length) {
+    addErr('Page not found!');
+  }
   // console.log(game)
   return (
     game.map(game => (

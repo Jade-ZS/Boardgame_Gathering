@@ -11,6 +11,8 @@ import {Routes, Route, NavLink } from 'react-router-dom'
 import GameAbout from './GameAbout';
 import Locations from './Locations';
 import Artists from './Artists';
+import ErrorDisplay from './ErrorDisplay';
+
 
 
 function App() {
@@ -36,16 +38,19 @@ function App() {
       .catch(error => setError(error))
   }, [])
 
+  const addErr = err => setError(err);
+
   return (
     <div>
     <Routes>
       <Route path="/" element={<><Banner  games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/> <MenuBar /><GameCards games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
       {/* change path to ":id" */}
-      <Route path="/:id" element={<GameDisplay games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/>}>
+      <Route path="/:id" element={ error ? <ErrorDisplay fetchError={error}/> : <GameDisplay addErr={addErr} games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/>}>
         <Route index element={<GameAbout />} />
         <Route path="locations" element={<Locations />} />
         <Route path="artists" element={<Artists />} />
       </Route>
+      <Route path='*' element={<ErrorDisplay fetchError={error}/>} />
     </Routes>
   </div>
   );

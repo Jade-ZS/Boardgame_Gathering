@@ -12,8 +12,7 @@ import GameAbout from './GameAbout';
 import Locations from './Locations';
 import Artists from './Artists';
 import ErrorDisplay from './ErrorDisplay';
-
-
+import Offline from './Offline.js'
 
 function App() {
 
@@ -24,8 +23,13 @@ function App() {
   const [kidFriendly, setKidFriendly] = useState([]);
   const addErr = err => setError(err);
   const allGames = [...games, ...newRelease, ...kidFriendly, ...partyGames];
+  const [offline, setOffline] = useState(false);
 
   useEffect(() => {
+    if(!navigator.onLine) {
+      setOffline(true);
+    }
+
     getData('&order_by=rank&ascending=false&pretty=true')
       .then(data => setGames(data.games)) 
       .catch(error => setError(error))
@@ -42,6 +46,7 @@ function App() {
 
   return (
   <div>
+     <Offline offline={offline}/>
     <Routes>
       <Route path="/" element={<><Banner  games={allGames} /> <MenuBar /><GameCards games={allGames} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
       <Route path="/:id" element={ error ? <ErrorDisplay fetchError={error}/> : <GameDisplay addErr={addErr} games={allGames} />}>

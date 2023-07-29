@@ -24,7 +24,8 @@
 }
 
 @media screen and (max-width: 550px) {
-  .artists-container {
+  .artist-container {
     max-width: 80vw;
+    flex-direction: column;
   }
 } 

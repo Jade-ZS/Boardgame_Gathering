@@ -10,6 +10,7 @@ function GameDisplay({addErr, games}) {
 const {id} = useParams()
   
   const game = games.filter(game => game.id === id)
+
   if (Array.isArray(game) && !game.length) {
     addErr('Page not found!');
   }

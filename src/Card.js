@@ -6,6 +6,7 @@ export default function Card({name ,imgSrc, id}) {
 
   return (
     <Link to={`/${id}`}>
+      
     <div className='card'>
       <img src={imgSrc}/>
       <p>{name}</p>

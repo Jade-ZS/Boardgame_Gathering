@@ -7,6 +7,7 @@ import { useSearchParams } from 'react-router-dom';
 export default function GameCards({games, kidFriendly, partyGames, newRelease}) {
   const [ searchParam ] = useSearchParams();
   const nameParam = searchParam.get('name');
+  games = [...games, ...kidFriendly, ...partyGames, ...newRelease];
   
   const gameRows = (
     <div>

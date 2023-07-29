@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 export default function Card({name ,imgSrc, id}) {
 
   return (
-    // To Do: add link path
     <Link to={`/${id}`}>
       
     <div className='card'>

@@ -1,5 +1,4 @@
 .game-row {
-  /* border: solid 2px pink; */
   margin: 0 5vw;
 }
 
@@ -10,8 +9,8 @@
 
 .row-card-container {
   display: flex;
-  /* justify-content: space-around; */
   overflow-x: auto;
-  gap: 10px;
+  gap: 3%;
+  padding: 3% 3%;
 }
 

@@ -4,21 +4,16 @@ import './GameDisplay.css'
 import { useEffect, useState } from 'react'
 import { NavLink, Outlet, Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
-//need to import useParams
-function GameDisplay({games, kidFriendly, partyGames, newRelease}) {
-games = [...games, ...kidFriendly, ...partyGames, ...newRelease];
+
+function GameDisplay({addErr, games}) {
+
 const {id} = useParams()
-
-//const { id } = useParams()
-
-  // useEffect(() => {
-  //   //interpelate the id from the url into the fetch call
-  //   fetch('https://api.boardgameatlas.com/api/search?order_by=rank&ascending=false&client_id=JLBr5npPhV')
-  //   .then(response => response.json())
-  //   .then(data => setGame([data.games[0]]))
-  // }, [])
   
   const game = games.filter(game => game.id === id)
+
+  if (Array.isArray(game) && !game.length) {
+    addErr('Page not found!');
+  }
 
   return (
     game.map(game => (

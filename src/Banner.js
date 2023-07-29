@@ -2,12 +2,12 @@ import './Banner.css';
 import PopOutMenu from './PopOutMenu';
 import { useState } from'react';
 
-export default function Banner({ games, newRelease, kidFriendly, partyGames }) {
+export default function Banner({ games }) {
 
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  games = [...games,...newRelease,...kidFriendly,...partyGames]
+
   return (
     <div className='banner'>
       <h1>Boardgame Gathering</h1>

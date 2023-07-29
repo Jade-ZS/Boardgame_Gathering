@@ -22,6 +22,8 @@ function App() {
   const [newRelease, setNewRelease] = useState([]);
   const [partyGames, setPartyGames] = useState([]);
   const [kidFriendly, setKidFriendly] = useState([]);
+  const addErr = err => setError(err);
+  const allGames = [...games, ...newRelease, ...kidFriendly, ...partyGames];
 
   useEffect(() => {
     getData('&order_by=rank&ascending=false&pretty=true')
@@ -38,14 +40,11 @@ function App() {
       .catch(error => setError(error))
   }, [])
 
-  const addErr = err => setError(err);
-
   return (
-    <div>
+  <div>
     <Routes>
-      <Route path="/" element={<><Banner  games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/> <MenuBar /><GameCards games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
-      {/* change path to ":id" */}
-      <Route path="/:id" element={ error ? <ErrorDisplay fetchError={error}/> : <GameDisplay addErr={addErr} games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/>}>
+      <Route path="/" element={<><Banner  games={allGames} /> <MenuBar /><GameCards games={allGames} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
+      <Route path="/:id" element={ error ? <ErrorDisplay fetchError={error}/> : <GameDisplay addErr={addErr} games={allGames} />}>
         <Route index element={<GameAbout />} />
         <Route path="locations" element={<Locations />} />
         <Route path="artists" element={<Artists />} />

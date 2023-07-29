@@ -10,6 +10,7 @@
 .row-card-container {
   display: flex;
   overflow-x: auto;
-  gap: 10px;
+  gap: 3%;
+  padding: 3% 3%;
 }
 

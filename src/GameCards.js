@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 export default function GameCards({games, kidFriendly, partyGames, newRelease}) {
   const [ searchParam ] = useSearchParams();
   const nameParam = searchParam.get('name');
-  // console.log(games)
+
   games = [...games, ...kidFriendly, ...partyGames, ...newRelease];
 
   // console.log('partyGames: ', partyGames)

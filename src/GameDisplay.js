@@ -19,7 +19,7 @@ const {id} = useParams()
   // }, [])
   
   const game = games.filter(game => game.id === id)
-  // console.log(game)
+
   return (
     game.map(game => (
     <section className='game-display' key={id}>

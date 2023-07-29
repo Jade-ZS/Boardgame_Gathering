@@ -8,7 +8,7 @@ to view a small sub-set of featured games we can update month to month. We have 
 Steps to install the project and how to get the development environment running:
 
 ```
-1. git clone git@github.com:Jade-ZS/PWA_Stretch.git
+1. git clone 
 2. cd projectname/
 3. npm install
 4. npm start

@@ -16,7 +16,6 @@ export default function SearchResult({ games }) {
   )
 }
 
-
 SearchResult.propTypes = {
   games: PropTypes.array.isRequired,
 }

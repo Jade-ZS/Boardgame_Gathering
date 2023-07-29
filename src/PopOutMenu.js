@@ -34,28 +34,32 @@ function PopOutMenu({ games, handleClose }) {
     : games;
   console.log();
 
+  const yearsCatagory = yearPublished && yearList.map(game => (
+    <Link to={`/${game.id}`}>
+      <div key={game.id} className="option">
+        <p>👾</p>
+        <li>{game.handle.replaceAll('-', ' ')}</li>
+      </div>
+    </Link>
+  ))
+
+  const gamesCatagory =  gameType && gameList.map(game => (
+    <Link to={`/${game.id}`} className="game-link">
+      <div key={game.id} className="option">
+        <p>👾</p>
+        <li>{game.handle.replaceAll('-', ' ')}</li>
+      </div>
+    </Link>
+  ))
+
   return (
     <div className="pop-out-menu">
       <div className="filtered">
         {show && <div className="filter-ul">
           <button onClick={clearFilters}>Clear Filters</button>
           <p className="label">Your Options</p>
-          {yearPublished && yearList.map(game => (
-            <Link to={`/${game.id}`}>
-              <div key={game.id} className="option">
-                <p>👾</p>
-                <li>{game.handle.replaceAll('-', ' ')}</li>
-              </div>
-            </Link>
-          ))}
-          {gameType && gameList.map(game => (
-            <Link to={`/${game.id}`} className="game-link">
-              <div key={game.id} className="option">
-                <p>👾</p>
-                <li>{game.handle.replaceAll('-', ' ')}</li>
-              </div>
-            </Link>
-          ))}
+          {yearList.length ? yearsCatagory : <p>Sorry No Games For This Year</p>}
+          {gameList.length ? gamesCatagory : <p>Sorry No Games For This Catagory</p>}
         </div>}
       </div>
       <div className="menu-item">
@@ -108,88 +112,108 @@ function PopOutMenu({ games, handleClose }) {
         </div>
       </div>
       <div className="menu-item">
-        <p className="label">Year Published</p>
+        <p className="label">Featured Year The 90's</p>
         <div className="drop-down-menu">
           <ul>
           <li
-              id="1995"
+              id="1990"
               onClick={(event) => { 
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
               className={selectedCategory === "1995" ? "selected" : ""}
             >
-              1995
+              1990
             </li>
             <li
-              id="2000"
+              id="1991"
               onClick={(event) => { 
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
               className={selectedCategory === "2000" ? "selected" : ""}
             >
-              2000
+              1991
             </li>
             <li
-              id="2008"
+              id="1992"
               onClick={(event) => { 
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
               className={selectedCategory === "2008" ? "selected" : ""}
             >
-              2008
+             1992
             </li>
             <li
-              id="2016"
+              id="1993"
               onClick={(event) => { 
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
               className={selectedCategory === "2016" ? "selected" : ""}
             >
-              2016
+              1993
             </li>
             <li
-              id="2017"
+              id="1994"
               onClick={(event) => { 
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
               className={selectedCategory === "2017" ? "selected" : ""}
             >
-              2017
+              1994
             </li>
             <li
-              id="2018"
+              id="1995"
               onClick={(event) => { 
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
               className={selectedCategory === "2018" ? "selected" : ""}
             >
-              2018
+              1995
             </li>
             <li
-              id="2019"
+              id="1996"
               onClick={(event) => { 
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
               className={selectedCategory === "2019" ? "selected" : ""}
             >
-              2019
+              1996
             </li>
             <li
-              id="2022"
+              id="1997"
               onClick={(event) => { 
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
               className={selectedCategory === "2022" ? "selected" : ""}
             >
-              2022
+              1997
+            </li>
+            <li
+              id="1998"
+              onClick={(event) => { 
+                handleClick(event, "year_published")
+                setSelectedCategory(event.target.id)
+              }}
+              className={selectedCategory === "2022" ? "selected" : ""}
+            >
+              1998
+            </li>
+            <li
+              id="1999"
+              onClick={(event) => { 
+                handleClick(event, "year_published")
+                setSelectedCategory(event.target.id)
+              }}
+              className={selectedCategory === "2022" ? "selected" : ""}
+            >
+              1999
             </li>
           </ul>
         </div>

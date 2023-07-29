@@ -115,63 +115,13 @@ function PopOutMenu({ games, handleClose }) {
         <p className="label">Featured Year The 90's</p>
         <div className="drop-down-menu">
           <ul>
-          <li
-              id="1990"
-              onClick={(event) => { 
-                handleClick(event, "year_published")
-                setSelectedCategory(event.target.id)
-              }}
-              className={selectedCategory === "1995" ? "selected" : ""}
-            >
-              1990
-            </li>
-            <li
-              id="1991"
-              onClick={(event) => { 
-                handleClick(event, "year_published")
-                setSelectedCategory(event.target.id)
-              }}
-              className={selectedCategory === "2000" ? "selected" : ""}
-            >
-              1991
-            </li>
-            <li
-              id="1992"
-              onClick={(event) => { 
-                handleClick(event, "year_published")
-                setSelectedCategory(event.target.id)
-              }}
-              className={selectedCategory === "2008" ? "selected" : ""}
-            >
-             1992
-            </li>
-            <li
-              id="1993"
-              onClick={(event) => { 
-                handleClick(event, "year_published")
-                setSelectedCategory(event.target.id)
-              }}
-              className={selectedCategory === "2016" ? "selected" : ""}
-            >
-              1993
-            </li>
-            <li
-              id="1994"
-              onClick={(event) => { 
-                handleClick(event, "year_published")
-                setSelectedCategory(event.target.id)
-              }}
-              className={selectedCategory === "2017" ? "selected" : ""}
-            >
-              1994
-            </li>
             <li
               id="1995"
               onClick={(event) => { 
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
-              className={selectedCategory === "2018" ? "selected" : ""}
+              className={selectedCategory === "1995" ? "selected" : ""}
             >
               1995
             </li>
@@ -181,7 +131,7 @@ function PopOutMenu({ games, handleClose }) {
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
-              className={selectedCategory === "2019" ? "selected" : ""}
+              className={selectedCategory === "1996" ? "selected" : ""}
             >
               1996
             </li>
@@ -191,7 +141,7 @@ function PopOutMenu({ games, handleClose }) {
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
-              className={selectedCategory === "2022" ? "selected" : ""}
+              className={selectedCategory === "1997" ? "selected" : ""}
             >
               1997
             </li>
@@ -201,7 +151,7 @@ function PopOutMenu({ games, handleClose }) {
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
-              className={selectedCategory === "2022" ? "selected" : ""}
+              className={selectedCategory === "1998" ? "selected" : ""}
             >
               1998
             </li>
@@ -211,7 +161,7 @@ function PopOutMenu({ games, handleClose }) {
                 handleClick(event, "year_published")
                 setSelectedCategory(event.target.id)
               }}
-              className={selectedCategory === "2022" ? "selected" : ""}
+              className={selectedCategory === "1999" ? "selected" : ""}
             >
               1999
             </li>

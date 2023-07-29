@@ -11,7 +11,7 @@ import {Routes, Route, NavLink } from 'react-router-dom'
 import GameAbout from './GameAbout';
 import Locations from './Locations';
 import Artists from './Artists';
-
+import Offline from './Offline.js'
 
 function App() {
 
@@ -20,8 +20,14 @@ function App() {
   const [newRelease, setNewRelease] = useState([]);
   const [partyGames, setPartyGames] = useState([]);
   const [kidFriendly, setKidFriendly] = useState([]);
+  const [offline, setOffline] = useState(false);
+  
 
   useEffect(() => {
+    if(!navigator.onLine) {
+      setOffline(true);
+    }
+
     getData('&order_by=rank&ascending=false&pretty=true')
       .then(data => setGames(data.games)) 
       .catch(error => setError(error))
@@ -37,10 +43,11 @@ function App() {
   }, [])
 
   return (
+   
     <div>
+    <Offline offline={offline}/>
     <Routes>
-      <Route path="/" element={<><Banner  games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/> <MenuBar /><GameCards games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
-      {/* change path to ":id" */}
+      <Route path="/" element={<><Banner  games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} offline={offline}/> <MenuBar /><GameCards games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames} /></>} />
       <Route path="/:id" element={<GameDisplay games={games} newRelease={newRelease} kidFriendly={kidFriendly} partyGames={partyGames}/>}>
         <Route index element={<GameAbout />} />
         <Route path="locations" element={<Locations />} />

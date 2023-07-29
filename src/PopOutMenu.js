@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import "./PopOutMenu.css";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
-
+import PropTypes from 'prop-types'
 
 function PopOutMenu({ games, handleClose }) {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -198,3 +198,8 @@ function PopOutMenu({ games, handleClose }) {
   </div>    
 )}
 export default PopOutMenu;
+
+PopOutMenu.propTypes = {
+  games: PropTypes.array.isRequired,
+  handleClose: PropTypes.func.isRequired,
+}

@@ -6,9 +6,8 @@ import { useOutletContext } from 'react-router-dom'
 function Artists(props) {
   
   const { game } = useOutletContext()
-  
   const artists = game.artists.map(artist => (
-    <div key={artist.id} className='artist'>
+    <div key={game.id} className='artist'>
       <p>{artist}</p>
     </div>
   ))
@@ -21,6 +20,7 @@ function Artists(props) {
 }
 
 Artists.propTypes = {}
+
 
 export default Artists
 

@@ -2,10 +2,8 @@ async function unreg() {
   if (!window.navigator || !navigator.serviceWorker) {
     return null;
   }
-  const regs = await navigator.serviceWorker.getRegistrations();
-  return Promise.all(regs.map((registration) => {
-    return registration.unregister();
-  }));
+  const registrations = await navigator.serviceWorker.getRegistrations();
+  return Promise.all(registrations.map(registration => registration.unregister()));
 }
 
 beforeEach(() => {
@@ -23,7 +21,7 @@ beforeEach(() => {
   .as('new')
   
 
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=14&min_players=7&client_id=Efb4IXjG2E', {
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_players=4&client_id=Efb4IXjG2E', {
     statusCode: 200,
     fixture: 'party.json'
   })
@@ -101,7 +99,7 @@ describe('Testing for user viewing game info.', () => {
         
       })
     cy.get('.details')
-    .each(()=>{
+    .within(()=>{
       cy.get('h4')
       .eq(0)
       .contains('12.95')
@@ -145,7 +143,7 @@ describe('Testing for user viewing game info.', () => {
     cy.get('.links')
     .within(()=>{
       cy.get('.game-nav')
-      .each(()=>{
+      .within(()=>{
         cy.get('a')
         .eq(0)
         .should('have.attr', 'href' )
@@ -164,7 +162,7 @@ describe('Testing for user viewing game info.', () => {
     cy.get('.links')
     .within(()=>{
       cy.get('.game-nav')
-      .each(()=>{
+      .within(()=>{
         cy.get('a')
         .eq(0)
         .click()
@@ -182,14 +180,14 @@ describe('Testing for user viewing game info.', () => {
     cy.get('.links')
     .within(()=>{
       cy.get('.game-nav')
-      .each(()=>{
+      .within(()=>{
         cy.get('a')
         .eq(1)
         .click()
       })
     })
     cy.get('.location-container')
-    .each(()=>{
+    .within(()=>{
       cy.get('.retail-location')
       .first()
       .within(()=>{
@@ -221,5 +219,6 @@ describe('Testing for user viewing game info.', () => {
         .contains('Ilya Komarov')
       })
     })
+  cleanUp()
   })
 })

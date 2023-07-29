@@ -2,11 +2,13 @@ import './GameCards.css';
 import GameRow from './GameRow';
 import SearchResult from './SearchResult';
 import { useState } from 'react';
-import { useSearchParams } from 'react-router-dom'; 
+import { useSearchParams } from 'react-router-dom';
+import PropTypes from 'prop-types'; 
 
 export default function GameCards({games, kidFriendly, partyGames, newRelease}) {
   const [ searchParam ] = useSearchParams();
   const nameParam = searchParam.get('name');
+
   games = [...games, ...kidFriendly, ...partyGames, ...newRelease];
   
   const gameRows = (
@@ -22,4 +24,11 @@ export default function GameCards({games, kidFriendly, partyGames, newRelease}) 
       { nameParam ? <SearchResult games={games}/> : gameRows}
     </div>
   )
+}
+
+GameCards.propTypes = {
+  games: PropTypes.array.isRequired,
+  newRelease: PropTypes.array.isRequired,
+  kidFriendly: PropTypes.array.isRequired,
+  partyGames: PropTypes.array.isRequired
 }

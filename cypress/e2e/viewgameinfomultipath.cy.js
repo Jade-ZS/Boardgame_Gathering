@@ -2,10 +2,8 @@ async function unreg() {
   if (!window.navigator || !navigator.serviceWorker) {
     return null;
   }
-  const regs = await navigator.serviceWorker.getRegistrations();
-  return Promise.all(regs.map((registration) => {
-    return registration.unregister();
-  }));
+  const registrations = await navigator.serviceWorker.getRegistrations();
+  return Promise.all(registrations.map(registration => registration.unregister()));
 }
 
 beforeEach(() => {
@@ -23,7 +21,7 @@ beforeEach(() => {
   .as('new')
   
 
-  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_age=14&min_players=7&client_id=Efb4IXjG2E', {
+  cy.intercept("GET", 'https://api.boardgameatlas.com/api/search?&min_players=4&client_id=Efb4IXjG2E', {
     statusCode: 200,
     fixture: 'party.json'
   })
@@ -137,5 +135,6 @@ describe('Testing for user pathing to game info page.', () => {
       cy.get('a').click({ force: true })
 
     })
+    cleanUp()
   })
 })

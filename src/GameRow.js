@@ -1,5 +1,6 @@
 import './GameRow.css';
 import Card from './Card'
+import PropTypes from 'prop-types'
 
 export default function GameRow({category, games}) {
   return (
@@ -15,4 +16,9 @@ export default function GameRow({category, games}) {
      
     </div>
   )
+}
+
+GameRow.propTypes = {
+  games: PropTypes.array.isRequired,
+  category: PropTypes.string.isRequired,
 }

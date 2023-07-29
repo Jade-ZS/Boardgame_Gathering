@@ -1,6 +1,7 @@
 import './SearchResult.css';
 import Card from './Card';
 import { useSearchParams } from 'react-router-dom';
+import PropTypes from 'prop-types'
 
 export default function SearchResult({ games }) {
   const [searchParams] = useSearchParams(); 
@@ -13,4 +14,9 @@ export default function SearchResult({ games }) {
       {searchResults.length ? resultCards : <p>Sorry, no matching game was found. Please try a different game name...</p>}
     </div>
   )
+}
+
+
+SearchResult.propTypes = {
+  games: PropTypes.array.isRequired,
 }

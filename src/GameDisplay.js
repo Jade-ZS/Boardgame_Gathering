@@ -45,6 +45,11 @@ const {id} = useParams()
   )))
 }
 
-GameDisplay.propTypes = {}
+GameDisplay.propTypes = {
+  games: PropTypes.array.isRequired,
+  newRelease: PropTypes.array.isRequired,
+  kidFriendly: PropTypes.array.isRequired,
+  partyGames: PropTypes.array.isRequired
+}
 
 export default GameDisplay

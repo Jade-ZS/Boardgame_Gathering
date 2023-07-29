@@ -137,10 +137,6 @@ span {
 }
 
 @media screen and (max-width: 850px) {
-  /* .game-display {
-    width: 100%;
-    flex-direction: column
-  }; */
   
   .game-details {
     flex-direction: column;

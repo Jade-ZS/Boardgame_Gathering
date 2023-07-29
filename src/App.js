@@ -34,7 +34,7 @@ function App() {
     getData('&gt_year_published=2021')
       .then(data => setNewRelease(data.games))
       .catch(error => setError(error))
-    getData('&min_age=14&min_players=7')
+    getData('&min_players=4')
       .then(data => setPartyGames(data.games))
       .catch(error => setError(error))
     getData('&min_age=6')

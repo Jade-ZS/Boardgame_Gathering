@@ -9,6 +9,8 @@ export default function GameCards({games, kidFriendly, partyGames, newRelease}) 
   const nameParam = searchParam.get('name');
   games = [...games, ...kidFriendly, ...partyGames, ...newRelease];
 
+  console.log('partyGames: ', partyGames)
+  
   const gameRows = (
     <div>
         <GameRow games={newRelease} category='New Release'/>

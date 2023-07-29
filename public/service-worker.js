@@ -1,4 +1,5 @@
-const gameBoardsCache = `GameBoard Cache version`;
+const gameBoardsCache = "GameBoard Cache";
+
 const filesPath = [
   '/',
   "/index.html",
@@ -16,7 +17,6 @@ self.addEventListener("install", (event) => {
         console.log("Open Cache");
         return cache.addAll(filesPath);
       })
-    
   );
 });
 
@@ -53,3 +53,4 @@ self.addEventListener("activate", () => {
       })
     })
 });
+

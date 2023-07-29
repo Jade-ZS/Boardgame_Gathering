@@ -2,10 +2,8 @@ async function unreg() {
   if (!window.navigator || !navigator.serviceWorker) {
     return null;
   }
-  const regs = await navigator.serviceWorker.getRegistrations();
-  return Promise.all(regs.map((registration) => {
-    return registration.unregister();
-  }));
+  const registrations = await navigator.serviceWorker.getRegistrations();
+  return Promise.all(registrations.map(registration => registration.unregister()));
 }
 
 beforeEach(() => {
@@ -273,7 +271,8 @@ describe('Main page should display all elements', () => {
       .should('have.attr', 'placeholder')
       .should('include', 'game name')
       })
-    }) 
+    })
+  cleanUp() 
   }) 
 })
 

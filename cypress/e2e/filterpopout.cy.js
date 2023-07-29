@@ -37,63 +37,67 @@ beforeEach(() => {
 })
 
 function cleanUp() {
-
   cy.clearCookies()
 }
 
-
-describe('Conditional rendering should make missing data not apparent user interfacing.', () => {
-  it('Games like chess that are missing parts but not all of the additional info section should have that selectively! Conditionally rendered out.', () => {
+describe('Filter should have correct elements, pathing, and selections.', () => {
+  it('Filter pop out should be able to open and close.', () => {
     unreg()
 
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
-
-    cy.get('.game-row')
-    .eq(2)
-    .within(() => {
-      cy.get('img')
-      .first()
+    cy.get('.filter')
+    .click()
+    cy.get('.pop-out-menu')
+    .should('exist')
+    cy.get('.menu-item')
+    .first()
+    .within(()=>{
+      cy.get('button')
       .click()
-      })
-      cy.get('.links')
-      .within(()=>{
-        cy.get('.game-nav')
-        .within(()=>{
-          cy.get('a')
-          .eq(2)
-          .should('not.exist')
-      })
     })
+    cy.get('.pop-out-menu')
+    .should('not.exist')
+
     cleanUp()
   })
 
-  it('Games that are missing large chunks of data, removing the need for things like a nav section should have that conditionally rendered out.', () => {
+  it('Filter pop out should be able to open and close, and extension pop-out should be able to open and close by selecting a filter and by clearing filters.', () => {
     unreg()
 
     cy.visit('http://localhost:3000/')
     cy.wait(['@games','@new','@party','@kids'])
-
-    cy.get('.game-row')
-    .eq(1)
-    .within(() => {
-      cy.get('img')
-      .eq(3)
+    cy.get('.filter')
+    .click()
+    cy.get('.pop-out-menu')
+    .should('exist')
+    cy.get('.filter-ul')
+    .should('not.exist')
+    cy.get('.menu-item')
+    .first()
+    .within(()=>{
+      cy.get('li')
+      .first()
       .click()
-      })
-    cy.get('.links')
-    .within(()=>{
-      cy.get('.game-nav')
-      .should('not.be.visible')
     })
-    cy.get('.about-container')
-    .should('not.be.visible')
-    cy.get('.details')
+    cy.get('.filter-ul')
+    .should('exist')
+    cy.get('.filtered')
     .within(()=>{
-      cy.get('h4')
-      .eq(2)
-      .should('not.exist')
+      cy.get('button')
+      .click()
     })
+    cy.get('.filter-ul')
+    .should('not.exist')
+    cy.get('.menu-item')
+    .first()
+    .within(()=>{
+      cy.get('button')
+      .click()
+    })
+    cy.get('.pop-out-menu')
+    .should('not.exist')
+    
     cleanUp()
   })
 })

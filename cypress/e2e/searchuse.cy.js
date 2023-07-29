@@ -2,10 +2,8 @@ async function unreg() {
   if (!window.navigator || !navigator.serviceWorker) {
     return null;
   }
-  const regs = await navigator.serviceWorker.getRegistrations();
-  return Promise.all(regs.map((registration) => {
-    return registration.unregister();
-  }));
+  const registrations = await navigator.serviceWorker.getRegistrations();
+  return Promise.all(registrations.map(registration => registration.unregister()));
 }
 
 beforeEach(() => {
@@ -132,5 +130,6 @@ describe('Search should have an intuitive user experience.', () => {
         .contains('Backgammon')
       })
     })
+  cleanUp()
   })
 })

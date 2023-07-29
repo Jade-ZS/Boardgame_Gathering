@@ -2,10 +2,8 @@ async function unreg() {
   if (!window.navigator || !navigator.serviceWorker) {
     return null;
   }
-  const regs = await navigator.serviceWorker.getRegistrations();
-  return Promise.all(regs.map((registration) => {
-    return registration.unregister();
-  }));
+  const registrations = await navigator.serviceWorker.getRegistrations();
+  return Promise.all(registrations.map(registration => registration.unregister()));
 }
 
 beforeEach(() => {
@@ -137,5 +135,6 @@ describe('Testing for user pathing to game info page.', () => {
       cy.get('a').click({ force: true })
 
     })
+    cleanUp()
   })
 })

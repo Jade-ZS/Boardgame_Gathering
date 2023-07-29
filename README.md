@@ -20,4 +20,19 @@ Steps to install the project and how to get the development environment running:
 
 ## Contributing
 
-Guidelines on how to contribute to the project.
+Isaiah Richardson
+GitHub: https://github.com/CapCinematic
+LinkedIn: https://www.linkedin.com/in/isaiah-cap-richardson/
+
+Jade Shi
+GitHub: https://github.com/Jade-ZS
+LinkedIn: https://www.linkedin.com/in/ziyu-jade-shi-26447a19b/
+
+Race Osuna
+GitHub: https://github.com/RaceOsuna
+LinkedIn: https://www.linkedin.com/in/raceosuna/
+
+Victor Sriqui
+GitHub: https://github.com/vsriqui
+LinkedIn: https://turingschool.slack.com/archives/C05HRR6QES1/p1690658527589989
+

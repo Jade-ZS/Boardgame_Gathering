@@ -1,7 +1,6 @@
 import './GameCards.css';
 import GameRow from './GameRow';
 import SearchResult from './SearchResult';
-import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import PropTypes from 'prop-types'; 
 

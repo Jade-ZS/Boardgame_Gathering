@@ -2,10 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: #ffc0cb; */
-  /* background: rgb(255,194,204); */
   background-color: rgba(255,194,204,0.444437149859944);
-/* background: linear-gradient(90deg, rgba(255,194,204,0.444437149859944) 0%, rgba(255,255,255,1) 100%); */
   min-height: 100vh;
   width: 100%;
 }
@@ -20,7 +17,6 @@
 .thumbnail {
   display: flex;
   justify-content: center;
-  align-items: start;
   width: 40%;
 }
 
@@ -154,10 +150,6 @@ span {
   .details {
     padding: 0
   }
-
-  /* .game-display {
-   width:100vw;
-  } */
 }
 
 @media screen and (max-width: 450px) {

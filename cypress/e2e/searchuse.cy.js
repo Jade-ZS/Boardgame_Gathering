@@ -60,7 +60,7 @@ describe('Search should have an intuitive user experience.', () => {
     cleanUp()
   })
   
-  it('When the user gets results that message should not appear, or persist.', () => {
+  it('User should be able to type a partial name.', () => {
     
     unreg()
 
@@ -68,7 +68,7 @@ describe('Search should have an intuitive user experience.', () => {
     cy.wait(['@games','@new','@party','@kids'])
 
     .get('input[type="text"]')
-    .type('Ca')
+    .type('la')
     cy.get('.game-cards-container')
     .within(()=> {
       cy.get('.search-result')
@@ -78,25 +78,25 @@ describe('Search should have an intuitive user experience.', () => {
         cy.get('a')
         .first()
         .should('have.attr', 'href')
-        .should('include', '/OIXt3DmJU0')
+        .should('include', '/XuFYZKopUR')
         cy.get('img')
         .first()
         .should('have.attr', 'src')
-        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324722072.jpg')
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/empty+box.jpg')
         cy.get('p')
         .first()
-        .contains('Catan')
+        .contains('Zombicide')
         cy.get('a')
         .last()
         .should('have.attr', 'href')
-        .should('include', '/c7ncqL5AX6')
+        .should('include', '/J1vBFiqdHG')
         cy.get('img')
         .last()
         .should('have.attr', 'src')
-        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559257497048-519-B02BO03L.jpg')
+        .should('include', 'https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1629324599426.jpg')
         cy.get('p')
         .last()
-        .contains('PitchCar Mini')         
+        .contains('Atlantis Rising')         
       })
     })
     cleanUp()

@@ -22,7 +22,4 @@ export default function Banner({ games }) {
 
 Banner.propTypes = {
   games: PropTypes.array.isRequired,
-  newRelease: PropTypes.array.isRequired,
-  kidFriendly: PropTypes.array.isRequired,
-  partyGames: PropTypes.array.isRequired
 }

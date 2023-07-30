@@ -37,8 +37,7 @@ beforeEach(() => {
 })
 
 function cleanUp() {
-
-  cy.clearCookies()
+  cy.clearAllCookies()
 }
 
 

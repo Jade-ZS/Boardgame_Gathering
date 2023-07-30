@@ -1,7 +1,7 @@
 import React from "react";
 import { useSearchParams } from "react-router-dom";
 import "./PopOutMenu.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { useState } from "react";
 import PropTypes from "prop-types";
 

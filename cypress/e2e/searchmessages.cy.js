@@ -37,7 +37,7 @@ beforeEach(() => {
 })
 
 function cleanUp() {
-  cy.clearCookies()
+  cy.clearAllCookies()
 }
 
 describe('Search should have an intuitive user experience.', () => {

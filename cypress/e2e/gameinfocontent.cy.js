@@ -37,7 +37,7 @@ beforeEach(() => {
 })
 
 function cleanUp() {
-  cy.clearCookies()
+  cy.clearAllCookies()
 }
 
 describe('Testing for user viewing game info.', () => {

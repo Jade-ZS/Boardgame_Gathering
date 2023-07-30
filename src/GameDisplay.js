@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './GameDisplay.css'
-import { useEffect, useState } from 'react'
 import { NavLink, Outlet, Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 
@@ -47,9 +46,7 @@ const {id} = useParams()
 
 GameDisplay.propTypes = {
   games: PropTypes.array.isRequired,
-  newRelease: PropTypes.array.isRequired,
-  kidFriendly: PropTypes.array.isRequired,
-  partyGames: PropTypes.array.isRequired
+  addErr: PropTypes.func.isRequired
 }
 
 export default GameDisplay

@@ -1,5 +1,6 @@
 import './Offline.css';
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 export default function Offline({offline}) {
   const [clicked, setClicked] = useState(false)
@@ -17,4 +18,8 @@ export default function Offline({offline}) {
       </div>
     </div>
   )
+}
+
+Offline.propTypes = {
+  offline: PropTypes.bool.isRequired,
 }

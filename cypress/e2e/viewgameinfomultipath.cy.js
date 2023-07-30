@@ -37,8 +37,9 @@ beforeEach(() => {
 })
 
 function cleanUp() {
-  cy.clearCookies()
+  cy.clearAllCookies()
 }
+
 
 describe('Testing for user pathing to game info page.', () => {
 
@@ -58,11 +59,16 @@ describe('Testing for user pathing to game info page.', () => {
       .click()
     })
     cy.url()
-    .should('include', 'http://localhost:3000/YBJODy05aF')
+    .should('include', '/YBJODy05aF')
     cy.get('.home-button')
     .within(() => {
       cy.get('a').click({ force: true })
     })
+    cy.url()
+    .should('not.include', '/YBJODy05aF')
+    cy.url()
+    .should('include', 'http://localhost:3000/')
+
     cleanUp() 
   })
 
@@ -87,6 +93,11 @@ describe('Testing for user pathing to game info page.', () => {
       cy.get('a').click({ force: true })
 
     })
+    cy.url()
+    .should('not.include', '/J1vBFiqdHG')
+    cy.url()
+    .should('include', 'http://localhost:3000/')
+
     cleanUp()
   })
 
@@ -111,7 +122,13 @@ describe('Testing for user pathing to game info page.', () => {
       cy.get('a').click({ force: true })
 
     })
+    cy.url()
+    .should('not.include', '/OTIkviy9XZ')
+    cy.url()
+    .should('include', 'http://localhost:3000/')
+
     cleanUp()
+    
   })
 
   it('User should be able to select a game from kid friendly carousel, view game info, and return home', () => {
@@ -135,6 +152,54 @@ describe('Testing for user pathing to game info page.', () => {
       cy.get('a').click({ force: true })
 
     })
+    cy.url()
+    .should('not.include', '/3hnL2wtWnM')
+    cy.url()
+    .should('include', 'http://localhost:3000/')
     cleanUp()
   })
+
+  it('User should be able to select a game from filter, view game info, and come home.', () => {
+
+    unreg()
+
+    cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+
+    cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+    cy.get('.filter')
+    .click()
+    cy.get('.pop-out-menu')
+    .should('exist')
+    cy.get('.filter-ul')
+    .should('not.exist')
+    cy.get('.menu-item')
+    .first()
+    .within(()=>{
+      cy.get('li')
+      .eq(1)
+      .click()
+    })
+    cy.get('.game-link')
+    .first()
+    .click()
+    cy.url()
+    .should('include', '/OO9EJFWOcI')
+    cy.get('.home-button')
+    .within(() => {
+      cy.get('a').click({ force: true })
+    })
+    cy.url()
+    .should('not.include', '/OO9EJFWOcI')
+    cy.url()
+    .should('include', 'http://localhost:3000/')
+
+    cleanUp()
+  })
+  
 })
+
+
+
+

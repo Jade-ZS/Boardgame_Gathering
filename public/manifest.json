@@ -3,17 +3,17 @@
   "name": "Boardgame Gathering",
   "icons": [
     {
-      "src": "BG Icon.png",
+      "src": "/src/IconImages/assets/BG Icon.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
-      "src": "BG Icon(192x192).png",
+      "src": "/src/IconImages/assets/BG Icon(192x192).png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "BG Icon(512).png",
+      "src": "/src/IconImages/assets/BG Icon(512).png",
       "type": "image/png",
       "sizes": "512x512"
     }

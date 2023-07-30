@@ -1,7 +1,6 @@
 # Game Gathering
 
-Game Gathering, is an awesome app that allows users to search and view a wide arrange of board games. New and old, small and large you name it! Users can search for a game by name or use our pop out menu feature
-to view a small sub-set of featured games we can update month to month. We have 3 carsol options a user can serach through as well.
+Introducing Boardgame Gathering - the ultimate app for board game enthusiasts! Our app offers an extensive collection of both classic and modern board games, big and small. With just a few clicks, users can easily search for games by name or browse through our curated selection of featured games in the pop-out menu. We also offer three carousel options for easy navigation. Don't miss out on the fun - download Boardgame Gathering today!
 
 ## Deployment
 https://pwa-stretch.vercel.app/

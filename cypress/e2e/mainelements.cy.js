@@ -37,8 +37,9 @@ beforeEach(() => {
 })
 
 function cleanUp() {
-
-  cy.clearCookies()
+  cy.clearAllCookies()
+  cy.clearAllLocalStorage()
+  cy.clearAllSessionStorage()
 }
 
 

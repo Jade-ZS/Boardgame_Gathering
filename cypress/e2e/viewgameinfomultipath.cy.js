@@ -37,8 +37,11 @@ beforeEach(() => {
 })
 
 function cleanUp() {
-  cy.clearCookies()
+  cy.clearAllCookies()
+  cy.clearAllLocalStorage()
+  cy.clearAllSessionStorage()
 }
+
 
 describe('Testing for user pathing to game info page.', () => {
 

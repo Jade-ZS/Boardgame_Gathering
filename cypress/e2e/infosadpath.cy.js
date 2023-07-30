@@ -37,10 +37,10 @@ beforeEach(() => {
 })
 
 function cleanUp() {
-
-  cy.clearCookies()
+  cy.clearAllCookies()
+  cy.clearAllLocalStorage()
+  cy.clearAllSessionStorage()
 }
-
 
 describe('Conditional rendering should make missing data not apparent user interfacing.', () => {
   it('Games like chess that are missing parts but not all of the additional info section should have that selectively! Conditionally rendered out.', () => {

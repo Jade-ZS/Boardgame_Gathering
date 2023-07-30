@@ -37,7 +37,9 @@ beforeEach(() => {
 })
 
 function cleanUp() {
-  cy.clearCookies()
+  cy.clearAllCookies()
+  cy.clearLocalStorage()
+  cy.clearAllSessionStorage()
 }
 
 describe('Filter should have correct elements, pathing, and selections.', () => {
@@ -115,7 +117,7 @@ describe('Filter should have correct elements, pathing, and selections.', () => 
     cleanUp()
   })
 
-  it('Filter pop out Options section should have proper elements.', () => {
+  it('Filter pop out Options section should have proper elements and atrributes.', () => {
     unreg()
 
     cy.visit('http://localhost:3000/')
@@ -161,6 +163,99 @@ describe('Filter should have correct elements, pathing, and selections.', () => 
     })
 
     ////
+    cleanUp()
+  })
+
+  it('Filter pop out Game Type section should have proper elements and attributes.', () => {
+    unreg()
+
+    cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+    cy.get('.filter')
+    .click()
+    cy.get('.pop-out-menu')
+    .should('exist')
+    //////
+    cy.get('.menu-item')
+    .eq(0)
+    .within(()=>{
+      cy.get('div')
+      .first()
+      .within(()=>{
+        cy.get('button')
+        .contains('Close')
+        cy.get('p')
+        .contains('Game Type')
+        cy.get('.drop-down-menu')
+        .within(()=>{
+          cy.get('ul')
+          .within(()=>{
+            cy.get('li')
+            .first()
+            .should('have.attr','id')
+            .should('include', 'nuHYRFmMjU')
+            cy.get('li')
+            .first()
+            .should('have.attr','class')
+            .should('not.include', 'selected')
+            cy.get('li')
+            .first()
+            .contains('Renaissance')
+            cy.get('li')
+            .last()
+            .should('have.attr','id')
+            .should('include', 'JwHcKqxh33')
+            cy.get('li')
+            .last()
+            .should('have.attr','class')
+            .should('not.include', 'selected')
+            cy.get('li')
+            .last()
+            .contains('Trains')
+            cy.get('li')
+            .last()
+            .click()    
+            .should('have.attr','class')
+            .should('include', 'selected')
+          })
+        })
+      })
+      cy.get('.menu-item')
+      .within(()=>{
+        cy.get('p')
+        .contains('Featured Year The 90\'s')
+        cy.get('.drop-down-menu')
+        .within(()=>{
+          cy.get('li')
+          .first()
+          .should('have.attr','id')
+          .should('include', '1995')
+          cy.get('li')
+          .first()
+          .should('have.attr','class')
+          .should('not.include', 'selected')
+          cy.get('li')
+          .first()
+          .contains('1995')
+          cy.get('li')
+          .last()
+          .should('have.attr','id')
+          .should('include', '1999')
+          cy.get('li')
+          .last()
+          .should('have.attr','class')
+          .should('not.include', 'selected')
+          cy.get('li')
+          .last()
+          .contains('1999')
+          cy.get('li')
+          .last()
+          .click()    
+          .should('have.attr','class')
+          .should('include', 'selected')
+        })
+      })
+    })
     cleanUp()
   })
 

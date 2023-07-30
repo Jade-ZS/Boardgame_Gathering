@@ -37,7 +37,9 @@ beforeEach(() => {
 })
 
 function cleanUp() {
-  cy.clearCookies()
+  cy.clearAllCookies()
+  cy.clearAllLocalStorage()
+  cy.clearAllSessionStorage()
 }
 
 describe('Search should have an intuitive user experience.', () => {
@@ -51,6 +53,8 @@ describe('Search should have an intuitive user experience.', () => {
 
     .get('input[type="text"]')
     .type('a')
+    .url()
+    .should('include', '?name=a')
     cy.get('.game-cards-container')
     .within(()=> {
       cy.get('.search-result')
@@ -69,6 +73,8 @@ describe('Search should have an intuitive user experience.', () => {
 
     .get('input[type="text"]')
     .type('la')
+    .url()
+    .should('include', '?name=la')
     cy.get('.game-cards-container')
     .within(()=> {
       cy.get('.search-result')
@@ -111,6 +117,8 @@ describe('Search should have an intuitive user experience.', () => {
 
     .get('input[type="text"]')         
     .type('Backgammon')
+    .url()
+    .should('include', '?name=Backgammon')
     cy.get('.game-cards-container')
     .within(()=> {
       cy.get('.search-result')

@@ -115,7 +115,7 @@ describe('Filter should have correct elements, pathing, and selections.', () => 
     cleanUp()
   })
 
-  it('Filter pop out should have proper elements.', () => {
+  it('Filter pop out Options section should have proper elements.', () => {
     unreg()
 
     cy.visit('http://localhost:3000/')
@@ -130,10 +130,37 @@ describe('Filter should have correct elements, pathing, and selections.', () => 
     .first()
     .within(()=>{
       cy.get('li')
-      .first()
+      .eq(1)
       .click()
     })
+    ////
+    cy.get('.filtered')
+    .within(()=>{
+      cy.get('.filter-ul')
+      .within(()=>{
+        cy.get('button')
+        .contains('Clear Filters')
+        cy.get('p')
+        .first()
+        .contains('Your Options')
+        cy.get('a')
+        .should('have.attr','href')
+        .should('include', '/OO9EJFWOcI')
+        cy.get('a')
+        .within(()=>{
+          cy.get('.option')
+          .within(()=>{
+            cy.get('p')
+            .contains('👾')
+            cy.get('li')
+            .first()
+            .contains('first rat')
+          })
+        })
+      })
+    })
 
+    ////
     cleanUp()
   })
 

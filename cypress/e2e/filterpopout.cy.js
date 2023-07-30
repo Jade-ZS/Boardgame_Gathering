@@ -38,8 +38,6 @@ beforeEach(() => {
 
 function cleanUp() {
   cy.clearAllCookies()
-  cy.clearLocalStorage()
-  cy.clearAllSessionStorage()
 }
 
 describe('Filter should have correct elements, pathing, and selections.', () => {
@@ -112,8 +110,6 @@ describe('Filter should have correct elements, pathing, and selections.', () => 
       })
     })
 
-
-
     cleanUp()
   })
 
@@ -135,7 +131,7 @@ describe('Filter should have correct elements, pathing, and selections.', () => 
       .eq(1)
       .click()
     })
-    ////
+
     cy.get('.filtered')
     .within(()=>{
       cy.get('.filter-ul')
@@ -162,7 +158,6 @@ describe('Filter should have correct elements, pathing, and selections.', () => 
       })
     })
 
-    ////
     cleanUp()
   })
 

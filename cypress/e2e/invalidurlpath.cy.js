@@ -38,8 +38,6 @@ beforeEach(() => {
 
 function cleanUp() {
   cy.clearAllCookies()
-  cy.clearAllLocalStorage()
-  cy.clearAllSessionStorage()
 }
 
 describe('Invalid url paths should return a helpful message to user.', () => {

@@ -38,8 +38,6 @@ beforeEach(() => {
 
 function cleanUp() {
   cy.clearAllCookies()
-  cy.clearAllLocalStorage()
-  cy.clearAllSessionStorage()
 }
 
 describe('Conditional rendering should make missing data not apparent user interfacing.', () => {

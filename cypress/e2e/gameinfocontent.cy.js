@@ -38,8 +38,6 @@ beforeEach(() => {
 
 function cleanUp() {
   cy.clearAllCookies()
-  cy.clearAllLocalStorage()
-  cy.clearAllSessionStorage()
 }
 
 describe('Testing for user viewing game info.', () => {

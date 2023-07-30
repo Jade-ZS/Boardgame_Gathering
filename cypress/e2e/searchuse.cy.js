@@ -38,8 +38,6 @@ beforeEach(() => {
 
 function cleanUp() {
   cy.clearAllCookies()
-  cy.clearAllLocalStorage()
-  cy.clearAllSessionStorage()
 }
 
 describe('Search should have an intuitive user experience.', () => {

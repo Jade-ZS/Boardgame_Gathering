@@ -1,9 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { useOutletContext } from 'react-router-dom'
 import './GameAbout.css'
 
-function GameAbout(props) {
+function GameAbout() {
 
   const { game } = useOutletContext()
 
@@ -16,6 +15,5 @@ function GameAbout(props) {
   )
 }
 
-GameAbout.propTypes = {}
 
 export default GameAbout

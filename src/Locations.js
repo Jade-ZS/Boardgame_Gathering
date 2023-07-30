@@ -1,9 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import './Locations.css'
 import { useOutletContext } from 'react-router-dom'
 
-function Locations(props) {
+function Locations() {
   let locations;
   const { game } = useOutletContext()
 
@@ -27,8 +26,6 @@ function Locations(props) {
     </div>
   )
 }
-
-Locations.propTypes = {}
 
 export default Locations
 

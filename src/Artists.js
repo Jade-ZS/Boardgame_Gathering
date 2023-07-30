@@ -1,13 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import './Artists.css'
 import { useOutletContext } from 'react-router-dom'
 
-function Artists(props) {
+function Artists() {
   
   const { game } = useOutletContext()
-  const artists = game.artists.map(artist => (
-    <div key={game.id} className='artist'>
+
+  const artists = game.artists.map((artist, i)=> (
+    <div key={game.id + i} id={game.id + i} className='artist'>
       <p>{artist}</p>
     </div>
   ))
@@ -18,8 +18,6 @@ function Artists(props) {
     </div>
   )
 }
-
-Artists.propTypes = {}
 
 
 export default Artists

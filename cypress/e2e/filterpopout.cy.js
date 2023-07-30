@@ -41,7 +41,7 @@ function cleanUp() {
 }
 
 describe('Filter should have correct elements, pathing, and selections.', () => {
-  it('Filter pop out should have proper handling for filter returning no data.', () => {
+  it('Filter pop out should have proper handling for filter returning no data by category.', () => {
     unreg()
 
     cy.visit('http://localhost:3000/')
@@ -75,7 +75,44 @@ describe('Filter should have correct elements, pathing, and selections.', () => 
 
 
 
-    // cleanUp()
+    cleanUp()
+  })
+
+  it('Filter pop out should have proper handling for filter returning no data by year.', () => {
+    unreg()
+
+    cy.visit('http://localhost:3000/')
+    cy.wait(['@games','@new','@party','@kids'])
+    cy.get('.filter')
+    .click()
+    cy.get('.pop-out-menu')
+    .should('exist')
+    cy.get('.filter-ul')
+    .should('not.exist')
+    cy.get('.menu-item')
+    .last()
+    .within(()=>{
+      cy.get('li')
+      .last()
+      .click()
+    })
+
+    cy.get('.pop-out-menu')
+    .within(()=>{
+      cy.get('.filtered')
+      .within(()=>{
+        cy.get('.filter-ul')
+        .within(()=>{
+          cy.get('p')
+          .eq(1)
+          .contains('Sorry No Games For This Year')
+        })
+      })
+    })
+
+
+
+    cleanUp()
   })
 
   it('Filter pop out should have proper elements.', () => {

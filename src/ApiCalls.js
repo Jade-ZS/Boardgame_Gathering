@@ -1,5 +1,5 @@
 async function getData(query) {
-  let response = await fetch(`https://api.boardgameatlas.com/api/search?${query}&client_id=Efb4IXjG2E`)
+  let response = await fetch(`https://temp-bga-api-c4bd0c7481bf.herokuapp.com/api/search?${query}&client_id=Efb4IXjG2E`)
   if (!response.ok) { 
     throw new Error(response.statusText)
   }
@@ -8,3 +8,5 @@ async function getData(query) {
 } 
 
 export {getData}
+
+

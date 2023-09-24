@@ -1,3 +1,7 @@
+# Warning 
+
+Our public api backend is going down for this app due to the site owner going out of business in this tough economic circumstance unfortunately. I emailed him and he sent me the heroku that will go down October 30th 2023. The api functionality might be defunct at that date. We might also circle back to this as a group and use it as a learn to make your own backend experience, or use postman to craft mock data for the app. Thanks!!!
+
 # Game Gathering
 
 Introducing Boardgame Gathering - the ultimate app for board game enthusiasts! Our app offers an extensive collection of both classic and modern board games, big and small. With just a few clicks, users can easily search for games by name or browse through our curated selection of featured games in the pop-out menu. We also offer three carousel options for easy navigation. Don't miss out on the fun - download Boardgame Gathering today!

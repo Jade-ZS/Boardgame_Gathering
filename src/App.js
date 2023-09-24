@@ -24,6 +24,9 @@ function App() {
   const allGames = [...games, ...newRelease, ...kidFriendly, ...partyGames];
   const [offline, setOffline] = useState(false);
 
+
+ 
+
   useEffect(() => {
     if(!navigator.onLine) {
       setOffline(true);
